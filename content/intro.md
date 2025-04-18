@@ -1,11 +1,7 @@
 ---
 nav_order: 1
-title: How This Works
+title: How OHD Works
 ---
-
-[Oral History as Data (OHD)](https://github.com/oralhistoryasdata) is a powerful digital platform that enables researchers to publish, analyze, and visualize oral history and qualitative interview collections online. This documentation will guide you through the complete process of building your own interview collection using OHD.
-
-## How Oral History as Data Works
 
 OHD uses a CSV-driven approach to manage your collection. Rather than creating individual web pages for each interview, you'll manage all your interviews through a simple spreadsheet and let the system automatically generate the web presentation.
 
@@ -17,7 +13,7 @@ OHD uses a CSV-driven approach to manage your collection. Rather than creating i
 
 **2. Prepare Your Interviews**
 - Transform interview transcripts into structured CSV files
-- Add metadata through a spreadsheet
+- Add metadata through a spreadsheet (based on [CollectionBuilder-CSV](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/))
 
 **3. Develop Your Analysis Framework**
 - Create a controlled vocabulary for coding

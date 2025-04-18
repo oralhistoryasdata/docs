@@ -8,28 +8,44 @@ title: Setting Up Your Metadata
 
 Before working with individual transcripts, you'll need to set up your project's metadata spreadsheet. This file serves as the central registry for all your interviews and provides the information needed to generate your site's pages.
 
+Oral History as Data uses the [CollectionBuilder-CSV metadata format](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/) as its foundation, which means it's compatible with other CollectionBuilder projects and follows established digital collection standards. If you've worked with CollectionBuilder before, you'll find the metadata structure familiar and straightforward.
+
 ## Understanding the Metadata CSV
 
-The metadata spreadsheet contains information about each interview in your collection. Each row represents one interview, and columns represent different metadata fields.
+The metadata spreadsheet contains information about each interview in your collection. Each row represents one interview, and columns represent different metadata fields. This structure is based on the CollectionBuilder-CSV metadata model, which follows digital collection standards used by libraries and archives.
 
-Key fields include:
+### Key Fields
 
+#### Required Fields
 - **objectid**: A unique identifier for each interview (used for filenames and URLs)
 - **title**: The title of the interview
+- **date**: When the interview took place (YYYY-MM-DD format recommended)
+
+#### Standard CollectionBuilder Fields
+- **description**: A brief summary of the interview content
+- **subject**: Topics covered in the interview (semicolon separated)
+- **location**: Where the interview was conducted
+- **latitude**: Geographic coordinate (if relevant)
+- **longitude**: Geographic coordinate (if relevant)
+- **format**: The format of the original interview (e.g., "Oral History Interview")
+- **rights**: Copyright or usage rights statement
+- **rightsstatement**: URL to a formal rights statement
+
+#### Oral History as Data Specific Fields
 - **interviewee**: Name of the person interviewed
 - **interviewer**: Name of the person conducting the interview
-- **date**: When the interview took place
-- **description**: A brief summary of the interview content
-- **location**: Where the interview was conducted (can include coordinates)
 - **object_location**: URL to audio/video (if available)
 - **object_transcript**: Path to transcript file (if separate from main system)
 - **bio**: Biographical information about the interviewee
+
+The CollectionBuilder foundation means your metadata is structured according to best practices in digital collections, making it interoperable with other systems and easily migratable if needed in the future.
 
 ## Creating Your Metadata Spreadsheet
 
 1. Start with a copy of the sample spreadsheet:
    - Download the [demo-ohd-metadata.csv](/examples/demo-ohd-metadata.csv) file
    - Open it in Google Sheets, or another spreadsheet program (*** Do NOT Open IT in EXCEL!)
+   - Check out our [examples folder](/examples/) for complete sample files
 
    
 2. Review the column structure:

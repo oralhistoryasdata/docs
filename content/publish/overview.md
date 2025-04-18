@@ -1,20 +1,49 @@
 ---
 section_id: Publish and Connect
-nav_order: 5
-title: Section Overview
+nav_order: 6
+title: Publishing & Media
 ---
 
-At this point, you should have downloaded your CSV file and properly named it. Now we just need to publish it and connect it with the rest of the site!
+# Publishing and Connecting Media
 
-This section will walk you through the steps needed to publish your interview transcript on a webpage using the Oral History as Data framework. 
+After preparing your transcripts and metadata, you're ready to publish your content and optionally connect it with audio and video sources. This section walks you through uploading your materials and enhancing them with multimedia elements.
 
-**Goals**: 
+## What You'll Learn
 
-- Learn how to upload files to a GitHub repository
-- Learn how to create a basic Markdown file 
-- Learn to create metadata and the importance of attention to detail in its creation
-- (Optional) Learn How to use metadata to connect your transcript to a Audio and Video recordings
+- How to add content to your GitHub repository
+- How to connect transcripts with audio/video recordings
+- How to ensure everything displays properly on your site
 
-**Estimated Time to Complete**: ~30 minutes to an 1 Hour
+## The Publishing Workflow
 
-{% include bootstrap/button.md color="success btn-lg" text="Get Started!" link="copy.html" %}
+1. **Upload content** - Add your transcripts and metadata to the repository
+2. **Connect media** - Link transcripts to audio/video sources (optional)
+3. **Verify display** - Check that everything appears correctly on your site
+
+## Why This Matters
+
+Publishing is the final step in making your oral histories accessible to the public. By connecting interviews with their original audio or video recordings, you create:
+
+- A more engaging user experience
+- Multiple ways to interact with your content
+- Greater accessibility for different learning styles
+- A more complete historical record
+
+### CollectionBuilder Connection
+
+Oral History as Data is built on the [CollectionBuilder](https://collectionbuilder.github.io/) framework and uses the [CollectionBuilder-CSV metadata format](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/). This means:
+
+- Your projects follow digital library metadata standards
+- You can repurpose your metadata for other CollectionBuilder projects
+- Your oral history collection integrates with other digital collection tools
+- You're building on a well-established, open-source platform
+
+## Documentation & Resources
+
+| Resource | Purpose |
+|----------|---------|
+| [Adding Content to GitHub](github.html) | Learn how to upload your files to your repository |
+| [Connect Audio/Video](av.html) | Link transcripts to media sources |
+| [Example Files](/examples/) | Sample files showing proper formatting |
+
+{% include bootstrap/button.md color="success btn-lg" text="Start Publishing" link="github.html" %}

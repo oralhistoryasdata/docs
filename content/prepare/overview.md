@@ -1,6 +1,6 @@
 ---
 section_id: Prepare Your Content
-nav_order: 2
+nav_order: 4
 title: Content Preparation
 ---
 
@@ -18,9 +18,11 @@ This section guides you through the process of preparing your interview material
 ## The Content Workflow
 
 1. **Create your metadata spreadsheet** - Set up the central registry for all your interviews
-2. **Format your transcripts** - Transform interview text into structured data
-3. **Clean your content** - Ensure consistency across all materials
-4. **Verify your files** - Check that everything is properly formatted
+2. **Format your transcripts** - Ensure your transcripts follow the required structure
+3. **Add coding tags** - Apply your controlled vocabulary to transcript segments
+4. **Connect media** - Link transcripts to audio/video sources (optional)
+
+If you're starting with raw transcripts that need extensive preparation, our [step-by-step tutorial](tutorial.html) walks through the detailed process.
 
 ## Why This Matters
 
@@ -32,6 +34,15 @@ Properly structured data is the foundation of any successful digital project. By
 - Your research can be preserved for the long term
 
 The time invested in careful preparation will pay dividends in the quality and usefulness of your final publication.
+
+## Documentation & Resources
+
+| Resource | Purpose |
+|----------|---------|
+| [Metadata Setup](metadata.html) | Learn how to structure your collection metadata |
+| [Transcript Format](transcript-format.html) | Understand required CSV file structure |
+| [Step-by-Step Tutorial](tutorial.html) | Detailed walkthrough for transcript preparation |
+| [Example Files](/examples/) | Sample transcripts and metadata to reference |
 
 {% include bootstrap/button.md color="success btn-lg" text="Start with Metadata" link="metadata.html" %}
 

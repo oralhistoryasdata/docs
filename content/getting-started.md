@@ -1,10 +1,7 @@
 ---
 nav_order: 2
-title: Getting Started
+title: Quick Start
 ---
-
-# Getting Started with Oral History as Data
-
 This guide will help you set up your Oral History as Data project and understand the basic workflow.
 
 ## Prerequisites
@@ -36,16 +33,20 @@ Before you begin, you should have:
 You'll need two main CSV files:
 
 **Metadata File** (`demo-ohd-metadata.csv` or your custom name):
-- Contains information about each interview
+- Contains information about each interview using the [CollectionBuilder-CSV format](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/)
 - Each row represents one interview
-- Be sure to include the required fields: objectid, title, etc.
-- Store this file in the `_data/` directory
+- Required fields include: objectid, title, date
+- Compatible with other CollectionBuilder projects
+- Store this file in the root directory
+- See our [examples/demo-ohd-metadata.csv](/examples/demo-ohd-metadata.csv) for a sample
 
 **Transcript Files**:
-- For each interview, create a CSV with three columns: speaker, words, tags
+- For each interview, create a CSV with four columns: speaker, words, tags, timestamp
+- The timestamp field is optional but enables synchronization with audio/video
 - Each row represents one segment of dialogue
 - Store these in the `_data/transcripts/` directory
 - Name each file to match the objectid in your metadata
+- Check our [examples folder](/examples/) for sample transcript files
 
 ### 4. Create Your Coding System
 
@@ -66,11 +67,14 @@ You'll need two main CSV files:
 ```
 your-repository/
 ├── _data/
-│   ├── demo-ohd-metadata.csv # Metadata for all interviews
 │   ├── filters.csv           # Your coding vocabulary
 │   └── transcripts/          # Folder for transcript CSVs
 │       └── example.csv       # Sample transcript
 ├── _config.yml               # Site configuration
+├── examples/                 # Sample files for reference
+│   ├── demo-ohd-metadata.csv # Example metadata
+│   └── armantrout.csv        # Example transcript with timestamps
+├── your-metadata.csv         # Your collection metadata file
 └── objects/                  # Folder for interview images
 ```
 
