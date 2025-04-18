@@ -39,6 +39,7 @@ You'll need two main CSV files:
 - Contains information about each interview
 - Each row represents one interview
 - Be sure to include the required fields: objectid, title, etc.
+- Store this file in the `_data/` directory
 
 **Transcript Files**:
 - For each interview, create a CSV with three columns: speaker, words, tags
@@ -65,12 +66,12 @@ You'll need two main CSV files:
 ```
 your-repository/
 ├── _data/
+│   ├── demo-ohd-metadata.csv # Metadata for all interviews
 │   ├── filters.csv           # Your coding vocabulary
 │   └── transcripts/          # Folder for transcript CSVs
 │       └── example.csv       # Sample transcript
-├── demo-ohd-metadata.csv     # Metadata for all interviews
 ├── _config.yml               # Site configuration
-└── images/                   # Folder for interview images
+└── objects/                  # Folder for interview images
 ```
 
 ## Next Steps

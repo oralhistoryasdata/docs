@@ -28,8 +28,9 @@ Key fields include:
 ## Creating Your Metadata Spreadsheet
 
 1. Start with a copy of the sample spreadsheet:
-   - Download the [demo-ohd-metadata.csv](/demo-ohd-metadata.csv) file
-   - Open it in Excel, Google Sheets, or another spreadsheet program
+   - Download the [demo-ohd-metadata.csv](/examples/demo-ohd-metadata.csv) file
+   - Open it in Google Sheets, or another spreadsheet program (*** Do NOT Open IT in EXCEL!)
+
    
 2. Review the column structure:
    - Keep all the original column headers

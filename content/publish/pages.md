@@ -10,7 +10,7 @@ Oral History as Data now uses a CSV metadata file to automatically generate inte
 
 ### About the Metadata Spreadsheet
 
-The system uses a CSV file (like the included `demo-ohd-metadata.csv`) with the following key fields:
+The system uses a CSV file (like the included `/_data/demo-ohd-metadata.csv`) with the following key fields:
 
 - **objectid**: A unique identifier for each interview (used to link to transcript files)
 - **title**: The title of the interview
