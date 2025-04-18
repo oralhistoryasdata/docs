@@ -1,9 +1,8 @@
 #########
 #
-# Learn-Static Lesson Template
-# a Jekyll template for a simple lesson or workshop website
-# with a sidebar content nav layout
-# https://github.com/learn-static/lesson-template
+# Oral History as Data Documentation
+# A comprehensive guide for researchers using the Oral History as Data tool
+# https://github.com/learn-static/oral-history-as-data
 #
 #########
 
@@ -11,29 +10,31 @@
 # SITE SETTINGS
 #
 # title appears in the header
-title: Oral History as Data | Learn-Static Lesson Template
+title: Oral History as Data | Researcher's Guide
 # title-icon appears in the header to give some pizazz (leave blank for none)
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
-# some options: code-slash file-code gear tools lightblub book bookmark-star
 title-icon: soundwave
 # description appears in sidebar footer
-description: "Learn how to prepare, publish, and visualize coded oral history transcripts."
+description: "A comprehensive guide to preparing, publishing, and analyzing oral history transcripts."
 # keywords for meta tags used by search engines
-keywords: "workshops, websites, oral history, gh-pages, jekyll"
+keywords: "oral history, digital humanities, qualitative research, transcript analysis, interview coding"
 # image for meta tags, will appear when sharing link on social media
-featured-image: ""
+featured-image: "images/ohd_homepage.png"
 
 # author name, displayed in credits
 author: dcnb
 # year or date published, displayed in sidebar
-publication_year: 2022
+publication_year: 2023
 # location of code, the full url to your github repository
 source-code: https://github.com/learn-static/oral-history-as-data
 # content license (typically "cc by-sa"), displayed in sidebar
 content_license: "CC BY-SA"
 # URL to the content license
 content_license_link: https://creativecommons.org/licenses/by-sa/4.0/
+
+# Configuration for CSV-based metadata
+metadata-csv: demo-ohd-metadata.csv
 
 ##########
 # THEME CUSTOMIZATION [optional!]

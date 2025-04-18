@@ -1,66 +1,73 @@
 ---
 section: Publish and Connect
 nav_order: 3
-title: Create Interview Pages
+title: Generate Interview Pages
 ---
 
-## Creating a Markdown File
+## Using CSV Metadata to Generate Pages
 
-##### Go to the `_transcripts/` directory: 
+Oral History as Data now uses a CSV metadata file to automatically generate interview pages, making the process more streamlined for researchers working with multiple interviews.
 
-- Navigate back to the root of your repository by clicking on `<> Code ` at the top left of the page.
-- Click on the folder that says "_transcripts" 
-{% include bootstrap/figure.md img="howto/transcripts.png" caption="" alt="_transcipts button" class="w-50" %}
+### About the Metadata Spreadsheet
 
-##### Make a copy of one of the Markdown files in the directory: 
+The system uses a CSV file (like the included `demo-ohd-metadata.csv`) with the following key fields:
 
-- Open up any of the .md file examples that are in this folder
-- Navigate to the button that says "raw" and click it
-{% include bootstrap/figure.md img="howto/raw.png" caption="" alt="raw file button" class="w-50" %}
-- Copy the text inside of the file you opened by clicking CTRL+C or right clicking and selecting "Copy"
-{% include bootstrap/figure.md img="howto/newcopyandpaste.png" caption="" alt="raw file text" class="w-50" %}
+- **objectid**: A unique identifier for each interview (used to link to transcript files)
+- **title**: The title of the interview
+- **interviewee**: Name of the person being interviewed
+- **interviewer**: Name of the person conducting the interview
+- **date**: Date the interview took place
+- **description**: A brief description of the interview content
+- **subject**: Keywords or subjects covered in the interview
+- **location**: Where the interview was conducted
+- **object_transcript**: Path to the transcript file
+- **object_location**: URL to audio/video (if available)
+- **bio**: Biographical information about the interviewee
 
-{% include youtube/embed.html  video-id="kfDeEfjl6nQ" title="Creating a .MD File" display="d-none d-md-block" %}
+{% include bootstrap/figure.md img="howto/metadata-spreadsheet.png" caption="Example of the metadata spreadsheet format" alt="Sample CSV metadata file" class="w-75" %}
 
+### Setting Up Your CSV File
 
-##### Create a new Markdown file for your transcript by pasting and then editing your copied text:  
+1. **Create your metadata file**:
+   - Use a spreadsheet program (Excel, Google Sheets, etc.) to create your metadata
+   - Ensure all required columns are included
+   - Save/export the file as CSV format
+   - Name it something descriptive (e.g., `project-interviews.csv`)
 
-- Go back to your _transcripts directory by using the back button. You'll need to click back two pages in your browser.
-- Click the "Create New File" button
-{% include bootstrap/figure.md img="howto/createnewmd.png" caption="" alt="create new file button" class="w-50" %}
-- Name this file the same name you named your transcript file, but be sure to put `.md `rather than `.csv`, as it's file extension.  
-    - ***Be sure that the filename is the same as the filename of your transcript. If your transcript is `doe_jane.csv`, make sure this file is `doe_jane.md`***   
+2. **Add your CSV file to your project**:
+   - Upload the CSV file to the root directory of your repository
+   - The file should be placed at the same level as the `_config.yml` file
 
-{% include bootstrap/figure.md img="howto/mdname.png" caption="" alt="name field in new markdown file" class="w-50" %}
+3. **Update Configuration**:
+   - Open your `_config.yml` file
+   - Locate or add the `metadata-csv` setting and set it to your CSV filename
+   - Example: `metadata-csv: project-interviews.csv`
+
+### Field Requirements and Best Practices
 
 {:.alert .alert-info .mb-5}
-You are creating a markdown file; [more on Markdown here](https://www.markdownguide.org/). 
-Jekyll uses the markdown file as the basis for creating web pages. The information stored between the two `---` lines at the top of the page called "frontmatter." This frontmatter is written in a language called YAML, which is a [a human-readable language for writing/storing data variables](https://en.wikipedia.org/wiki/YAML). 
+The **objectid** field is crucial for connecting your metadata to transcript files. It must match the name of your transcript file in the `_data/transcripts` folder (without the .csv extension).
 
-- Paste the text you copied from the raw file you opened initially into this new file.
-{% include bootstrap/figure.md img="howto/beforemd1.png" caption="Pasted text before editing" alt="pasted text in new .md file" class="w-50" %}
-- Edit the variables in the frontmatter (between the `---` lines ) to fit your interview's information.     
-    - ***Be sure that the object-id option is the same as the filename (without the extension) of your transcript.***
-{% include bootstrap/figure.md img="howto/aftermd2.png" caption="File after being edited for new file" alt="new .md file text after being edited for new file" class="w-50" %}
+{% capture csv_requirements %}
+**Critical fields**:
+- **objectid**: Must be unique and match your transcript filename (without extension)
+- **title**: Should be descriptive and include interviewee name
+- **object_transcript**: If using transcripts, this should be the path to the transcript file
+- **object_location**: If using audio/video, this should be the URL to the media file
 
-{:.alert .alert-danger .mb-5}
-If you are not going to be connecting the transcript to an audio or video source, be sure and ***DELETE the av_source and audiovideo-id lines from the markdown file.*** You can also just remove the values and leave them blank. If you put a different value, like "n/a", the site will likely break. So just get rid of them if you aren't using that feature! 
+**Media notes**: If you're not including audio or video, you can leave the object_location field blank.
+{% endcapture %}
 
-{% capture lastcheck %}
-LAST CHECK: if the "object-id" field or the markdown filename is different than the name of your transcript CSV file in the _data/transcripts folder, the tool will break. Make sure all these files and the frontmatter value match! Look at the example below 
+{% include bootstrap/alert.md color="warning" text=csv_requirements %}
 
-Using our ongoing Jane Doe example, 
+### How Page Generation Works
 
-- Our transcript should be named: `doe_jane.csv` 
-- The markdown file should be named: `doe_jane.md`
-- The object-id value in the frontmatter should read: `doe_jane` 
-    - That line should look like this: `object-id: doe_jane` {% endcapture %}
+When you build your site:
 
-##### Commit your changes:
+1. The system reads your CSV metadata file
+2. For each row in the CSV, it creates a page with a URL based on the objectid
+3. The page displays the metadata and links to any associated transcripts or media
+4. All styling and formatting is handled automatically
 
-- Write a commit message, briefly describing the changes you made and then commit them at the bottom.
-- Once you are done, navigate to your new file, it should look like the example below (without that bit about the poet at the bottom). 
-{% include bootstrap/figure.md img="howto/comletemd.png" caption="" alt="the newly created md file" class="w-50" %}
-
-{% include bootstrap/alert.md color="warning" text=lastcheck %}
+This approach eliminates the need to manually create individual markdown files for each interview, making it easier to manage larger collections of oral histories.
 

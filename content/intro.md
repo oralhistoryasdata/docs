@@ -3,27 +3,37 @@ nav_order: 1
 title: How This Works
 ---
 
-[Oral History as Data (OHD)](https://github.com/oralhistoryasdata) is a static web framework that will let you publish a collection of oral history/qualitative interviews online. This [Learn-Static Lesson Template](https://github.com/learn-static) will help you as a class to build your own collection of interviews using OHD. 
+[Oral History as Data (OHD)](https://github.com/oralhistoryasdata) is a powerful digital platform that enables researchers to publish, analyze, and visualize oral history and qualitative interview collections online. This documentation will guide you through the complete process of building your own interview collection using OHD.
 
-To do that, **Instructors will follow these steps:** 
+## How Oral History as Data Works
 
-1. Make a copy of the OHD GitHub Repository
-2. Edit a Config file to describe your project.
-3. Create a controlled vocabularly with your students
-4. Customize and Publish your site using GitHub Pages 
+OHD uses a CSV-driven approach to manage your collection. Rather than creating individual web pages for each interview, you'll manage all your interviews through a simple spreadsheet and let the system automatically generate the web presentation.
 
-To get started as an instructor, go to the [For Instructors Section Overview Page](instructor/overview.html). 
+## The Complete Workflow
 
-And **students will follow these steps:** 
+**1. Prepare Your Environment**
+- Create a copy of the OHD GitHub Repository
+- Configure your project settings
 
-1. Transform your interview text into a spreadsheet 
-2. Code sections of your transcripts by subject, using the controlled vocabularly created by the class
-3. Publish your transcript by your transcript's CSV and a Markdown file describing your interview
-4. Engage with the class collection via presentation or critical essay
+**2. Prepare Your Interviews**
+- Transform interview transcripts into structured CSV files
+- Add metadata through a spreadsheet
 
-To get started as a student, go to the [Prepare Your Transcript Section Overview Page](prepare/overview.html). 
+**3. Develop Your Analysis Framework**
+- Create a controlled vocabulary for coding
+- Apply thematic codes to your transcript content
 
-At the end of the process you will have a fully baked website that publishes each of your transcripts and allows for users to search interviews by keyword or browse by the topics you define in your controlled vocabulary. The site will feature some spiffy visualizations to entice engagement. 
+**4. Publish and Share**
+- Publish your collection using GitHub Pages
+- Connect transcripts with audio/video sources (optional)
+
+**5. Analyze and Visualize**
+- Explore your collection through interactive visualizations
+- Identify patterns across multiple interviews
+
+The entire process is designed to be flexible, allowing you to focus on the content and analysis rather than web development. Whether you're working with a single interview or a large collection, OHD scales to meet your needs.
+
+At the end of the process, you'll have a professional-quality website that publishes your transcripts with powerful search, browse, and visualization features. The final product will enable both your research and public engagement with your interviews.
 
 {% include button.html link="https://oralhistoryasdata.github.io/" text="Check Out the OHD Demo Site" color="primary btn-lg mt-2 mb-4 ms-5"%}
 
