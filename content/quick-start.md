@@ -32,7 +32,7 @@ Before you begin, you should have:
 
 You'll need a main CSV and transcript CSV files:
 
-**Metadata File** (`demo-ohd-metadata.csv` or your custom name):
+**Metadata File** (`metadata.csv` or your custom name):
 - Contains information about each interview using the [CollectionBuilder-CSV format](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/)
 - Each row represents one interview
 - Required fields include: objectid, title, date
@@ -53,7 +53,7 @@ You'll need a main CSV and transcript CSV files:
 1. Create or edit `_data/filters.csv`
 2. Define your tag codes and descriptions
 3. Apply these codes in the "tags" column of your transcript files
-4. You can also use our [Python scripts](https://journal.code4lib.org/articles/18286) to automatically tag your transcripts.
+4. You can also use [Python scripts](https://journal.code4lib.org/articles/18286) to automatically tag your transcripts.
 
 ### 5. Publish Your Site
 
@@ -68,6 +68,7 @@ You'll need a main CSV and transcript CSV files:
 
 ## Project Structure Overview
 
+
 ```
 your-repository/
 ├── _data/
@@ -75,7 +76,8 @@ your-repository/
 │   ├── filters.csv           # Your coding vocabulary
 │   ├── theme.yml             # Your site configuration (basic customizations)
 │   └── transcripts/          # Folder for transcript CSVs
-│       └── example.csv       # Sample transcript
+│       └── transcript1.csv   # Sample transcript 1
+│       └── transcript2.csv   # Sample transcript 2
 ├── _config.yml               # Project configuration (title, metadata, etc.)
 └── objects/                  # Folder for interview images
 ```

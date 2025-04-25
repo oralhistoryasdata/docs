@@ -22,11 +22,12 @@ This guide explains how to properly clean interview transcript text to ensure it
 
 2. **Clean your text**
    - Copy your raw transcript text
-   - Paste it in the top text box of the cleaner tool
+   - Paste it in the top text box of the cleaner tool below
    - Click the "Clean Text" button
    - Copy the cleaned version from the bottom box (Ctrl+A, then Ctrl+C)
 
-   ![Text Cleaner Tool with text pasted in top box and cleaned text in bottom box](SCREENSHOT_PLACEHOLDER)
+   {% include wordcleaner.html %}
+
 
 ## What Gets Fixed
 

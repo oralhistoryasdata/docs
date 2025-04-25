@@ -22,45 +22,43 @@ This guide explains how to link your interview transcripts with their correspond
    - **YouTube** for video files
    - **Vimeo** for video files (alternative to YouTube)
    - **SoundCloud** for audio files
-   - **Internet Archive** for public domain content
+   - **Internet Archive** for audio and video files
 
 2. **Upload your media file**:
    - Create an account if needed
    - Follow the platform's upload process
    - Set appropriate privacy settings
 
-   ![Example of uploaded media on YouTube](SCREENSHOT_PLACEHOLDER)
+3. **Get the media URL**:
+   - After uploading, obtain the URL that will be used to connect your transcript to the media
+   - Each platform provides URLs in a specific format. Here are examples that work:
+     - **YouTube**: `https://youtu.be/BX_bURONf78` or `https://www.youtube.com/watch?v=BX_bURONf78`
+     - **Vimeo**: `https://vimeo.com/464555587`
+     - **SoundCloud**: `https://soundcloud.com/user-944694772/robert-wrigley-ctrl-shift-interview-conducted-by-devin-becker`
+     - **Internet Archive**: `https://archive.org/details/f8_2005-08-18_gluck-prose`
 
-3. **Get the media ID or URL**:
-   - **YouTube**: Use the ID from the URL (e.g., "dQw4w9WgXcQ" from youtube.com/watch?v=dQw4w9WgXcQ)
-   - **Vimeo**: Use the ID number
-   - **SoundCloud**: Use the track URL
-   - **Internet Archive**: Use the item identifier
+### Step 2: Connect the Media to Your Collection
 
-### Step 2: Add Media Reference to Your Metadata
-
-1. **Open your metadata CSV**
-2. **Add the media reference** to the `object_location` field:
-   - For YouTube: `https://youtu.be/YOUR_VIDEO_ID`
-   - For Vimeo: `https://vimeo.com/YOUR_VIDEO_ID`
-   - For SoundCloud: `https://soundcloud.com/USER/TRACK_NAME`
+1. **Open your metadata CSV file**
+2. **Add the media URL** to the `object_location` field for the corresponding interview:
+   - Simply paste the full URL you obtained in Step 1
+   - This connects your transcript page with the hosted media
 
    ![Example of metadata with object_location field](SCREENSHOT_PLACEHOLDER)
 
-## Option 2: Direct Hosting (For Smaller Files)
+## Option 2: Direct Hosting or External Audio Files
 
-1. **Prepare your media file**:
+1. **For direct hosting (small audio files)**:
    - Keep files under 50MB when possible
    - Use MP3 format for audio
-   - Use MP4 format for video
-
-2. **Upload to your repository**:
    - Place files in the `objects/` directory
-   - Consider compressed versions for better performance
-
-3. **Reference in metadata**:
-   - Use the file path in the `object_location` field
+   - Reference in metadata using the file path
    - Example: `objects/smith_interview.mp3`
+
+2. **For externally hosted audio files**:
+   - You can link to MP3 files hosted on any web server
+   - Simply use the full URL in the `object_location` field
+   - Example: `https://www.example.com/john_doe.mp3`
 
 ## Adding Timestamps for Synchronization
 
@@ -87,6 +85,7 @@ To sync transcript segments with specific points in your media:
 - **Media doesn't appear**: Check the URL/ID format in metadata
 - **Player appears but won't play**: Verify media permissions on hosting platform
 - **Timestamps don't work**: Ensure format follows MM:SS or HH:MM:SS
+   - Note Timestamps for Vimeo and Internet Archive items do not advance the player
 - **Slow loading**: Consider reducing media file size or using external services
 
 ## Next Steps
