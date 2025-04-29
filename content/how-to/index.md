@@ -33,4 +33,4 @@ These how-to guides are ideal when:
 
 ## Contributing
 
-Have a suggestion for a new how-to guide? Please [submit an issue](https://github.com/oralhistoryasdata/demo/issues) with your idea.
+Have a suggestion for a new how-to guide? Please [submit an issue](https://github.com/oralhistoryasdata/template/issues) with your idea.

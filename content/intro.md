@@ -47,7 +47,7 @@ The entire process is designed to be flexible, allowing you to focus on the cont
 
 At the end of the process, you'll have a professional-quality website that publishes your transcripts with powerful search, browse, and visualization features. The final product will enable both your research and public engagement with your interviews.
 
-{% include button.html link="https://oralhistoryasdata.github.io/demo" text="Check Out the OHD Demo Site" color="primary btn-lg mt-2 mb-4 ms-5"%}
+{% include button.html link="https://oralhistoryasdata.github.io/template" text="Check Out the OHD Demo Site" color="primary btn-lg mt-2 mb-4 ms-5"%}
 
 ### About Oral History as Data
 
