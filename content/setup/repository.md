@@ -21,7 +21,7 @@ If you already have a GitHub account, you can skip this step.
 
 ## Use the OHD Template
 
-1. Go to the [Oral History as Data repository](https://github.com/oralhistoryasdata/oralhistoryasdata.github.io){:target="_blank"}
+1. Go to the [Oral History as Data repository](https://github.com/oralhistoryasdata/template){:target="_blank"}
 
 2. Click the green "Use this template" button in the upper right corner of the page and select "Create New repository" 
 

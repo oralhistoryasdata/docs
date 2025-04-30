@@ -1,6 +1,6 @@
 ---
 section_id: Prepare Your Metadata
-nav_order: 5
+nav_order: 6
 title: Metadata Preparation
 ---
 

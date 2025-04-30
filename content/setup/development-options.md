@@ -1,12 +1,9 @@
 ---
-section: Setup and Configuration
-nav_order: 3
-title: Development Options
+nav_order: 2
+title: Development Options for OHD
 ---
 
-# Development Options for CollectionBuilder
-
-CollectionBuilder offers two primary approaches to developing your digital collection: using GitHub's web interface or setting up a local development environment. Each approach has its advantages, and many users start with the web interface before transitioning to local development as their project and skills grow.
+Oral History as Data and CollectionBuilder offer two primary approaches to developing your digital collection: using GitHub's web interface or setting up a local development environment. Each approach has its advantages, and many users start with the web interface before transitioning to local development as their project and skills grow.
 
 ## Web Interface Development
 
@@ -22,7 +19,7 @@ However, web interface development does have some limitations:
 - More complex customizations can be cumbersome
 - Limited ability to test changes before publishing
 
-The [GitHub Web Interface Tutorial](github-web-interface.html) walks you through the entire process of building your collection using only your browser.
+The [GitHub Web Interface Tutorial](/content/setup/tutorial-github.html) walks you through the entire process of building your collection using only your browser.
 
 ## Local Development Environment
 
@@ -43,11 +40,22 @@ To get started with local development, you'll need to install:
 2. **Ruby**: Programming language that Jekyll is built with
 3. **Jekyll**: Static site generator that powers CollectionBuilder
 
-The CollectionBuilder documentation provides detailed guides for setting up these tools:
 
-- [Installing Git](https://collectionbuilder.github.io/cb-docs/docs/software/git/)
+#### Recommended Tools for Local Development
+
+While not required, these tools can further enhance your local development experience:
+
+- **Visual Studio Code**: A free, powerful text editor with Git integration
+- **GitHub Desktop**: A user-friendly interface for Git operations
+- **Ruby Version Manager**: Helps manage Ruby versions (particularly important for macOS users)
+
+The [Software Section on CollectionBuilder's Documentation site](https://collectionbuilder.github.io/cb-docs/docs/software/) provides detailed guides for setting up these software packages and tools:
+
+- [Installing Git and GitHub Desktop](https://collectionbuilder.github.io/cb-docs/docs/software/git/)
+- [Installing Visual Studio Code](https://collectionbuilder.github.io/cb-docs/docs/software/texteditor/)
 - [Installing Ruby](https://collectionbuilder.github.io/cb-docs/docs/software/ruby/)
 - [Installing Jekyll](https://collectionbuilder.github.io/cb-docs/docs/software/jekyll/)
+- [Installing ImageMagick and Ghostscript](https://collectionbuilder.github.io/cb-docs/docs/software/optional/)
 
 Once these tools are installed, you can:
 
@@ -56,13 +64,6 @@ Once these tools are installed, you can:
 3. Run `bundle exec jekyll serve` to preview your site locally
 4. Use Git to commit and push changes to GitHub when ready
 
-### Recommended Tools for Local Development
-
-While not required, these tools can enhance your local development experience:
-
-- **Visual Studio Code**: A free, powerful text editor with Git integration
-- **GitHub Desktop**: A user-friendly interface for Git operations
-- **Ruby Version Manager**: Helps manage Ruby versions (particularly important for macOS users)
 
 ## Combining Approaches
 

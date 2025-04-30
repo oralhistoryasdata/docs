@@ -1,5 +1,5 @@
 ---
-nav_order: 2
+nav_order: 3
 title: Quick Start
 ---
 This guide will help you set up your Oral History as Data project and understand the basic workflow.
