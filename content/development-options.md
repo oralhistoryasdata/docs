@@ -3,7 +3,12 @@ nav_order: 2
 title: Development Options for OHD
 ---
 
-Oral History as Data and CollectionBuilder offer two primary approaches to developing your digital collection: using GitHub's web interface or setting up a local development environment. Each approach has its advantages, and many users start with the web interface before transitioning to local development as their project and skills grow.
+Oral History as Data and CollectionBuilder offer two primary approaches to developing your  project: 
+
+- [Using GitHub's web interface](#web-interface-development)
+- [Setting up a local development environment](#local-development-environment)
+
+Each approach has its advantages, and many users start with the web interface before transitioning to local development as their project and skills grow.
 
 ## Web Interface Development
 
