@@ -8,6 +8,8 @@ title: Repository Setup
 
 The first step in building your Oral History as Data project is to create a GitHub repository using our template. This gives you your own copy of all the necessary files and structure.
 
+{% include alert.html text="See our [How To Guide](/content/how-to/create-github-repository.html) for more detailed instructions with images" color="info" %}
+
 ## Create a GitHub Account
 
 If you already have a GitHub account, you can skip this step.
@@ -21,24 +23,19 @@ If you already have a GitHub account, you can skip this step.
 
 1. Go to the [Oral History as Data repository](https://github.com/oralhistoryasdata/oralhistoryasdata.github.io){:target="_blank"}
 
-2. Click the green "Use this template" button in the upper right corner of the page
-
-   {% include bootstrap/figure.md img="howto/ohd_template.png" caption="Use this template button" alt="Screenshot showing the green Use this template button on GitHub" class="w-75" %}
+2. Click the green "Use this template" button in the upper right corner of the page and select "Create New repository" 
 
 3. Name your repository
    - Choose a descriptive name related to your project 
    - Keep it concise and use lowercase letters with hyphens instead of spaces
    - Example: "vietnam-veterans-oral-history" or "community-memory-project"
-
-   {% include bootstrap/figure.md img="howto/name_repository.png" caption="Naming your repository" alt="GitHub form for naming a new repository" class="w-75" %}
+   - Optional: Associate the repo with an organization rather than your personal account ([more below](#repository-organization-options))
 
 4. Make sure the repository is set to "Public" (required for GitHub Pages)
 
-5. Click "Create repository from template"
+5. Click "Create repository" button
    - This copies all the files from the template into your new repository
    - Unlike a fork, it doesn't maintain connection to the original repository
-
-   {% include bootstrap/figure.md img="howto/create_repository_button.png" caption="Create repository button" alt="Button to create repository from template" class="w-75" %}
 
 ## Repository Organization Options
 
@@ -61,6 +58,7 @@ If you want to create an organization:
 3. Click "New organization"
 4. Follow the prompts to set up your organization
 5. Then create your repository within the organization
+6. On the initial configuration page, you'll then change the owner of the repo from yourself to the organization, using the drop down menu to the left of where you name the repo.
 
 ## Next Steps
 

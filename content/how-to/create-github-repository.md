@@ -20,30 +20,30 @@ This guide shows you how to create your own copy of the Oral History as Data pro
    - Open your web browser
    - Navigate to [https://github.com/oralhistoryasdata/csv-version](https://github.com/oralhistoryasdata/csv-version)
    - Make sure you're logged into your GitHub account
-   
-   ![OHD GitHub repository page with green "Use this template" button](SCREENSHOT_PLACEHOLDER)
 
 2. **Click the "Use this template" button**
    - Look for the green "Use this template" button near the top of the page
    - Click this button to begin creating your own copy
    
-   ![Dropdown menu after clicking "Use this template" button](SCREENSHOT_PLACEHOLDER)
+3. **Select "Create a new repository"** from the dropdown menu
+
+{% include bootstrap/figure.md img="use-this-template.jpg" caption="Use this template button" alt="Screenshot showing the green Use this template button on GitHub" class="w-50" %}
 
 ## Step 2: Configure Your New Repository
 
-1. **Select "Create a new repository"** from the dropdown menu
 
-2. **Fill in repository details**
+1. **Fill in repository details**
    - **Repository name**: Choose a descriptive name (e.g., "family-oral-histories" or "community-interview-project")
    - **Description**: Add a brief description of your project
    - **Visibility**: Choose "Public" unless you have specific privacy needs
    - Leave other settings at their defaults
-   
-   ![Repository creation form with fields completed](SCREENSHOT_PLACEHOLDER)
 
-3. **Click "Create repository from template"**
+2. **Click "Create repository" button**
    - This button is at the bottom of the form
    - GitHub will create your new repository with a copy of all OHD files
+
+      
+{% include bootstrap/figure.md img="new-repo-config.jpg" caption="Base repository configuration menu" alt="Screenshot showing the configuration menu for someone after they create a new repo based on ohd template" class="w-50" %}
 
 ## Step 3: Explore Your New Repository
 
@@ -58,7 +58,7 @@ This guide shows you how to create your own copy of the Oral History as Data pro
      - `pages/`: Web pages content
      - `objects/`: Storage for media files
    
-   ![New repository main page showing file structure](SCREENSHOT_PLACEHOLDER)
+{% include bootstrap/figure.md img="new-collection.jpg" caption="Newly created OHD collection" alt="Screenshot showing the github.com homepage of a newly created OHD collection from template" class="w-75" %}
 
 ## Common Issues and Solutions
 
