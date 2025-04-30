@@ -17,7 +17,7 @@ This guide shows you how to convert an existing CollectionBuilder-CSV repository
 ## Step 1: Download the OHD Template
 
 1. **Access the OHD template repository**
-   - Go to [https://github.com/oralhistoryasdata/csv-version](https://github.com/oralhistoryasdata/csv-version)
+   - Go to [https://github.com/oralhistoryasdata/template](https://github.com/oralhistoryasdata/template)
    - Click the green "Code" button
    - Select "Download ZIP"
    
