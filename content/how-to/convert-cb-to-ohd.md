@@ -1,6 +1,6 @@
 ---
 section: How-To Guides
-nav_order: 7
+nav_order: 4
 title: How to Convert CollectionBuilder-CSV to Oral History as Data
 ---
 
@@ -43,12 +43,17 @@ This guide shows you how to convert an existing CollectionBuilder-CSV repository
    | Add | `_layouts/visualization.html` | Layout for visualization pages |
    | Add | `_layouts/item/transcript.html` | Layout for transcript items |
    | Add | `_layouts/home-cover.html` | Cover page layout |
+   | Replace | `_layouts/default.html` | Adjusted layout base for OHD options |
    | Add | `pages/visualization.html` | Visualization page template |
    | Replace | `pages/about.md` | Remember to edit with your project info |
    | Replace | `pages/index.md` | Change layout to "home-cover" |
    | Replace | `assets/css/cb.scss` | Updated styles for OHD |
+   | Add | `assets/data/filter-facets.csv` | Data for presenting count of filters |
+   | Add | `assets/data/filters.csv` | Data download for filters.csv used in project |
+   | Add | `assets/data/transcript-collection.json` | All transcripts in one big JSON file |
    | Replace | `_config.yml` | OHD configuration file |
    | Replace | `readme.md` | Edit to reflect your project |
+   | Replace | `.gitignore` | Removes line that excludes "objects/" from git |
    | Add | `rakelib/generate_json.rake` | Helper for generating transcript JSON |
 
 {% include bootstrap/figure.md img="file-replacement.jpg" caption="Replace files in your repository" alt="Illustration showing the process of replacing files in your existing repository" class="w-75" %}
