@@ -1,1 +1,59 @@
 /* add your tweaks here! */
+/* Table Styling for OHD Documentation */
+
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  table th,
+  table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    text-align: left;
+    border-top: .5px solid #dee2e6;
+  }
+  
+  table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+  
+  table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+  }
+  
+  /* Striped rows for better readability */
+  table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  
+  /* Hover effect */
+  table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+  
+  /* Responsive tables */
+  @media (max-width: 767.98px) {
+    .table-responsive {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  
+  /* Problem-solution table specific styling */
+  table td:first-child {
+    font-weight: 500;
+    width: 25%;
+  }
+  
+  /* Add a slight border around the entire table */
+  table {
+    border: .5px solid #dee2e6;
+  }
