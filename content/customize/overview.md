@@ -1,6 +1,6 @@
 ---
 section_id: Customize Your Site
-nav_order: 7
+nav_order: 6
 title: Customization & Visualization
 ---
 
@@ -29,14 +29,3 @@ Proper coding and customization transform your transcripts from simple text into
 - Thematic analysis through interactive filtering
 - Improved user experience through intentional design
 - More engaging presentation of your oral history content
-
-## Documentation & Resources
-
-| Resource | Purpose |
-|----------|---------|
-| [Customization Basics](customization.md) | Learn about site configuration options |
-| [Visualization Settings](visualizations.md) | Configure the visualization interface |
-| [Coding Tutorial](tutorial-coding.md) | Step-by-step guide for coding transcripts |
-| [Example Sites](examples.md) | See customized OHD implementations |
-
-{% include bootstrap/button.md color="success btn-lg" text="Start Customizing" link="customization.md" %}

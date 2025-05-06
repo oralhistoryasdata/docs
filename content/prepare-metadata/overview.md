@@ -1,6 +1,6 @@
 ---
 section_id: Prepare Your Metadata
-nav_order: 6
+nav_order: 3
 title: Metadata Preparation
 ---
 
@@ -29,15 +29,4 @@ Metadata is the backbone of your digital collection, enabling:
 - Connections to external media sources when needed
 
 Well-structured metadata ensures that all components of your project work together seamlessly.
-
-## Documentation & Resources
-
-| Resource | Purpose |
-|----------|---------|
-| [Metadata Structure](metadata.html) | Learn about required and optional fields |
-| [Metadata Tutorial](tutorial-metadata.html) | Step-by-step guide for creating metadata |
-| [Code Documentation](code.html) | Technical details for advanced users |
-| [Example Files](/examples/) | Sample metadata files to reference |
-
-{% include bootstrap/button.md color="success btn-lg" text="Start with Metadata" link="metadata.html" %}
 

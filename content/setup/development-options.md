@@ -1,12 +1,13 @@
 ---
+section: Setup and Configuration
 nav_order: 2
 title: Development Options for OHD
 ---
 
 Oral History as Data and CollectionBuilder offer two primary approaches to developing your  project: 
 
-- [Using GitHub's web interface](#web-interface-development)
-- [Setting up a local development environment](#local-development-environment)
+- Using GitHub's web interface
+- Setting up a local development environment
 
 Each approach has its advantages, and many users start with the web interface before transitioning to local development as their project and skills grow.
 
@@ -68,16 +69,6 @@ Once these tools are installed, you can:
 2. Make changes to files in your preferred text editor
 3. Run `bundle exec jekyll serve` to preview your site locally
 4. Use Git to commit and push changes to GitHub when ready
-
-
-## Combining Approaches
-
-Many CollectionBuilder users adopt a hybrid approach:
-
-- Start with the web interface to get comfortable with the basic concepts
-- Transition to local development as your project grows more complex
-- Use the web interface for quick text edits when away from your development machine
-- Use local development for major redesigns or when adding multiple files
 
 ## Choosing Your Path
 

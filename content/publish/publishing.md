@@ -27,9 +27,7 @@ GitHub Actions allows you to use GitHub Pages to host an OHD site on GitHub that
 - **Documentation**: [GitHub Actions Guide](https://collectionbuilder.github.io/cb-docs/docs/deploy/actions/)
 
 
-{% include button.html text="Check out our Step by Step Tutorial to Learn More" color="outline-primary btn-lg" link="content/publish/tutorial-publishing.html"%}
-
-
+{% include button.html text="Check out our Step by Step Tutorial to Learn More" color="outline-primary btn-lg" link="content/tutorials/tutorial-publishing.html"%}
 
 
 ## GitHub Pages Usage Guidelines
@@ -58,4 +56,4 @@ GitHub Pages is intended for documentation and small project sites. Keep these g
 **Note:** For extensive media collections, consider using dedicated media hosting services rather than storing large files directly in your repository.
 {% endcapture %}
 
-{% include bootstrap/alert.md text=media_note color="secondary" %}
+{% include bootstrap/alert.md text=media_note color="primary" %}

@@ -31,14 +31,3 @@ This initial setup takes approximately 15-20 minutes and requires no programming
 | **_data/config-*.csv** | Feature-specific settings for various site functions |
 
 Each configuration file is documented with inline comments explaining available options.
-
-## Documentation & Resources
-
-| Resource | Purpose |
-|----------|---------|
-| [GitHub Repository Setup](repository.html) | Step-by-step guide to creating your repository |
-| [Configuration Options](configuration.html) | Detailed explanation of all settings |
-| [Development Options](development-options.html) | Choose between web-based or local development |
-| [GitHub Tutorial](tutorial-github.html) | Hands-on tutorial for GitHub beginners |
-
-{% include bootstrap/button.md color="success btn-lg" text="Start Setup" link="repository.html" %}

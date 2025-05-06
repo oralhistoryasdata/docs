@@ -1,6 +1,6 @@
 ---
 section: Setup and Configuration
-nav_order: 1
+nav_order: 3
 title: Repository Setup
 ---
 
@@ -62,4 +62,4 @@ If you want to create an organization:
 
 ## Next Steps
 
-After creating your repository, you're ready to customize it for your project by [configuring the settings](configuration.html) in the _config.yml file.
+After creating your repository, you're ready to customize it for your project by configuring the settings in the _config.yml file.

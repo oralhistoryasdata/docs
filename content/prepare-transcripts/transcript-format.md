@@ -27,13 +27,13 @@ The first row of your CSV file should contain these column headers.
 
 Here's how a typical transcript segment looks:
 
-```
-speaker,words,tags,timestamp
-Interviewer,Could you tell me about your early experiences?,background,[00:00]
-Interviewee,"Yes, I grew up in a small town in the 1950s. It was quite different from today.",childhood; rural life,[00:15]
-Interviewer,What was school like for you?,education,[01:32]
-Interviewee,"School was challenging but rewarding. I particularly enjoyed mathematics and science classes.",education; academic interests,[01:45]
-```
+| **Speaker**    | **Words**                                                                                                   | **Tags**                       | **Timestamp** |
+|----------------|-------------------------------------------------------------------------------------------------------------|--------------------------------|---------------|
+| Interviewer    | Could you tell me about your early experiences?                                                             | background                     | [00:00]       |
+| Interviewee    | Yes, I grew up in a small town in the 1950s. It was quite different from today.                             | childhood; rural life          | [00:15]       |
+| Interviewer    | What was school like for you?                                                                               | education                      | [01:32]       |
+| Interviewee    | School was challenging but rewarding. I particularly enjoyed mathematics and science classes.              | education; academic interests  | [01:45]       |
+
 
 ## Timestamp Format
 
@@ -71,5 +71,3 @@ You can download and examine these files to better understand the format require
 Name your transcript CSV files to match the objectid in your metadata spreadsheet. For example, if your metadata contains an interview with objectid `smith_john`, name the transcript file `smith_john.csv`.
 
 This naming convention is crucial because it connects your transcript files to the CollectionBuilder-CSV metadata system, allowing the platform to automatically link the right transcript with the right metadata entry. This integration between the metadata system and transcript files is one of the key features that makes Oral History as Data powerful and flexible.
-
-{% include button.html text="Check out our Step by Step Tutorial to Learn More" color="outline-primary btn-lg" link="content/prepare-transcripts/tutorial-transcript.html"%}

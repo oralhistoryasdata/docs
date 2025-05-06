@@ -1,6 +1,6 @@
 ---
 section_id: Publish Your Site
-nav_order: 8
+nav_order: 5
 title: Publishing & Media Integration
 ---
 
@@ -37,12 +37,3 @@ OHD supports several approaches for connecting transcripts to audio/video:
 
 Each method is documented with step-by-step instructions.
 
-## Documentation & Resources
-
-| Resource | Purpose |
-|----------|---------|
-| [GitHub Publishing Tutorial](tutorial-publishing.html) | Step-by-step guide to GitHub Pages |
-| [Media Connection Guide](publishing-other.html) | Instructions for linking to audio/video |
-| [Alternative Hosting](publishing.html) | Options beyond GitHub Pages |
-
-{% include bootstrap/button.md color="success btn-lg" text="Publishing Tutorial" link="tutorial-publishing.html" %}
