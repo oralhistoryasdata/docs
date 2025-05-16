@@ -1,5 +1,5 @@
 ---
-nav_order: 12
+nav_order: 7
 title: Quick Start
 ---
 If you just want to jump in to creating an Oral History as Data project without reading all of the sections, this guide will help you understand the basic workflow.
