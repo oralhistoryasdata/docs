@@ -1,5 +1,5 @@
 ---
-section: Publish Your Site
+section: Tutorials
 nav_order: 4
 title: Tutorial - Publishing via GH Pages
 ---

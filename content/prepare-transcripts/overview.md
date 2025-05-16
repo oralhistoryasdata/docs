@@ -1,6 +1,6 @@
 ---
 section_id: Prepare Your Transcript
-nav_order: 5
+nav_order: 2
 title: Transcript Preparation
 ---
 
@@ -31,15 +31,4 @@ Structured transcript data enables core OHD functionality:
 - Media synchronization for audio/video connections
 - Foundation for thematic coding and analysis
 - Consistent display across different browsers and devices
-
-## Documentation & Resources
-
-| Resource | Purpose |
-|----------|---------|
-| [Transcript Format](transcript-format.html) | Learn about CSV structure requirements |
-| [Tutorial](tutorial-transcript.html) | Step-by-step guide for converting transcripts |
-| [Vocabulary Guide](vocabulary.html) | Best practices for consistent coding |
-| [Example Files](/examples/) | Sample transcript CSVs to reference |
-
-{% include bootstrap/button.md color="success btn-lg" text="Transcript Format Guide" link="transcript-format.html" %}
 

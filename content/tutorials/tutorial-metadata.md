@@ -1,6 +1,6 @@
 ---
-section: Prepare Your Metadata
-nav_order: 6
+section: Tutorials
+nav_order: 2
 title: Tutorial - Metadata Preparation
 ---
 
@@ -129,20 +129,43 @@ If you have audio or video recordings:
 
 ## Example of a Complete Metadata File
 
-Here's how a properly formatted metadata file might look with multiple entries:
+Here's how a properly formatted metadata file might look with multiple entries (displayed vertically for easier reading):
 
 ```
-objectid,title,display_template,interviewer,interviewee,date,description,subject,location,object_location
-smith_john,"Interview with John Smith on Mining History",transcript,"Sarah Johnson","John Smith",2023-05-15,"John Smith discusses his 40-year career in local mines, focusing on safety improvements.","mining; labor history; safety","Coalville, PA",https://youtu.be/BX_bURONf78
-garcia_maria,"Maria Garcia on Immigration and Education",transcript,"David Lee","Maria Garcia",2023-06-10,"Maria Garcia shares her experience immigrating to the US as a child and later becoming an educator.","immigration; education; family","Phoenix, AZ",https://soundcloud.com/user/maria-garcia-interview
-taylor_robert,"Robert Taylor: Civil Rights Activism in the 1960s",transcript,"Emily Wong","Robert Taylor",2023-04-22,"Robert Taylor recounts his participation in civil rights demonstrations and community organizing.","civil rights; activism; history","Atlanta, GA",
+object id: smith_john  
+title: "Interview with John Smith on Mining History"  
+display_template: transcript  
+interviewer: Sarah Johnson  
+interviewee: John Smith  
+date: 2023-05-15  
+description: John Smith discusses his 40-year career in local mines, focusing on safety improvements.  
+subject: mining; labor history; safety  
+location: Coalville, PA  
+object_location: https://youtu.be/BX_bURONf78  
 ```
 
-## What's Next?
+```
+object id: garcia_maria  
+title: "Maria Garcia on Immigration and Education"  
+display_template: transcript  
+interviewer: David Lee  
+interviewee: Maria Garcia  
+date: 2023-06-10  
+description: Maria Garcia shares her experience immigrating to the US as a child and later becoming an educator.  
+subject: immigration; education; family  
+location: Phoenix, AZ  
+object_location: https://soundcloud.com/user/maria-garcia-interview  
+```
 
-After completing this tutorial:
-1. [Prepare your transcript files](../prepare-transcripts/tutorial-transcript.html)
-2. [Configure your site settings](../setup/configuration.html)
-3. [Publish your collection](../publish/tutorial-publishing.html)
-
-Need more help? See our [metadata specifications](metadata.html) or [contact us](https://github.com/oralhistoryasdata/csv-version/issues).
+```
+object id: taylor_robert  
+title: "Robert Taylor: Civil Rights Activism in the 1960s"  
+display_template: transcript  
+interviewer: Emily Wong  
+interviewee: Robert Taylor  
+date: 2023-04-22  
+description: Robert Taylor recounts his participation in civil rights demonstrations and community organizing.  
+subject: civil rights; activism; history  
+location: Atlanta, GA  
+object_location:  
+```

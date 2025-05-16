@@ -1,8 +1,8 @@
 ---
-nav_order: 3
+nav_order: 7
 title: Quick Start
 ---
-This guide will help you set up your Oral History as Data project and understand the basic workflow.
+If you just want to jump in to creating an Oral History as Data project without reading all of the sections, this guide will help you understand the basic workflow.
 
 ## Prerequisites
 

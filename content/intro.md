@@ -45,9 +45,7 @@ your-repository/
 
 The entire process is designed to be flexible, allowing you to focus on the content and analysis rather than web development. Whether you're working with a single interview or a large collection, OHD scales to meet your needs.
 
-At the end of the process, you'll have a professional-quality website that publishes your transcripts with powerful search, browse, and visualization features. The final product will enable both your research and public engagement with your interviews.
-
-{% include button.html link="https://oralhistoryasdata.github.io/template" text="Check Out the OHD Demo Site" color="primary btn-lg mt-2 mb-4 ms-5"%}
+At the end of the process, you’ll have a professional-quality website that publishes your transcripts with powerful search, browse, and visualization features to promote your research and engage the public.
 
 ### About Oral History as Data
 

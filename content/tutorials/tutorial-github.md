@@ -1,6 +1,6 @@
 ---
-section: Setup and Configuration
-nav_order: 5
+section: Tutorials
+nav_order: 3
 title: Tutorial - Working in Github
 ---
 
@@ -98,9 +98,3 @@ This tutorial walks you through setting up and configuring your Oral History as 
 1. **Theme settings**
    - Edit "_data/theme.yml" to change colors, fonts, and other visual elements
    - Changes to this file immediately affect your site's appearance
-
-## Next Steps
-
-After these initial configurations, proceed to [publishing your site](../publish/tutorial-publishing.html) using GitHub Pages.
-
-Remember that any edits you make will be reflected in your site after the build process completes (typically a few minutes).

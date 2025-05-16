@@ -1,6 +1,6 @@
 ---
-section: Prepare Your Transcript
-nav_order: 7
+section_id: Tutorials
+nav_order: 8
 title: Tutorial - Transcript Preparation
 ---
 
@@ -134,19 +134,10 @@ Gather these materials:
 
 Here's how a properly formatted transcript CSV should look:
 
-```
-speaker,words,tags,timestamp
-Interviewer,What was your first teaching job?,career; education,00:15
-John Smith,"I started at Lincoln Elementary in 1972. It was a challenging environment but rewarding.",education; career; 1970s,00:22
-Interviewer,What subject did you teach?,education,01:05
-John Smith,"I taught sixth grade math and science, though I preferred the science lessons.",education; science; mathematics,01:12
-```
+| **Speaker**    | **Words**                                                                                      | **Tags**                           | **Timestamp** |
+|----------------|-----------------------------------------------------------------------------------------------|------------------------------------|---------------|
+| Interviewer    | What was your first teaching job?                                                              | career; education                  | 00:15         |
+| John Smith     | "I started at Lincoln Elementary in 1972. It was a challenging environment but rewarding."     | education; career; 1970s           | 00:22         |
+| Interviewer    | What subject did you teach?                                                                    | education                          | 01:05         |
+| John Smith     | "I taught sixth grade math and science, though I preferred the science lessons."              | education; science; mathematics    | 01:12         |
 
-## What's Next?
-
-After completing this tutorial:
-1. [Create metadata for your interview](../prepare-metadata/tutorial-metadata.html)
-2. [Connect audio/video to your transcript](../how-to/connect-media-to-transcripts.html)
-3. [Explore more advanced tagging techniques](../how-to/create-transcript-tags.html)
-
-Need more help? See our [sample files](/examples/) or [contact us](https://github.com/oralhistoryasdata/csv-version/issues).

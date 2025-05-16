@@ -1,6 +1,6 @@
 ---
 section: Setup and Configuration
-nav_order: 2
+nav_order: 4
 title: Configuration
 ---
 
@@ -124,5 +124,3 @@ After configuring your site, you'll need to:
 1. Add your interview metadata CSV file to the `_data` directory
 2. Add your interview transcript and media files
 3. Publish your site on GitHub Pages
-
-For more information about the Oral History as Data project, visit the [project website](https://oralhistoryasdata.github.io/about.html).

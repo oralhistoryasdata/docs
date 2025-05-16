@@ -20,8 +20,6 @@ layout: lesson-content
 
 Whether you're working with a single interview or managing a large collection, this guide will walk you through the complete workflow from transcript preparation to final publication. The documentation is organized into logical sections following the research process.
 
-{% include toc.html %}
-
 ## Who Should Use This Tool?
 
 - **Oral historians** looking to make their interviews accessible and analyzable
@@ -37,5 +35,7 @@ Whether you're working with a single interview or managing a large collection, t
 - **Responsive design**: Works on mobile and desktop devices
 - **Media integration**: Connect transcripts with audio/video sources
 - **Open source**: Free to use and adapt to your needs
+
+{% include toc.html %}
 
 {% include template/credits.html %}
