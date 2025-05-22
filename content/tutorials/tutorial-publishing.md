@@ -60,8 +60,7 @@ Ensure you have:
 
 4. **Commit the workflow file**
    - Review the workflow file (you don't need to understand all the details)
-   - Scroll to the bottom
-   - Click the green "Commit changes..." button
+   - Click the green "Commit changes..." button at the top right
    - A dialog will appear
    - Click "Commit changes" again
    
