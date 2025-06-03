@@ -1,10 +1,8 @@
 ---
-section: old
+section_id: Customize Your Site
 nav_order: 6
 title: Customization & Visualization
 ---
-
-<!-- This page has been moved to the 'old' documentation folder. See the new Setup Your Site section for current guidance. -->
 
 # Customizing Your Site
 

@@ -1,10 +1,8 @@
 ---
-section: old
+section: Customize Your Site
 nav_order: 4
 title: Customizing Visualizations
 ---
-
-<!-- This page has been moved to the 'old' documentation folder. See the new Setup Your Site section for current guidance. -->
 
 # Understanding and Customizing Visualizations
 

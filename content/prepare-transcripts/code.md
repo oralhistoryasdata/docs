@@ -1,10 +1,10 @@
 ---
-section: old
+section: Prepare Your Transcript
 nav_order: 5
 title: Code Your Transcript
 ---
 
-<!-- This page has been moved to the 'old' documentation folder. See the new Prepare Your Content section for current guidance. -->
+<!-- This section has been replaced by the new combined 'Prepare Your Content' documentation. Please see ../prepare-content.md for the latest workflow. -->
 
 ## Add Tags/Codes to Your Transcript Spreadsheet (Optional)
 

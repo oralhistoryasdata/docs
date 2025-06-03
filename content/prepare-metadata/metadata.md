@@ -1,10 +1,8 @@
 ---
-section: old
+section: Prepare Your Metadata
 nav_order: 1
 title: Creating Your Metadata
 ---
-
-<!-- This page has been moved to the 'old' documentation folder. See the new Prepare Your Content section for current guidance. -->
 
 # Configuring Your Interview Metadata
 
