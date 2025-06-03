@@ -8,9 +8,9 @@ layout: lesson-content
 Oral History as Data helps you prepare, publish, and analyze interview transcripts with a streamlined, user-friendly workflow.
 
 **Key Steps:**
-1. [Quick Start](quick-start.html) – Get going in minutes
-2. [Prepare Your Content](prepare-content.html) – Clean, format, and organize your transcripts and metadata
-3. [Setup Your Site](setup-your-site.html) – Configure and customize your project
+1. [Quick Start](quick-start) – Get going in minutes
+2. [Prepare Your Content](prepare-content) – Clean, format, and organize your transcripts and metadata
+3. [Setup Your Site](setup/setup-your-site) – Configure and customize your project
 4. Publish and share your collection
 
 Whether you have one interview or a large collection, this guide walks you through every step.

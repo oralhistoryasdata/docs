@@ -1,5 +1,5 @@
 ---
-section: Customize Your Site
+section: Setup Your Site
 nav_order: 4
 title: Customizing Visualizations
 ---

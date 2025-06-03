@@ -61,4 +61,4 @@ If the automatic cleaner doesn't fix all issues:
 
 ## Next Steps
 
-After cleaning your text, proceed to [converting your transcript to CSV format](../prepare-transcripts/tutorial-transcript.html) for use in your OHD project.
+After cleaning your text, proceed to [converting your transcript to CSV format](../tutorials/tutorial-transcript) for use in your OHD project.

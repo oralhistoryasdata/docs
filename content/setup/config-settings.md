@@ -1,7 +1,7 @@
 ---
-section_id: Setup Your Site
-nav_order: 4
-title: _config.yml Settings
+section: Setup Your Site
+nav_order: 2
+title: Configuring (_config.yml settings)
 ---
 
 # Configuring Your Site with `_config.yml`
@@ -51,8 +51,8 @@ organization-logo-nav: https://path-to-your-nav-logo.png
 - Save and commit changes to see them live
 
 ## Learn More & Tutorials
-- [How to Edit _config.yml on GitHub](../tutorials/tutorial-github.html#edit-_configyml)
-- [Project Setup Guide](../setup-your-site.html)
-- [Metadata Preparation](../prepare-content.html)
+- [How to Edit _config.yml on GitHub](../tutorials/tutorial-github#edit-_configyml)
+- [Project Setup Guide](setup-your-site)
+- [Metadata Preparation](../prepare-content)
 
 For advanced options, see the [CollectionBuilder configuration docs](https://collectionbuilder.github.io/cb-docs/docs/theme/).

@@ -77,6 +77,6 @@ Once applied, tags enable:
 ## Next Steps
 
 After tagging your transcripts:
-- [Learn how to customize visualization colors](../customize/visualizations.html)
-- [Configure your filters display](../customize/customization.html)
-- [Test your visualization features](../customize/overview.html)
+- [Learn how to customize visualization colors](../setup/visualizations)
+- [Configure your filters display](../z-old/customize/customization)
+- [Test your visualization features](../z-old/customize/overview)

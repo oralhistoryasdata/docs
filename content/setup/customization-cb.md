@@ -1,6 +1,6 @@
 ---
-section: Customize Your Site
-nav_order: 3
+section: Setup Your Site
+nav_order: 5
 title: CollectionBuilder Customization 
 ---
 

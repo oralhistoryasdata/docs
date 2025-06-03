@@ -1,7 +1,7 @@
 ---
-section_id: Setup Your Site
-nav_order: 5
-title: theme.yml Settings
+section: Setup Your Site
+nav_order: 3
+title: Customizing (_data/theme.yml Settings)
 ---
 
 # Customizing Your Site with `_data/theme.yml`
@@ -48,8 +48,8 @@ Controls whether JSON files are used for advanced visualization features.
 - Displaying transcript text improves accessibility
 
 ## Learn More & Tutorials
-- [How to Customize Your Site](../tutorials/tutorial-github.html#customize-your-site)
-- [OHD Customization Options](../customize/overview.html)
+- [How to Customize Your Site](../tutorials/tutorial-github#customize-your-site)
+- [OHD Customization Options](../customize/overview)
 - [theme.yml Reference (CollectionBuilder)](https://collectionbuilder.github.io/cb-docs/docs/theme/)
 
 For more advanced options, see the [CollectionBuilder documentation](https://collectionbuilder.github.io/cb-docs/docs/customization/).

@@ -21,8 +21,8 @@ Properly formatted transcripts enable:
 - Thematic coding and analysis
 
 ## More Help
-- [Step-by-step transcript tutorial](../tutorials/tutorial-transcript.html)
-- [How-to: Clean transcript text](../how-to/clean-transcript-text.html)
-- [How-to: Create and apply transcript tags](../how-to/create-transcript-tags.html)
+- [Step-by-step transcript tutorial](../tutorials/tutorial-transcript)
+- [How-to: Clean transcript text](../how-to/clean-transcript-text)
+- [How-to: Create and apply transcript tags](../how-to/create-transcript-tags)
 
 For sample files, see the [examples folder](/examples/).

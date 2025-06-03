@@ -57,3 +57,13 @@ Consider these factors when selecting a deployment method:
 4. **Long-term maintenance**: Who will manage updates? (Self-hosting requires more maintenance)
 5. **Budget**: All options listed have free tiers available
 
+## Why This Matters
+
+Having multiple publishing options ensures you can:
+- Choose the deployment method that best fits your technical requirements
+- Scale your hosting solution as your collection grows
+- Maintain control over your content and presentation
+- Adapt to changing institutional or technical needs over time
+
+The flexibility of static site generation means your content isn't locked into any single platform, giving you freedom to migrate or adapt your publishing strategy as needed.
+
