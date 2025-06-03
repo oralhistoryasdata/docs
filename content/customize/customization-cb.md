@@ -42,3 +42,5 @@ Most pages in CollectionBuilder are placeholders for visualization features like
 - [Discussion Forum](https://github.com/CollectionBuilder/collectionbuilder.github.io/discussions) - Get help from the CollectionBuilder community
 - [Video Tutorials](https://collectionbuilder.github.io/cb-docs/docs/tutorials/) - Watch instructional videos to help build your site
 
+<!-- This section has been replaced by the new combined 'Setup Your Site' documentation. Please see ../setup-your-site.md for the latest workflow. -->
+
