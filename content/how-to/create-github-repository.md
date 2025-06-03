@@ -72,8 +72,8 @@ This guide shows you how to create your own copy of the Oral History as Data pro
 
 After creating your repository:
 
-1. [Configure your site settings](edit-github-files.html) by editing _config.yml
-2. [Add your collection metadata](upload-files-to-github.html) and transcript files
-3. [Publish your site](../publish/tutorial-publishing.html) using GitHub Pages
+1. [Configure your site settings](edit-github-files) by editing _config.yml
+2. [Add your collection metadata](upload-files-to-github) and transcript files
+3. [Publish your site](../tutorials/tutorial-publishing) using GitHub Pages
 
 Remember that your new repository is completely independent from the original template. Any changes you make will only affect your copy.

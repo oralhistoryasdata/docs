@@ -1,9 +1,8 @@
 ---
-section: Customize Your Site
-nav_order: 3
 title: CollectionBuilder Customization 
 ---
 
+> **Note:** This page has been deprecated and replaced by [Setup Your Site](../setup-your-site.md). Please refer to the new documentation for the latest workflow.
 # Customizing Using CollectionBuilder Options
 
 Because it is built on top of CollectionBuilder, you have a large number of ways to update your site using CollectionBuilder options. 
@@ -41,4 +40,6 @@ Most pages in CollectionBuilder are placeholders for visualization features like
 ## Additional Resources
 - [Discussion Forum](https://github.com/CollectionBuilder/collectionbuilder.github.io/discussions) - Get help from the CollectionBuilder community
 - [Video Tutorials](https://collectionbuilder.github.io/cb-docs/docs/tutorials/) - Watch instructional videos to help build your site
+
+<!-- This section has been replaced by the new combined 'Setup Your Site' documentation. Please see ../setup-your-site.md for the latest workflow. -->
 

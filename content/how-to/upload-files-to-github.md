@@ -135,6 +135,6 @@ If the `transcripts` folder doesn't exist yet:
 
 After uploading your files:
 
-1. [Configure your site](edit-github-files.html) if you haven't already
-2. [Publish your site](../publish/tutorial-publishing.html) to make it accessible online
-3. [Test your site](../publish/tutorial-publishing.html#common-issues-and-solutions) to ensure everything works correctly
+1. [Configure your site](edit-github-files) if you haven't already
+2. [Publish your site](../tutorials/tutorial-publishing) to make it accessible online
+3. [Test your site](../tutorials/tutorial-publishing#common-issues-and-solutions) to ensure everything works correctly

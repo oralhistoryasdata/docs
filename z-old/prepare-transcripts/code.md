@@ -4,6 +4,8 @@ nav_order: 5
 title: Code Your Transcript
 ---
 
+<!-- This section has been replaced by the new combined 'Prepare Your Content' documentation. Please see ../prepare-content.md for the latest workflow. -->
+
 ## Add Tags/Codes to Your Transcript Spreadsheet (Optional)
 
 If you'd like to enable subject-based browsing and color-coded visualizations for your transcript, you need to "code" portions of the conversation according to the subject matter. 

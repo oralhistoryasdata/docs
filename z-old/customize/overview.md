@@ -6,6 +6,8 @@ title: Customization & Visualization
 
 # Customizing Your Site
 
+<!-- This section has been replaced by the new combined 'Setup Your Site' documentation. Please see ../setup-your-site.md for the latest workflow. -->
+
 After preparing your transcripts and metadata, you can enhance your project with customizations and visualization options. This section covers how to code your transcripts for analysis and how to configure the visual aspects of your site.
 
 ## What You'll Learn

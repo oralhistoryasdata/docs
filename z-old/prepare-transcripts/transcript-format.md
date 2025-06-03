@@ -71,3 +71,5 @@ You can download and examine these files to better understand the format require
 Name your transcript CSV files to match the objectid in your metadata spreadsheet. For example, if your metadata contains an interview with objectid `smith_john`, name the transcript file `smith_john.csv`.
 
 This naming convention is crucial because it connects your transcript files to the CollectionBuilder-CSV metadata system, allowing the platform to automatically link the right transcript with the right metadata entry. This integration between the metadata system and transcript files is one of the key features that makes Oral History as Data powerful and flexible.
+
+<!-- This section has been replaced by the new combined 'Prepare Your Content' documentation. Please see ../prepare-content.md for the latest workflow. -->

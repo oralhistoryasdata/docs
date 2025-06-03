@@ -23,7 +23,7 @@ GitHub Pages is a free hosting service that publishes websites directly from Git
 
 GitHub Actions allows you to use GitHub Pages to host an OHD site on GitHub that require custom plugins. This is important since the default GitHub Pages process doesn't support plugins needed by CB-CSV.
 
-{% include button.html text="Check out our Step by Step Tutorial to Learn More" color="primary btn-lg" link="content/publish/tutorial-publishing.html"%}
+{% include button.html text="Check out our Step by Step Tutorial to Learn More" color="primary btn-lg" link="/content/tutorials/tutorial-publishing"%}
 
 
 - **Setup**: Configure through repository Settings > Pages

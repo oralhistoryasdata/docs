@@ -83,6 +83,6 @@ defaults:
     values:
       layout: "lesson-content"
 # ignore stuff
-exclude: [README.md, LICENSE, assets/lib/README.md]
+exclude: [README.md, LICENSE, assets/lib/README.md,z-old]
 # Build settings
 markdown: kramdown

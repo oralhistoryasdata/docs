@@ -90,5 +90,4 @@ To sync transcript segments with specific points in your media:
 
 ## Next Steps
 
-- [Learn about customizing the media player](../customize/customization.html)
-- [Set up advanced visualization features](../customize/visualizations.html)
+- [Set up advanced visualization features](../setup/visualizations)

@@ -1,8 +1,10 @@
 ---
-section: Setup and Configuration
-nav_order: 2
+section: Setup Your Site
+nav_order: 1
 title: Development Options for OHD
 ---
+
+## Development Options for OHD
 
 Oral History as Data and CollectionBuilder offer two primary approaches to developing your  project: 
 
@@ -25,7 +27,7 @@ However, web interface development does have some limitations:
 - More complex customizations can be cumbersome
 - Limited ability to test changes before publishing
 
-The [GitHub Web Interface Tutorial](/content/setup/tutorial-github.html) walks you through the entire process of building your collection using only your browser.
+The [GitHub Web Interface Tutorial](/content/tutorials/tutorial-github) walks you through the entire process of building your collection using only your browser.
 
 ## Local Development Environment
 

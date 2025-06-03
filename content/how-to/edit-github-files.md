@@ -123,6 +123,6 @@ When editing pages like `about.md` or other content:
 
 After editing your files:
 
-- [Add your content files](upload-files-to-github.html) like metadata and transcripts
-- [Check your site](../publish/tutorial-publishing.html) to verify your changes
-- Consider [connecting media](connect-media-to-transcripts.html) to your interviews
+- [Add your content files](upload-files-to-github) like metadata and transcripts
+- [Check your site](../tutorials/tutorial-publishing) to verify your changes
+- Consider [connecting media](connect-media-to-transcripts) to your interviews

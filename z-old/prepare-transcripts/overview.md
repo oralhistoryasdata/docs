@@ -6,6 +6,8 @@ title: Transcript Preparation
 
 # Preparing Your Interview Transcripts
 
+<!-- This section has been replaced by the new combined 'Prepare Your Content' documentation. Please see ../prepare-content.md for the latest workflow. -->
+
 This section guides you through the process of transforming traditional interview transcripts into structured CSV files that can be used with the Oral History as Data platform. Properly formatted transcripts are essential for searchability and visualization.
 
 ## What You'll Learn
