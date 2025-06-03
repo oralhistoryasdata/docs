@@ -88,6 +88,6 @@ For more detail on the instructions above, explore the rest of this site:
 
 1. **Explore the Prepare section** to learn how to format your transcripts and metadata
 2. **Review the Setup section** for information on setting up and customizing your site
-3. **Visit the Publish section** for details sharing your site publicly
+3. **Visit the Publish section** for details on sharing your site publicly
 
 {% include button.html link="prepare-content/overview" text="Continue to Preparation" color="primary btn-lg mt-2 mb-4" %}
