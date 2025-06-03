@@ -13,24 +13,30 @@ This section combines all the steps needed to get your Oral History as Data proj
 - How to configure essential project settings
 - How to choose your development approach (web or local)
 - How to customize your site's appearance and features
+- How to use and edit key configuration files: [_config.yml](setup/_config-settings.html) and [theme.yml](setup/theme-settings.html)
 
 ## Setup Workflow
 
 1. **Create your repository**
    - Use the OHD template on GitHub to start your project.
    - Name your repository and set it to public for GitHub Pages.
+   - [See the GitHub setup tutorial](../tutorials/tutorial-github.html)
 2. **Configure your project**
-   - Edit the `_config.yml` file to set your site title, description, and metadata filename.
+   - Edit the [_config.yml](setup/_config-settings.html) file to set your site title, description, and metadata filename.
    - Update other settings as needed (branding, navigation, etc.).
+   - [How to edit _config.yml on GitHub](../tutorials/tutorial-github.html#edit-_configyml)
 3. **Choose your development method**
    - Use GitHub's web interface for simple, browser-based editing.
    - Set up a local development environment for advanced customization and faster feedback.
+   - [See development options](../setup/development-options.html)
 4. **Customize your site**
-   - Edit `_data/theme.yml` to change colors, fonts, and layout.
+   - Edit [_data/theme.yml](setup/theme-settings.html) to change colors, fonts, and layout.
    - Adjust navigation and page config files in `_data/` as needed.
    - Add or edit content pages (e.g., about, home, custom sections).
+   - [Customization overview](../customize/overview.html)
 5. **Advanced options**
    - Explore CollectionBuilder's extensive customization features for further control over your site's look and functionality.
+   - [CollectionBuilder customization docs](https://collectionbuilder.github.io/cb-docs/docs/customization/)
 
 ## Key Files and Settings
 
