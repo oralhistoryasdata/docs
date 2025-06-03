@@ -39,4 +39,4 @@ bio: John Smith (b. 1945) worked as a miner from 1963-2003 and served as safety 
 - [How-to: Connect media to transcripts](../how-to/connect-media-to-transcripts)
 - [How-to: Convert CollectionBuilder-CSV to OHD](../how-to/convert-cb-to-ohd)
 
-For a sample file, see the [examples folder](/examples/demo-ohd-metadata.csv).
+For a sample file, see the {% include examples-modal.html %}.

@@ -25,4 +25,4 @@ Properly formatted transcripts enable:
 - [How-to: Clean transcript text](../how-to/clean-transcript-text)
 - [How-to: Create and apply transcript tags](../how-to/create-transcript-tags)
 
-For sample files, see the [examples folder](/examples/).
+For sample files, see the {% include examples-modal.html %}.

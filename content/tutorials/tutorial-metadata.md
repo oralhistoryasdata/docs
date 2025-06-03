@@ -27,7 +27,7 @@ Gather these materials:
 ### Step 1: Get Started with a Template
 
 1. **Download the template spreadsheet**
-   - Click to download the [demo-ohd-metadata.csv](/examples/demo-ohd-metadata.csv) file
+   - Click to download the [demo-ohd-metadata.csv](/examples/demo-ohd-metadata.csv) file, or browse all {% include examples-modal.html %}
    - Save it to your computer
    
    ![Example metadata CSV file downloaded to computer](SCREENSHOT_PLACEHOLDER)

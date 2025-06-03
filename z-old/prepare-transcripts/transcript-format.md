@@ -47,12 +47,12 @@ When connecting to audio/video sources, these timestamps create clickable links 
 
 ## Sample Files
 
-We've provided several example transcript files in our [examples folder](/examples/):
+We've provided several example transcript files - see our {% include examples-modal.html %} for:
 
-- [armantrout.csv](/examples/armantrout-transcript-example.csv)
-- [gluck.csv](/examples/gluck-transcript-example.csv)
-- [mohammad.csv](/examples/mohammad-transcript-example.csv)
-- [wrigley.csv](/examples/wrigley-transcript-example.csv)
+- armantrout-transcript-example.csv
+- gluck-transcript-example.csv
+- mohammad-transcript-example.csv
+- wrigley-transcript-example.csv
 
 You can download and examine these files to better understand the format requirements.
 

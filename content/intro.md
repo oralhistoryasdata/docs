@@ -3,7 +3,7 @@ nav_order: 0
 title: How OHD Works
 ---
 
-OHD uses a CSV-driven approach to manage your collection. Rather than creating individual web pages for each interview, you'll manage all your interviews through a simple spreadsheet and let the system automatically generate the web presentation.
+OHD uses a CSV-driven approach to manage your collection. Rather than creating individual web pages for each interview, you'll manage all your interviews through spreadsheet/CSVs for your metadata and transcripts and then let the system automatically generate the web presentation.
 
 ## Project Structure Overview
 
@@ -28,7 +28,7 @@ your-repository/
 - Configure your project settings
 
 **2. Prepare Your Content**
-- Transform interview transcripts into structured CSV files (see [examples](/examples/))
+- Transform interview transcripts into structured CSV files --> see {% include examples-modal.html %}
 - Add metadata through a spreadsheet (based on [CollectionBuilder-CSV](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/))
     - Connect transcripts with audio/video sources via Metadata (optional)
 - Code Your Transcripts (Optional)

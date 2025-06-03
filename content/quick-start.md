@@ -38,7 +38,7 @@ You'll need a main CSV and transcript CSV files:
 - Required fields include: objectid, title, date
 - Compatible with other CollectionBuilder projects
 - Store this file in the root directory
-- See our [examples/demo-ohd-metadata.csv](/examples/demo-ohd-metadata.csv) for a sample
+- See our [examples/demo-ohd-metadata.csv](/examples/demo-ohd-metadata.csv) for a sample, or browse all {% include examples-modal.html %}
 
 **Transcript Files**:
 - For each interview, create a CSV with four columns: speaker, words, tags, timestamp
@@ -46,7 +46,7 @@ You'll need a main CSV and transcript CSV files:
 - Each row represents one segment of dialogue
 - Store these in the `_data/transcripts/` directory
 - Name each file to match the item's objectid in your metadata 
-- Check our [examples folder](/examples/) for sample transcript files
+- Check our {% include examples-modal.html %} for sample transcript files
 
 ### 4. Create Your Coding System
 

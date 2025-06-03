@@ -51,4 +51,4 @@ Well-prepared content ensures:
 - Seamless integration of transcripts, metadata, and media
 - Thematic coding and visualization features
 
-For detailed examples and templates, see the [examples folder](/examples/) and the sample spreadsheets linked throughout this documentation.
+For detailed examples and templates, see the {% include examples-modal.html %} and the sample spreadsheets linked throughout this documentation.
