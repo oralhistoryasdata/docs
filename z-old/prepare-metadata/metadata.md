@@ -33,8 +33,13 @@ The metadata spreadsheet contains information about each interview in your colle
 - **objectid**: A unique identifier for each interview (used for filenames and URLs)
    - This should also match with the filename of the transcript your using!!
 - **title**: The title of the interview
-- **display_template**: The template for displaying the item described -- if it's an oral history, it should be `transcript`
+- **display_template**: The template for displaying the item described -- if it's an oral history and/or interview transcript, it should be `transcript`
 
+#### Oral History as Data Specific Fields
+- **interviewee**: Name of the person interviewed
+- **interviewer**: Name of the person conducting the interview
+- **pdf**: Path to transcript pdf file
+- **bio**: Biographical information about the interviewee
 
 #### Standard CollectionBuilder Fields
 - **description**: A brief summary of the interview content
@@ -51,11 +56,7 @@ The metadata spreadsheet contains information about each interview in your colle
 - **image_thumb**: thumbnail image to represent item in the collection (if left blank, will default to bootstrap icon)
 
 
-#### Oral History as Data Specific Fields
-- **interviewee**: Name of the person interviewed
-- **interviewer**: Name of the person conducting the interview
-- **pdf**: Path to transcript pdf file
-- **bio**: Biographical information about the interviewee
+
 
 The CollectionBuilder foundation means your metadata is structured according to best practices in digital collections, making it interoperable with other systems and easily migratable if needed in the future.
 

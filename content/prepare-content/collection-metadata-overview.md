@@ -14,8 +14,39 @@ Metadata is the structured information about each interview in your collection. 
 ## Key Steps
 - Use the [CollectionBuilder-CSV format](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/)
 - Required fields: `objectid`, `title`, `display_template` (set to `transcript`)
-- Recommended fields: `interviewer`, `interviewee`, `date`, `description`, `subject`, `location`, `object_location` (for media links)
+- OHD specific fields: `interviewer`, `interviewee`, `date`, `description`, `subject`, `location`, `object_location` (for media links)
 - Each row = one interview
+
+
+#### Required Fields
+- **objectid**: A unique identifier for each interview (used for filenames and URLs)
+   - This should also match with the filename of the transcript your using!!
+- **title**: The title of the interview
+- **display_template**: The template for displaying the item described -- it should be `transcript` for OHD features to work
+
+#### Oral History as Data Specific Fields
+- **interviewee**: Name of the person interviewed
+- **interviewer**: Name of the person conducting the interview
+- **pdf**: Path to transcript pdf file
+    - PDFs will be automatically generated using PagedJS but if you'd rather link to a prepared PDF file, list it either
+    - Can be an external link, or a relative link to a PDF stored in the repository
+- **bio**: Biographical information about the interviewee
+    - You can use Markdown to style the bios. 
+
+#### Standard CollectionBuilder Fields
+- **description**: A brief summary of the interview content
+- **subject**: Topics covered in the interview (semicolon separated)
+- **date**: When the interview took place (YYYY-MM-DD format recommended)
+- **location**: Where the interview was conducted
+- **latitude**: Geographic coordinate (if relevant)
+- **longitude**: Geographic coordinate (if relevant)
+- **format**: The format of the original interview (e.g. video/mp4)
+- **rights**: Copyright or usage rights statement
+- **rightsstatement**: URL to a formal rights statement
+- **object_location**: URL to audio/video (if available)
+- **image_small***: small image to represent item in the collection (if left blank, will default to bootstrap icon)
+- **image_thumb**: thumbnail image to represent item in the collection (if left blank, will default to bootstrap icon)
+
 
 ## Example Metadata Entry
 
