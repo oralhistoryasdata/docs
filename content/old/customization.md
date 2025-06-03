@@ -1,8 +1,10 @@
 ---
-section: Customize Your Site
+section: old
 nav_order: 2
 title: OHD Customization
 ---
+
+<!-- This page has been moved to the 'old' documentation folder. See the new Setup Your Site section for current guidance. -->
 
 # Oral History as Data Configuration Options
 

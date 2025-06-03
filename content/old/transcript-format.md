@@ -1,8 +1,10 @@
 ---
-section: Prepare Your Transcript
+section: old
 nav_order: 2
 title: Formatting Your Transcripts
 ---
+
+<!-- This page has been moved to the 'old' documentation folder. See the new Prepare Your Content section for current guidance. -->
 
 # Formatting Your Transcripts
 

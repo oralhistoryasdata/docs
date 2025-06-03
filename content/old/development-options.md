@@ -1,10 +1,10 @@
 ---
-section: Setup and Configuration
+section: old
 nav_order: 2
 title: Development Options for OHD
 ---
 
-<!-- This section has been replaced by the new combined 'Setup Your Site' documentation. Please see ../setup-your-site.md for the latest workflow. -->
+<!-- This page has been moved to the 'old' documentation folder. See the new Setup Your Site section for current guidance. -->
 
 Oral History as Data and CollectionBuilder offer two primary approaches to developing your  project: 
 
