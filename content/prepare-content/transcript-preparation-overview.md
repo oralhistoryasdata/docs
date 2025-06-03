@@ -1,6 +1,6 @@
 ---
-section_id: Prepare Your Content
-nav_order: 4
+section: Prepare Your Content
+nav_order: 3
 title: Transcript Preparation Overview
 ---
 

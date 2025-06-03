@@ -1,5 +1,5 @@
 ---
-section: Prepare Your Content
+section: Prepare Your Transcript
 nav_order: 4
 title: Creating Your Coding Vocabulary
 ---
