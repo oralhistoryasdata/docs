@@ -33,6 +33,10 @@
 {% if layout.gallery == true or page.gallery == true %}<link rel="stylesheet" href="{{ '/assets/lib/spotlight.min.css' | relative_url }}">{% endif %}
 <link rel="stylesheet" href="{{ '/assets/lib/bootstrap.min.css' | relative_url }}" type="text/css">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<!-- JTD Search Scripts -->
+<script src="{{ '/assets/lib/lunr.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/lunr-store.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/jtd-search.js' | relative_url }}"></script>
 
 {% comment %} 
   meta tags and analytics are added during production build ONLY 

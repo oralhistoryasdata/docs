@@ -17,7 +17,19 @@
         <script>
           function site_search() {
             var query = document.getElementById("site-search").value;
-            window.open("{{ '/search/index.html' | relative_url }}?q=" + encodeURIComponent(query), "_self" );
+            var jtdInput = document.getElementById("jtd-search-input");
+            if (jtdInput) {
+              jtdInput.value = query;
+              jtdInput.focus();
+              // Trigger search
+              var event = new Event('input', { bubbles: true });
+              jtdInput.dispatchEvent(event);
+              // Scroll to search
+              jtdInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+              // Fallback to old search page
+              window.open("{{ '/search/index.html' | relative_url }}?q=" + encodeURIComponent(query), "_self" );
+            }
           }
         </script>
         <form class="mb-3 mb-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
@@ -164,6 +176,9 @@
 
       <!-- Page content wrapper-->
       <div id="page-content-wrapper">
+        
+        <!-- Just the Docs style search -->
+        {% include jtd-search.html %}
         
           <!-- Page content-->
           <main id="maincontent" role="main" aria-label="Content">
