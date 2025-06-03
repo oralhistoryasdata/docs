@@ -1,9 +1,8 @@
 ---
-section: Setup Your Site
-nav_order: 5
 title: CollectionBuilder Customization 
 ---
 
+> **Note:** This page has been deprecated and replaced by [Setup Your Site](../setup-your-site.md). Please refer to the new documentation for the latest workflow.
 # Customizing Using CollectionBuilder Options
 
 Because it is built on top of CollectionBuilder, you have a large number of ways to update your site using CollectionBuilder options. 
