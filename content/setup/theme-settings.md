@@ -41,7 +41,12 @@ Displays and filters the contents of individual interviews at the bottom of the 
 ```yaml
 json-generation: false
 ```
-**Warning for Large Collections**: If set to `true`, you must run the rake command `generate_json` to create necessary JSON files. This determines whether JSON files are accessed for advanced visualization features. Defaults to `false`.
+
+This determines if JSON files will be accessed for the visualization page. Particularly good for large collections as it reduces the visualization page size and allows for better usability. 
+
+This will also allow you to download individual json files of your interviews. 
+
+**Warning --> This requires an Extra Step!**: If set to `true`, you must run the rake command `generate_json` to create necessary JSON files. This determines whether JSON files are accessed for advanced visualization features. Defaults to `false`.
 
 ### Site Layout Options
 ```yaml
