@@ -74,9 +74,3 @@ Once applied, tags enable:
 - Pattern identification across interviews
 - Targeted searching within specific themes
 
-## Next Steps
-
-After tagging your transcripts:
-- [Learn how to customize visualization colors](../setup/visualizations)
-- [Configure your filters display](../z-old/customize/customization)
-- [Test your visualization features](../z-old/customize/overview)

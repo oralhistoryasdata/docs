@@ -28,12 +28,11 @@ This section combines all the steps needed to get your Oral History as Data proj
 3. **Choose your development method**
    - Use GitHub's web interface for simple, browser-based editing.
    - Set up a local development environment for advanced customization and faster feedback.
-   - [See development options](../z-old/development-options)
+   - [See development options](development-options)
 4. **Customize your site**
    - Edit [_data/theme.yml](theme-settings) to change colors, fonts, and layout.
    - Adjust navigation and page config files in `_data/` as needed.
-   - Add or edit content pages (e.g., about, home, custom sections).
-   - [Customization overview](../z-old/customize/overview)
+   - Add or edit content pages (e.g., about, home, custom sections) using [CollectionBuilder Options](customization-cb).
 5. **Advanced options**
    - Explore CollectionBuilder's extensive customization features for further control over your site's look and functionality.
    - [CollectionBuilder customization docs](https://collectionbuilder.github.io/cb-docs/docs/customization/)
