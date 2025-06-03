@@ -14,38 +14,40 @@ The `_data/theme.yml` file controls your site's appearance and many display opti
 ```yaml
 transcript-fields: "description,date,location,interviewer,image"
 ```
-Controls which metadata fields appear at the top of each transcript page.
+Controls which metadata fields appear at the top of each transcript page. Choose from: `description`, `date`, `location`, `interviewer`, `interviewee`, `bio`, `image`. List the fields you want displayed, separated by commas.
 
 ```yaml
 media-scroll: true
 ```
-Keeps the media player and visualization visible as you scroll (on large screens).
+Keeps the media player and visualization visible as you scroll (on large screens with minimum width 1024px). The media appears in the lower right as users scroll down a transcript.
 
 ```yaml
 search-and-filters: true
 search-and-filters-sticky: true
 ```
-Show and pin the search/filter bar above transcript text.
+The first option shows the search/filter bar above transcript text. The second option makes the search and filter controls stick to the top of the page as users scroll down.
 
 ### Visualization Page Options
 ```yaml
 as-data: true
 ```
-Show an "As Data" button for more info about the visualization.
+Shows an "As Data" button at the top right of the visualization page, which opens a modal with more information about the data when clicked.
 
 ```yaml
 transcript-contents: true
 ```
-Display transcript text below the visualization chart.
+Displays and filters the contents of individual interviews at the bottom of the visualization page (below the color-coded chart portion).
 
 ```yaml
 json-generation: false
 ```
-Controls whether JSON files are used for advanced visualization features.
+**Warning for Large Collections**: If set to `true`, you must run the rake command `generate_json` to create necessary JSON files. This determines whether JSON files are accessed for advanced visualization features. Defaults to `false`.
 
-### Accessibility Considerations
-- Test media scroll and filters for screen reader compatibility
-- Displaying transcript text improves accessibility
+### Site Layout Options
+```yaml
+base-layout: OHD
+```
+Choose between `OHD` or `CB` (CollectionBuilder) to control the overall site appearance and styling.
 
 ## Learn More & Tutorials
 - [How to Customize Your Site](../tutorials/tutorial-github#customize-your-site)
