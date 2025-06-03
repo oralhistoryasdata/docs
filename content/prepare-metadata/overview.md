@@ -4,6 +4,8 @@ nav_order: 3
 title: Metadata Preparation
 ---
 
+<!-- This section has been replaced by the new combined 'Prepare Your Content' documentation. Please see ../prepare-content.md for the latest workflow. -->
+
 This section focuses on creating the metadata spreadsheet that serves as the central registry for all interviews in your Oral History as Data project. Proper metadata is essential for organizing your collection and enabling search functionality.
 
 ## What You'll Learn

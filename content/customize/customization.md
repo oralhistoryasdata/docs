@@ -6,6 +6,8 @@ title: OHD Customization
 
 # Oral History as Data Configuration Options
 
+<!-- This section has been replaced by the new combined 'Setup Your Site' documentation. Please see ../setup-your-site.md for the latest workflow. -->
+
 The OHD framework provides several customization options in the `_data/theme.yml` file that control how transcripts and visualizations are displayed. Below are key settings you can modify:
 
 ### Transcript Page Options

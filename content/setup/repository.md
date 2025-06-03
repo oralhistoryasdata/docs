@@ -63,3 +63,5 @@ If you want to create an organization:
 ## Next Steps
 
 After creating your repository, you're ready to customize it for your project by configuring the settings in the _config.yml file.
+
+<!-- This section has been replaced by the new combined 'Setup Your Site' documentation. Please see ../setup-your-site.md for the latest workflow. -->

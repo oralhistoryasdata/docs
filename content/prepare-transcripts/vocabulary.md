@@ -91,3 +91,5 @@ The visualization system will create a unique color for each tag, allowing you t
 {% include bootstrap/figure.md img="howto/visualization.png" caption="Example of visualization with color-coded tags" alt="Visualization of transcript with color highlighting" class="w-75" %}
 
 Remember that your coding system can evolve as your research progresses. The `filters.csv` file can be updated at any time to add new codes or refine existing ones.
+
+<!-- This section has been replaced by the new combined 'Prepare Your Content' documentation. Please see ../prepare-content.md for the latest workflow. -->

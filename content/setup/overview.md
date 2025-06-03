@@ -6,6 +6,8 @@ title: Project Setup
 
 # Setting Up Your OHD Project
 
+<!-- This section has been replaced by the new combined 'Setup Your Site' documentation. Please see ../setup-your-site.md for the latest workflow. -->
+
 The first step in creating an Oral History as Data site is setting up your GitHub repository and configuring basic project settings. This section provides a streamlined guide to get your project infrastructure ready.
 
 ## What You'll Learn
