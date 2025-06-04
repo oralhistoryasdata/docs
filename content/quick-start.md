@@ -16,7 +16,7 @@ Before you begin, you should have:
 
 ### 1. Set Up Your Repository
 
-1. Go to the [Oral History as Data repository](https://github.com/oralhistoryasdata/oral-history-as-data)
+1. Go to the [Oral History as Data Template repository](https://github.com/oralhistoryasdata/template)
 2. Click the green "Use this template" button
 3. Name your new repository and click "Create repository from template"
 4. Your repository is now ready to customize
