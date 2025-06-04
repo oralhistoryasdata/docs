@@ -27,6 +27,7 @@ This tutorial walks you through setting up and configuring your Oral History as 
      - `_data/` for metadata and configuration
      - `_includes/` and `_layouts/` for templates
      - `pages/` for website pages
+   - Learn more about the [repository structure](/docs/repository-structure.html)
 
 ## Essential Configuration
 
@@ -42,6 +43,7 @@ This tutorial walks you through setting up and configuring your Oral History as 
    - `description`: A longer description for SEO and footer
    - `author`: Your name or organization
    - `metadata`: Set to match your CSV filename (without extension)
+   - For detailed configuration options, see [Site Configuration](/docs/config.html)
 
 3. **Save changes**
    - Scroll down and add a commit message like "Update site configuration"
@@ -58,6 +60,7 @@ This tutorial walks you through setting up and configuring your Oral History as 
    - If uploading:
      - Click "Add file" → "Upload files"
      - Drag your CSV file or use the file selector
+   - Learn about required fields and formatting in [Metadata Guidelines](/docs/metadata.html)
 
 2. **Commit your changes**
    - Add a message like "Add collection metadata"
@@ -76,6 +79,7 @@ This tutorial walks you through setting up and configuring your Oral History as 
    - Click "Add file" → "Upload files" or "Create new file"
    - Add your prepared transcript CSV files
    - Ensure filenames match your metadata objectids
+   - For transcript formatting requirements, see [Transcript Preparation](/docs/transcripts.html)
 
 ## Customize Your Site
 
@@ -92,9 +96,17 @@ This tutorial walks you through setting up and configuring your Oral History as 
 
 3. **Additional pages**
    - Other pages in the "pages" directory can be customized as needed
+   - Learn more about [customizing pages](/docs/pages.html)
 
 ### 6. Visual Customization
 
 1. **Theme settings**
    - Edit "_data/theme.yml" to change colors, fonts, and other visual elements
    - Changes to this file immediately affect your site's appearance
+   - For detailed theming options, see [Theme Configuration](/docs/theme.html)
+
+## Next Steps
+
+- Enable GitHub Pages to publish your site - see [Publishing Your Site](/docs/deploy.html)
+- Add audio files and configure hosting - see [Audio Setup](/docs/audio.html)
+- Explore advanced features in the [Advanced Configuration](/docs/advanced.html) guide

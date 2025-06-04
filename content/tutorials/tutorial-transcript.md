@@ -30,17 +30,13 @@ Gather these materials:
    - Go to [sheets.google.com](https://sheets.google.com)
    - Click "Blank" to create a new spreadsheet
    
-   ![New blank Google Sheet with spreadsheet grid visible](SCREENSHOT_PLACEHOLDER)
-
 2. **Set up your column headers**
    - In cell A1, type: **speaker**
    - In cell B1, type: **words**
    - In cell C1, type: **tags**
    - In cell D1, type: **timestamp**
 
-   ![Google Sheet with column headers added in row 1](SCREENSHOT_PLACEHOLDER)
-
-   **Tip:** Alternatively, use our [template spreadsheet](https://docs.google.com/spreadsheets/d/1PZ4b1B8IlR9MGlYkCJFJBNGkCHGxzPPFMmUJ9QfwCE4/copy) and click "Make a copy".
+   **Tip:** Alternatively, use our [template spreadsheet](https://docs.google.com/spreadsheets/d/1uWrPMItiP-XOSkm7gyC8b9bl3tpSQRj9zLzS5y8QnW0/copy) and click "Make a copy".
 
 ### Step 2: Clean Your Transcript Text
 
@@ -60,35 +56,29 @@ Gather these materials:
    - Select all text (Ctrl+A or Cmd+A) 
    - Copy it (Ctrl+C or Cmd+C)
 
-   ![Text cleaner tool with text in both boxes and highlighted selection](SCREENSHOT_PLACEHOLDER)
-
 ### Step 3: Structure Your Transcript
 
 1. **Paste text into your spreadsheet**
-   - Click in cell B2 (under the "words" column)
+   - If you don't have any Speaker's noted in the text, Click in cell B2 (under the "words" column)
+   - If you do have Speaker's noted, click in cell A2 (under the "speaker" column)
    - Paste your cleaned text (Ctrl+V or Cmd+V)
    - The text will appear in a single cell
 
-   ![Spreadsheet with all text pasted into a single cell in column B](SCREENSHOT_PLACEHOLDER)
-
-2. **Separate text by paragraph**
-   - If your text appears in a single cell, follow these steps:
+2. **Separate text by speaker**
+   - If your text appears in a single cell, with the Speaker's name starting each cell like so "Speaker:" follow these steps:
      - Select the cell with your text
-     - Click Data → Split text to columns
-     - In the separator options, choose "Custom" and enter a paragraph mark (usually \n)
+     - Using the menu at top, click Data → Split text to columns
+     - In the separator options, choose "Custom" and enter a colon mark --> ":"
      - Click "Split"
-   - Each paragraph should now be in its own row
+   - Speaker's should now be separated from the text that they speak!
+      - Note: if you have colons in the rest of your text, this will also be split out into new cells; you can paste that content back into the preceding cells, or just replace the current words column with the cleaned transcript you had from before, then do a find/replace function to remove any mention of speakers
 
-   ![Spreadsheet showing text split into multiple rows](SCREENSHOT_PLACEHOLDER)
-
-3. **Identify speakers**
+3. **If not Speakers are listed, Identify speakers**
    - In column A, add the speaker name for each segment of text
    - For example:
      - "Interviewer" for questions
      - "John Smith" for the interviewee's responses
    - Be consistent with names throughout
-
-   ![Spreadsheet with speaker names added in column A](SCREENSHOT_PLACEHOLDER)
 
 ### Step 4: Add Optional Information
 
@@ -97,14 +87,12 @@ Gather these materials:
    - Format as MM:SS (e.g., 01:45) or HH:MM:SS (e.g., 1:12:30)
    - Match to the corresponding points in your recording
 
-   ![Spreadsheet with timestamps added in column D](SCREENSHOT_PLACEHOLDER)
-
 2. **Add topic tags** (for visualization)
    - In column C, add relevant topic keywords
    - Use semicolons between multiple tags (e.g., "education; family; career")
    - Be consistent with terminology across segments
 
-   ![Spreadsheet with topic tags added in column C](SCREENSHOT_PLACEHOLDER)
+[See our How To for more information on creating Tags!](../how-to/create-transcript-tags.html)
 
 ### Step 5: Finalize and Save
 
@@ -115,10 +103,9 @@ Gather these materials:
 
 2. **Save as CSV file**
    - Click File → Download → Comma-separated values (.csv)
-   - Name your file to match the objectid in your metadata
+   - Find the downloaded file (don't open it!!) where it's been downloaded
+   - Rename your file to match the objectid in your metadata
    - Example: If your interview has objectid "smith_john" in metadata, name the file "smith_john.csv"
-
-   ![File download menu showing CSV option](SCREENSHOT_PLACEHOLDER)
 
 3. **Upload to your repository**
    - Place the CSV file in the _data/transcripts/ folder
@@ -128,11 +115,10 @@ Gather these materials:
      - Drag your CSV file or use the file selector
      - Commit the changes
 
-   ![GitHub upload interface with file being added](SCREENSHOT_PLACEHOLDER)
 
 ## Example of Completed Transcript
 
-Here's how a properly formatted transcript CSV should look:
+Here's how a properly formatted transcript CSV should look (note: this is overly tagged to serve as an example ... )
 
 | **Speaker**    | **Words**                                                                                      | **Tags**                           | **Timestamp** |
 |----------------|-----------------------------------------------------------------------------------------------|------------------------------------|---------------|

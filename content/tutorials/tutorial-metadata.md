@@ -30,22 +30,17 @@ Gather these materials:
    - Click to download the [demo-ohd-metadata.csv](/examples/demo-ohd-metadata.csv) file, or browse all {% include examples-modal.html %}
    - Save it to your computer
    
-   ![Example metadata CSV file downloaded to computer](SCREENSHOT_PLACEHOLDER)
-
 2. **Open in Google Sheets**
    - Go to [sheets.google.com](https://sheets.google.com)
    - Click File → Import → Upload
    - Select the downloaded template file
    - Choose "Import data" when prompted
    
-   ![Google Sheets import screen with file being uploaded](SCREENSHOT_PLACEHOLDER)
-
 3. **Examine the structure**
    - Review the column headers in the first row
    - Note the example entries in subsequent rows
    - These show the format for each field
 
-   ![Google Sheet showing metadata template with column headers](SCREENSHOT_PLACEHOLDER)
 
 ### Step 2: Understand Required Fields
 
@@ -65,7 +60,6 @@ Every interview in your collection needs these three essential fields:
    - Controls how the item displays
    - Always set to "transcript" for interviews
    
-   ![Spreadsheet highlighting the three required fields](SCREENSHOT_PLACEHOLDER)
 
 ### Step 3: Add Your Interviews
 
@@ -90,7 +84,7 @@ Every interview in your collection needs these three essential fields:
      - **subject**: Main topics (separated by semicolons)
      - **location**: Where the interview took place
    
-   ![Spreadsheet with all recommended fields completed](SCREENSHOT_PLACEHOLDER)
+To get a better idea of how this look, see our {% include examples-modal.html %} 
 
 ### Step 4: Connect Media (Optional)
 
@@ -104,9 +98,8 @@ If you have audio or video recordings:
 2. **Add to object_location field**
    - YouTube format: `https://youtu.be/VIDEO_ID`
    - SoundCloud format: `https://soundcloud.com/USER/TRACK_NAME`
-   - Local file format: `objects/filename.mp3`
+   - Local file format: `/objects/filename.mp3`
    
-   ![Spreadsheet showing completed object_location field with media URLs](SCREENSHOT_PLACEHOLDER)
 
 ### Step 5: Finalize and Save
 
@@ -117,19 +110,16 @@ If you have audio or video recordings:
 
 2. **Save as CSV file**
    - Click File → Download → Comma-separated values (.csv)
-   - Name the file according to your preference (typically "metadata.csv")
+   - Name the file according to your preference (typically something like "project.csv" or "metadata.csv")
    
-   ![File download menu showing CSV option](SCREENSHOT_PLACEHOLDER)
-
 3. **Upload to your repository**
    - Place the CSV file in the `_data/` folder
    - Update `_config.yml` to reference this filename if needed
    
-   ![GitHub interface showing file being uploaded to _data folder](SCREENSHOT_PLACEHOLDER)
 
 ## Example of a Complete Metadata File
 
-Here's how a properly formatted metadata file might look with multiple entries (displayed vertically for easier reading):
+Here's how a metadata values might look with multiple entries (displayed vertically for easier reading--these will be in a spreadsheet when you enter them!):
 
 ```
 object id: smith_john  

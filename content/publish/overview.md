@@ -40,7 +40,7 @@ This section guides you through publishing your Oral History as Data project and
 
 | Method | Best For | Requirements |
 |--------|----------|--------------|
-| **GitHub Actions** | OHD projects (required) | GitHub repository, GitHub Actions workflow |
+| **GitHub Pages** | OHD projects (required) | GitHub repository, GitHub Actions workflow |
 | **Self-hosting** | Advanced users | Web server, Jekyll build environment |
 | **Third-party services** | Enhanced features | Account with hosting provider |
 
