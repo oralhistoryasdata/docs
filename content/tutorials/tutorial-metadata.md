@@ -115,7 +115,48 @@ If you have audio or video recordings:
 3. **Upload to your repository**
    - Place the CSV file in the `_data/` folder
    - Update `_config.yml` to reference this filename if needed
+
+### Step 6: Adding Compound Objects (Advanced)
+
+Compound objects allow you to associate additional materials (photographs, documents, artifacts) with your interview transcripts. These appear below the main transcript content.
+
+1. **Set up the parent interview** (using standard steps above)
+   - Keep `display_template: transcript` for the main interview
+   - Ensure the interview has a unique `objectid`
+
+2. **Create child object entries**
+   - Add new rows for each related item (photos, documents, etc.)
+   - Include a `parentid` field matching the parent interview's `objectid`
+   - Set appropriate `display_template` for the content type (e.g., "image")
+
+3. **Example compound object structure**:
+   ```
+   Parent Interview:
+   objectid: mcmichael
+   title: Interview with James McMichael
+   display_template: transcript
+   interviewee: James McMichael
+   interviewer: Devin Becker
    
+   Child Objects:
+   objectid: mcmichael1
+   parentid: mcmichael
+   title: McMichael's thesis binders on shelf
+   display_template: image
+   object_location: /objects/mcmichael1.jpg
+   
+   objectid: mcmichael2
+   parentid: mcmichael
+   title: Books and drafts on McMichael's desk
+   display_template: image
+   object_location: /objects/mcmichael2.jpg
+   ```
+
+4. **Key points for compound objects**:
+   - Parent objects must keep `display_template: transcript`
+   - Child objects inherit date and location information from their parent
+   - Child objects appear below the transcript and metadata sections
+   - Use descriptive titles for child objects to explain their relevance
 
 ## Example of a Complete Metadata File
 

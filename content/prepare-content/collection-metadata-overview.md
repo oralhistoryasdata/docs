@@ -65,6 +65,42 @@ object_location: https://youtu.be/BX_bURONf78
 bio: John Smith (b. 1945) worked as a miner from 1963-2003 and served as safety coordinator for the last decade of his career.
 ```
 
+## Creating Compound Objects
+
+Oral History as Data supports compound objects, allowing you to associate additional materials (photos, documents, artifacts) with interview transcripts. This follows the same approach as CollectionBuilder-CSV, with the key difference being that parent objects keep their `display_template` as "transcript".
+
+### How Compound Objects Work
+- **Parent object**: The main interview transcript with `display_template: transcript`
+- **Child objects**: Related materials (photos, documents) that appear below the transcript
+- **Connection**: Child objects include a `parentid` field matching the parent's `objectid`
+
+### Setting Up Compound Objects
+
+1. **Create the parent interview** with standard transcript metadata:
+   ```
+   objectid: mcmichael
+   title: Interview with James McMichael
+   display_template: transcript
+   interviewee: James McMichael
+   interviewer: Devin Becker
+   ```
+
+2. **Add child objects** with a `parentid` field:
+   ```
+   objectid: mcmichael1
+   parentid: mcmichael
+   title: McMichael's thesis binders on a shelf
+   display_template: image
+   format: image/jpg
+   object_location: /objects/mcmichael1.jpg
+   ```
+
+### Key Points for Compound Objects
+- Parent objects must have `display_template: transcript` to maintain OHD functionality
+- Child objects can use any appropriate display template (`image`, `pdf`, etc.)
+- Child objects inherit location and date information from their parent
+- All child objects will display below the main transcript and metadata sections
+
 ## More Help
 - [Step-by-step metadata tutorial](../tutorials/tutorial-metadata)
 - [How-to: Connect media to transcripts](../how-to/connect-media-to-transcripts)
