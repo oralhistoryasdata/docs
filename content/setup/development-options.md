@@ -1,6 +1,6 @@
 ---
 section: Setup Your Site
-nav_order: 1
+nav_order: 6
 title: Development Options for OHD
 ---
 

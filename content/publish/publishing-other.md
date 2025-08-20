@@ -1,6 +1,6 @@
 ---
 section: Publish Your Site
-nav_order: 3
+nav_order: 2
 title: Other Publishing Options
 ---
 

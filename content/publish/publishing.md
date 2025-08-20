@@ -1,6 +1,6 @@
 ---
-section: Publish Your Site
-nav_order: 2
+section_id: Publish Your Site
+nav_order: 5
 title: Publishing via GitHub Pages
 ---
 

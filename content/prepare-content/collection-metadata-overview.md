@@ -1,6 +1,6 @@
 ---
-section: Prepare Your Content
-nav_order: 3
+section_id: Prepare Your Content
+nav_order: 2
 title: Collection Metadata Overview
 ---
 

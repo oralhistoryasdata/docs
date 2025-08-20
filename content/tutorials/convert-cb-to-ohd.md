@@ -1,7 +1,7 @@
 ---
-section: How-To Guides
-nav_order: 4
-title: How to Convert CollectionBuilder-CSV to Oral History as Data
+section: Tutorials
+nav_order: 5
+title: Convert a CollectionBuilder-CSV Repo to Oral History as Data
 ---
 
 # How to Convert CollectionBuilder-CSV to Oral History as Data

@@ -1,7 +1,7 @@
 ---
 section: Tutorials
 nav_order: 2
-title: Tutorial - Metadata Preparation
+title: Metadata Creation
 ---
 
 # Step-by-Step: Creating Your Collection Metadata

@@ -1,7 +1,7 @@
 ---
 section: Setup Your Site
 nav_order: 3
-title: Customizing (_data/theme.yml Settings)
+title: Customize (_data/theme.yml)
 ---
 
 # Customizing Your Site with `_data/theme.yml`

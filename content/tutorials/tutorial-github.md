@@ -1,7 +1,7 @@
 ---
 section: Tutorials
 nav_order: 3
-title: Tutorial - Working in Github
+title: Github Walkthru
 ---
 
 # Getting Started with GitHub's Web Interface
@@ -43,7 +43,6 @@ This tutorial walks you through setting up and configuring your Oral History as 
    - `description`: A longer description for SEO and footer
    - `author`: Your name or organization
    - `metadata`: Set to match your CSV filename (without extension)
-   - For detailed configuration options, see [Site Configuration](/docs/config.html)
 
 3. **Save changes**
    - Scroll down and add a commit message like "Update site configuration"

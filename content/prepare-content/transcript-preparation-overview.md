@@ -14,8 +14,9 @@ This section guides you through the process of transforming traditional intervie
     - *The only required column is `words`*
 - Each row = one paragraph on the page
     - Break up overly long rows!
-- Save as CSV, name to match the `objectid` in your metadata
-    - A mismatch between filename and objectid is the most common problem users run into! [More below](#csv-naming-convention)
+- Save as CSV
+- ***Important!*** the filename must match the `objectid` in your metadata
+    - A mismatch between filename and objectid is the most common problem users run into! ([More below](#csv-naming-convention))
 
 
 ## Transcript CSV Structure
@@ -27,7 +28,43 @@ Your transcript CSV files can include the following columns (in any order). Note
 3. **tags**: Your thematic codes for this segment (optional, but enables visualization)
 4. **timestamp**: Timecode reference for audio/video syncing (optional)
 
-The first row of your CSV file should contain these column headers. 
+The first row of your CSV file should contain these column headers.
+
+## Using Tags for Visualization and Analysis
+
+Tags are thematic codes that enable powerful visualization and filtering features in your oral history site. When you add tags to transcript segments, they become:
+
+- Color-coded segments in the interactive visualization
+- Filters that users can apply to explore specific themes
+- Tools for pattern identification across interviews
+
+### Creating Your Tag Vocabulary
+
+Before tagging transcript segments, establish a consistent vocabulary:
+
+1. **Review your transcripts** to identify common themes (10-20 tags is usually sufficient)
+2. **Create a `filters.csv` file** in your `_data` folder with two columns:
+   - `tag`: The short term used in transcripts
+   - `description`: Brief explanation of what the tag represents
+
+Example filters.csv:
+```
+tag,description
+highlight,Highlight
+between,working between media to advance writing process
+early,writing before widespread computer usage
+paper,using paper in the writing process
+files,usage and organization of computer files
+revision,revision
+software,the use of software and/or code for writing
+```
+
+### Tips for Effective Tagging
+
+- **Keep it simple** - aim for 10-20 primary tags
+- **Use consistent formatting**: lowercase terms, avoid special characters, use singular forms
+- **Be selective** - tag only the most relevant segments
+- **Be consistent** across all transcripts in your collection 
 
 
 
@@ -74,4 +111,3 @@ For sample transcript files that demonstrate the proper format, see our {% inclu
 
 - [Step-by-step transcript tutorial](../tutorials/tutorial-transcript)
 - [How-to: Clean transcript text](../how-to/clean-transcript-text)
-- [How-to: Create and apply transcript tags](../how-to/create-transcript-tags)

@@ -1,7 +1,7 @@
 ---
 section: Tutorials
 nav_order: 4
-title: Tutorial - Publishing via GH Pages
+title: Publishing via GH Pages
 ---
 
 # Tutorial: Publishing Your Site with GitHub Pages

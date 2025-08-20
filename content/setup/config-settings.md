@@ -1,7 +1,7 @@
 ---
-section: Setup Your Site
-nav_order: 2
-title: Configuring (_config.yml settings)
+section_id: Setup Your Site
+nav_order: 3
+title: Configure (_config.yml)
 ---
 
 # Configuring Your Site with `_config.yml`
