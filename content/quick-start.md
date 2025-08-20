@@ -46,7 +46,7 @@ You'll need a main CSV and transcript CSV files:
 - Each row represents one segment of dialogue
 - Store these in the `_data/transcripts/` directory
 - Name each file to match the item's objectid in your metadata 
-- Check our {% include examples-modal.html %} for sample transcript files
+- For sample transcript files, check our {% include examples-modal.html %} 
 
 ### 4. Create Your Coding System
 

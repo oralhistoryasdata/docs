@@ -9,7 +9,7 @@ title: Transcript Preparation Overview
 This section guides you through the process of transforming traditional interview transcripts into structured CSV files that can be used with the Oral History as Data platform. 
 
 ## Key Steps
-- [Clean your transcript text](../how-to/clean-transcript-text.html) (remove formatting artifacts, normalize for web display)
+- Clean your transcript text (remove formatting artifacts, normalize for web display)
 - Create a CSV with columns: `speaker`, `words`, `tags`, `timestamp`
     - *The only required column is `words`*
 - Each row = one paragraph on the page
@@ -110,4 +110,3 @@ For sample transcript files that demonstrate the proper format, see our {% inclu
 ## More Help
 
 - [Step-by-step transcript tutorial](../tutorials/tutorial-transcript)
-- [How-to: Clean transcript text](../how-to/clean-transcript-text)

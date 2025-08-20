@@ -103,7 +103,5 @@ Oral History as Data supports compound objects, allowing you to associate additi
 
 ## More Help
 - [Step-by-step metadata tutorial](../tutorials/tutorial-metadata)
-- [How-to: Connect media to transcripts](../how-to/connect-media-to-transcripts)
-- [How-to: Convert CollectionBuilder-CSV to OHD](../how-to/convert-cb-to-ohd)
 
 For a sample file, see the {% include examples-modal.html %}.
