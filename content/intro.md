@@ -17,30 +17,32 @@ your-repository/
 │       └── transcript1.csv   # Sample transcript 1
 │       └── transcript2.csv   # Sample transcript 2
 ├── _config.yml               # Project configuration (title, metadata, etc.)
-└── objects/                  # Folder for interview images
+└── objects/                  # Folder for interview images and/or recordings
 ```
 
 
 ## The Complete Workflow
 
 **1. Setup Your Environment**
-- Create a copy of the OHD GitHub Repository
-- Configure your project settings
+- Create a copy of the [OHD GitHub Template Repository](https://github.com/oralhistoryasdata/template) by clicking Use This Template
+- Once copied, configure your project settings via _config.yml
 
 **2. Prepare Your Content**
-- Transform interview transcripts into structured CSV files --> see {% include examples-modal.html %}
-- Add metadata through a spreadsheet (based on [CollectionBuilder-CSV](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/))
-    - Connect transcripts with audio/video sources via Metadata (optional)
-- Code Your Transcripts (Optional)
-    - Create a controlled vocabulary for coding
-    - Apply thematic codes to your transcript content
+- Transform interview transcripts into structured CSV files
+    - Code Your Transcripts (Optional)
+        - Create a controlled vocabulary for coding
+        - Apply thematic codes to your transcript CSV via a `tags` column
+- Create your metadata spreadsheet to describe the interviews (based on [CollectionBuilder-CSV](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/))
+
+To see how these should look --> {% include examples-modal.html button="See Our Example Spreadsheet and Transcripts" %}
+
 
 **3. Customize Your Site**
-- Configure theme settings and appearance
-- Set up visualization options and coding structure
+- Configure theme settings, including visualization options, via `_data/theme.yml` 
+- Adjust nav and page data via CSV config files in the _data folder 
 
 **4. Publish and Share**
-- Publish your collection using GitHub Pages or via other deployment items
+- Publish your collection using GitHub Pages or via other deployment options
 - Share your new site!
 
 The entire process is designed to be flexible, allowing you to focus on the content and analysis rather than web development. Whether you're working with a single interview or a large collection, OHD scales to meet your needs.
