@@ -28,7 +28,7 @@ Metadata is the structured information about each interview in your collection. 
 - **interviewee**: Name of the person interviewed
 - **interviewer**: Name of the person conducting the interview
 - **pdf**: Path to transcript pdf file
-    - PDFs will be automatically generated using PagedJS but if you'd rather link to a prepared PDF file, list it either
+    - PDFs will be automatically generated using PagedJS but if you'd rather link to a prepared PDF file, list it here
     - Can be an external link, or a relative link to a PDF stored in the repository
 - **bio**: Biographical information about the interviewee
     - You can use Markdown to style the bios. 

@@ -6,7 +6,7 @@
 
 {%- endcomment -%}
 <!-- Button trigger modal -->
-<a href="#examplesModal" data-bs-toggle="modal" data-bs-target="#examplesModal">examples</a>
+<a href="#examplesModal" data-bs-toggle="modal" data-bs-target="#examplesModal">{{include.button | default: 'examples'}}</a>
 
 <!-- Modal -->
 <div class="modal fade" id="examplesModal" tabindex="-1" role="dialog" aria-labelledby="examplesModalLabel" aria-hidden="true">
