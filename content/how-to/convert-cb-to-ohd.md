@@ -72,11 +72,19 @@ This guide shows you how to convert an existing CollectionBuilder-CSV repository
 
 1. **Check your metadata format**
    - OHD requires specific metadata fields for transcripts to work properly
-   - Open the `_data/metadata.csv` file from the OHD template to see required fields:
-     - `objectid`: Unique identifier for each item
-     - `title`: Title of the oral history
-     - `format`: Should include "oral history" for transcript items
-     - `transcript-file`: Name of the transcript file (without path)
+   - Open the `_data/demo-ohd-metadata.csv` file from the OHD template to see the fields fields:
+     - Required:
+      - `objectid`: Unique identifier for each item that **MUST match the filename for the transcript csv!**
+      - `title`: This could be just the name of the interviewee, or something like "Oral History Interview with Jane Doe"
+      - `display_template`: Should be set to `transcript` for oral history/interview items
+     - Optional:
+      - **interviewee**: Name of the person interviewed
+      - **interviewer**: Name of the person conducting the interview
+      - **pdf**: Path to transcript pdf file
+         - PDFs will be automatically generated using PagedJS but if you'd rather link to a prepared PDF file, list it here
+         - Can be an external link, or a relative link to a PDF stored in the repository
+      - **bio**: Biographical information about the interviewee
+         - You can use Markdown to style the bios. 
 
 2. **Adapt your existing metadata**
    - Update your existing metadata CSV to include required OHD fields
