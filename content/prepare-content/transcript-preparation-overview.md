@@ -1,7 +1,7 @@
 ---
 section: Prepare Your Content
 nav_order: 3
-title: Transcript Preparation Overview
+title: Transcript Overview
 ---
 
 # Preparing Your Interview Transcripts

@@ -1,7 +1,7 @@
 ---
 section_id: Prepare Your Content
 nav_order: 2
-title: Collection Metadata Overview
+title: Metadata Overview
 ---
 
 # Collection Metadata Overview

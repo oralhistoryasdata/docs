@@ -3,6 +3,8 @@ nav_order: 0
 title: How OHD Works
 ---
 
+# How OHD Works
+
 OHD uses a CSV-driven approach to manage your collection. Rather than creating individual web pages for each interview, you'll manage all your interviews through spreadsheet/CSVs for your metadata and transcripts and then let the system automatically generate the web presentation.
 
 
