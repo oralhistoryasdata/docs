@@ -1,10 +1,10 @@
 ---
-section_id: Tutorials
-nav_order: 8
+section: Tutorials
+nav_order: 2
 title: Transcript Preparation
 ---
 
-# Complete Tutorial: Converting a Transcript to CSV Format
+# Step-by-Step: Converting Your Transcript to an OHD-friendly CSV Format
 
 This beginner-friendly tutorial guides you through converting a standard interview transcript into the structured CSV format used by Oral History as Data. Follow this step-by-step process to prepare your first transcript.
 

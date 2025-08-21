@@ -1,10 +1,10 @@
 ---
-section: Tutorials
-nav_order: 3
-title: Full Github Walkthru
+section_id: Tutorials
+nav_order: 8
+title: Full Github Walkthrough
 ---
 
-# Getting Started with GitHub's Web Interface
+# Walkthrough: Building an OHD Collection Interface via GitHub's Web Interface
 
 This tutorial walks you through setting up and configuring your Oral History as Data project entirely through GitHub's web interface, without installing any software on your computer.
 
