@@ -33,30 +33,18 @@ Before you begin, you should have:
 
 ### 3. Prepare Your CSV Files
 
-You'll need a main CSV and transcript CSV files:
+You'll need two types of CSV files:
 
-**Metadata File** (`metadata.csv` or your custom name):
-- Contains information about each interview using the [CollectionBuilder-CSV format](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/)
-- Each row represents one interview
-- Required fields include: objectid, title, date
-- Compatible with other CollectionBuilder projects
-- Store this file in the root directory
-- See our [examples/demo-ohd-metadata.csv](/examples/demo-ohd-metadata.csv) for a sample, or browse all {% include examples-modal.html %}
+**Metadata File**: One CSV with info about each interview (required fields: objectid, title, display_template). 
 
-**Transcript Files**:
-- For each interview, create a CSV with four columns: speaker, words, tags, timestamp
-- The timestamp field is optional but enables synchronization with audio/video
-- Each row represents one segment of dialogue
-- Store these in the `_data/transcripts/` directory
-- Name each file to match the item's objectid in your metadata 
-- For sample transcript files, check our {% include examples-modal.html %} 
+**Transcript Files**: One CSV per interview with columns: speaker, words, tags, timestamp. Store in `_data/transcripts/` folder. 
 
-### 4. Create Your Coding System
+To see samples of these  files, {% include examples-modal.html button="check out our example CSVs"%}
 
-1. Create or edit `_data/filters.csv`
-2. Define your tag codes and descriptions
-3. Apply these codes in the "tags" column of your transcript files
-4. You can also use [Python scripts](https://journal.code4lib.org/articles/18286) to automatically tag your transcripts.
+### 4. Create Your Coding System (Optional)
+
+1. Create `_data/filters.csv` to define tag codes and descriptions
+2. Apply these codes in the "tags" column of your transcript files for visualization
 
 ### 5. Publish Your Site
 
@@ -69,21 +57,6 @@ You'll need a main CSV and transcript CSV files:
 7. Wait a few minutes for your site to build
 8. Access your site at the URL provided
 
-## Project Structure Overview
-
-
-```
-your-repository/
-├── _data/
-│   ├── your-metadata.csv     # Your collection metadata file
-│   ├── filters.csv           # Your coding vocabulary
-│   ├── theme.yml             # Your site configuration (basic customizations)
-│   └── transcripts/          # Folder for transcript CSVs
-│       └── transcript1.csv   # Sample transcript 1
-│       └── transcript2.csv   # Sample transcript 2
-├── _config.yml               # Project configuration (title, metadata, etc.)
-└── objects/                  # Folder for interview images
-```
 
 ## More Detail
 
@@ -91,6 +64,6 @@ For more detail on the instructions above, explore the rest of this site:
 
 1. **Explore the Prepare section** to learn how to format your transcripts and metadata
 2. **Review the Setup section** for information on setting up and customizing your site
-3. **Visit the Publish section** for details on sharing your site publicly
+3. **See our publishing guide** for details on sharing your site publicly
 
-{% include button.html link="prepare-content/overview" text="Continue to Preparation" color="primary btn-lg mt-2 mb-4" %}
+{% include button.html link="prepare-content/collection-metadata-overview" text="Continue to Preparation" color="primary btn-lg mt-2 mb-4" %}
