@@ -51,20 +51,14 @@ Ensure you have:
    
    ![Build and deployment section with GitHub Actions selected](SCREENSHOT_PLACEHOLDER)
 
-3. **Configure the workflow**
-   - A "GitHub Pages Jekyll" option will appear
-   - Click the "Configure" button
-   - A new page will open with a workflow file
-   
-   ![GitHub Pages Jekyll option with Configure button](SCREENSHOT_PLACEHOLDER)
+{% include bootstrap/alert.md text="**Important:** If you see a 'GitHub Pages Jekyll' option with a 'Configure' button, **DO NOT** click it. The OHD template already includes the necessary workflow file, and clicking 'Configure' would create a duplicate file and cause an error." color="warning" %}
 
-4. **Commit the workflow file**
-   - Review the workflow file (you don't need to understand all the details)
-   - Click the green "Commit changes..." button at the top right
-   - A dialog will appear
-   - Click "Commit changes" again
+3. **Confirm the workflow is ready**
+   - GitHub will automatically detect the existing workflow file in your repository
+   - You should see a message indicating that GitHub Actions is configured
+   - No additional setup is needed since the OHD template already includes the necessary workflow file
    
-   ![Commit changes dialog for workflow file](SCREENSHOT_PLACEHOLDER)
+   ![GitHub Actions automatically detected](SCREENSHOT_PLACEHOLDER)
 
 ### Step 3: Wait for Your Site to Build
 
@@ -130,4 +124,4 @@ Now that your site is published:
    - [Customizing the theme](../z-old/customize/customization)
    - [Adding more interviews](../z-old/prepare-metadata/tutorial-metadata)
 
-{% include bootstrap/alert.md text="GitHub Pages is a free service with some limitations: 1GB storage maximum, 100GB bandwidth per month, and 10 builds per hour." color="info" %}
+{% include bootstrap/alert.md text="GitHub Pages is a free service with some (soft) limitations: 1GB storage maximum and 100GB bandwidth per month." color="info" %}

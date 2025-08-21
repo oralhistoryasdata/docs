@@ -50,12 +50,9 @@ To see samples of these  files, {% include examples-modal.html button="check out
 
 1. Go to Settings → Pages in your GitHub repository
 2. In the Build and Deployment section, Select "GitHub Actions" from the dropdown options (change from "Deploy from a branch")
-3. An option for "GitHub Pages Jekyll" will appear. Click "Configure"
-4. A new page will open with a GitHub Action file opened 
-5. Click the green "Commit Changes" button at the top right
-6. A modal will appear: just click the green "Commit Changes" on the bottom right
-7. Wait a few minutes for your site to build
-8. Access your site at the URL provided
+3. GitHub will automatically detect the existing workflow file in your repository - no additional configuration needed
+4. Wait a few minutes for your site to build
+5. Access your site at the URL provided
 
 
 ## More Detail
