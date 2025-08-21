@@ -51,8 +51,8 @@ organization-logo-nav: https://path-to-your-nav-logo.png
 - Save and commit changes to see them live
 
 ## Learn More & Tutorials
-- [How to Edit _config.yml on GitHub](../tutorials/tutorial-github#edit-_configyml)
-- [Project Setup Guide](setup-your-site)
-- [Metadata Preparation](../prepare-content)
+- [How to Edit _config.yml on GitHub](../tutorials/tutorial-github)
+- [Metadata Preparation](../prepare-content/collection-metadata-overview)
+- [Transcript Preparation](../prepare-content/transcript-preparation-overview)
 
 For advanced options, see the [CollectionBuilder configuration docs](https://collectionbuilder.github.io/cb-docs/docs/theme/).

@@ -1,6 +1,6 @@
 ---
 section: Tutorials
-nav_order: 4
+nav_order: 3
 title: Publishing via GH Pages
 ---
 

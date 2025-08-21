@@ -1,6 +1,6 @@
 ---
-section_id: Tutorials
-nav_order: 8
+section: Tutorials
+nav_order: 4
 title: Full Github Walkthrough
 ---
 
@@ -108,4 +108,4 @@ This tutorial walks you through setting up and configuring your Oral History as 
 
 - Enable GitHub Pages to publish your site - see our [publishing tutorial](tutorial-publishing)
 - Learn about connecting media files in our [metadata overview](../prepare-content/collection-metadata-overview)
-- Explore customization options in our [setup section](../setup//theme-settings.html)
+- Explore customization options in our [theme settings guide](../setup/theme-settings)

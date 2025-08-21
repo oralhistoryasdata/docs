@@ -1,6 +1,6 @@
 ---
-section: Tutorials
-nav_order: 2
+section_id: Tutorials
+nav_order: 8
 title: Transcript Preparation
 ---
 
