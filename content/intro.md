@@ -1,9 +1,13 @@
 ---
 nav_order: 0
-title: How OHD Works
+title: Overview / Quick Start
 ---
 
+# How OHD Works
+
 OHD uses a CSV-driven approach to manage your collection. Rather than creating individual web pages for each interview, you'll manage all your interviews through spreadsheet/CSVs for your metadata and transcripts and then let the system automatically generate the web presentation.
+
+
 
 ## Project Structure Overview
 
@@ -21,42 +25,68 @@ your-repository/
 ```
 
 
-## The Complete Workflow
+## Quick Start
 
-**1. Setup Your Environment**
-- Create a copy of the [OHD GitHub Template Repository](https://github.com/oralhistoryasdata/template) by clicking Use This Template
-- Once copied, configure your project settings via _config.yml
+### Prerequisites
 
-**2. Prepare Your Content**
-- Transform interview transcripts into structured CSV files
-    - Code Your Transcripts (Optional)
-        - Create a controlled vocabulary for coding
-        - Apply thematic codes to your transcript CSV via a `tags` column
-- Create your metadata spreadsheet to describe the interviews (based on [CollectionBuilder-CSV](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/))
+Before you begin, you should have:
 
-To see how these should look --> {% include examples-modal.html button="See Our Example Spreadsheet and Transcripts" %}
+1. **GitHub Account**: A free account at [github.com](https://github.com/)
+2. **Interview Content**: At least one interview transcript ready to work with
+3. **Basic Familiarity**: Some understanding of spreadsheets and CSV files
 
 
-**3. Customize Your Site**
-- Configure theme settings, including visualization options, via `_data/theme.yml` 
-- Adjust nav and page data via CSV config files in the _data folder 
+### 1. Set Up Your Repository
 
-**4. Publish and Share**
-- Publish your collection using GitHub Pages or via other deployment options
-- Share your new site!
+1. Go to the [Oral History as Data Template repository](https://github.com/oralhistoryasdata/template)
+2. Click the green "Use this template" button
+3. Name your new repository and click "Create repository from template"
+4. Your repository is now ready to customize
 
-The entire process is designed to be flexible, allowing you to focus on the content and analysis rather than web development. Whether you're working with a single interview or a large collection, OHD scales to meet your needs.
+### 2. Configure Your Project
 
-At the end of the process, you’ll have a professional-quality website that publishes your transcripts with powerful search, browse, and visualization features to promote your research and engage the public.
+1. Edit the `_config.yml` file to update:
+   - Project title and description
+   - Metadata CSV filename (defaults to `demo-ohd-metadata.csv`)
+   - Other project details
 
-### About Oral History as Data
+### 3. Prepare Your CSV Files
 
-Oral History as Data was first built in 2018, coming out of work at the University of Idaho Library's [Center for Digital Inquiry and Learning (CD?L)](https://cdil.lib.uidaho.edu/). 
-The framework served as the foundation for several digital humanities projects, including [Voices of Gay Rodeo](https://www.voicesofgayrodeo.com/), [Idaho Queered](https://www.lib.uidaho.edu/queered/), and [CTRL+Shift](https://ctrl-shift.org/).
+You'll need two types of CSV files:
 
-Devin Becker (@dcnb) is the primary developer for this project.
+- **Metadata File**: One CSV with info about each interview (required fields: objectid, title, display_template). 
+- **Transcript Files**: One CSV per interview with columns: speaker, words, tags, timestamp. Store in `_data/transcripts/` folder. 
 
-The project is closely related to the [CollectionBuilder](https://collectionbuilder.github.io/) project, and the current iteration was built on top of a CollectionBuilder-CSV template. 
+To see samples of these  files, {% include examples-modal.html button="check out our example CSVs"%}
+
+### 4. Create Your Coding System (Optional)
+
+1. Create `_data/filters.csv` to define tag codes and descriptions
+2. Apply these codes in the "tags" column of your transcript files for visualization
+
+### 5. Upload your CSV files
+
+1. Upload your metadata and filters CSVs to the `/_data/` folder
+2. Uplaod your transcript CSVs to the `/_data/transcripts/`
+
+### 5. Publish Your Site
+
+1. Go to Settings → Pages in your GitHub repository
+2. In the Build and Deployment section, Select "GitHub Actions" from the dropdown options (change from "Deploy from a branch")
+3. GitHub will automatically detect the existing workflow file in your repository - no additional configuration needed
+4. Wait a few minutes for your site to build
+5. Access your site at the URL provided
+
+## More Detail
+
+For more detail on the instructions above, explore the rest of this site:
+
+1. **Explore the Prepare section** to learn how to format your transcripts and metadata
+2. **Review the Setup section** for information on setting up and customizing your site
+3. **See our publishing guide** for details on sharing your site publicly
+
+{% include button.html link="/content/prepare-content/collection-metadata-overview" text="Continue to Preparation" color="primary btn-lg mt-2 mb-4" %}
+
 
 
 

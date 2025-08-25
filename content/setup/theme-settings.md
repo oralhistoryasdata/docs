@@ -1,7 +1,7 @@
 ---
 section: Setup Your Site
 nav_order: 3
-title: Customizing (_data/theme.yml Settings)
+title: Customize (_data/theme.yml)
 ---
 
 # Customizing Your Site with `_data/theme.yml`
@@ -54,9 +54,11 @@ base-layout: OHD
 ```
 Choose between `OHD` or `CB` (CollectionBuilder) to control the overall site appearance and styling.
 
+**Warning --> Home page needs further adjustment for CollectionBuilder look:** If you'd like to use a full CB look, you'll need to also change the layout of the `/pages/index.md` needs to be changed to `home-infographic` **
+
 ## Learn More & Tutorials
-- [How to Customize Your Site](../tutorials/tutorial-github#customize-your-site)
-- [OHD Customization Options](../customize/overview)
+- [How to Customize the Visualization](visualizations)
+- [Page and Scaffold Customizations via CB](customization-cb)
 - [theme.yml Reference (CollectionBuilder)](https://collectionbuilder.github.io/cb-docs/docs/theme/)
 
 For more advanced options, see the [CollectionBuilder documentation](https://collectionbuilder.github.io/cb-docs/docs/customization/).

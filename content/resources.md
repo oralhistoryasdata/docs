@@ -3,6 +3,8 @@ nav_order: 11
 title: Resources for Further Learning
 ---
 
+# Resources for Further Learning
+
 ## Technologies
 
 #### Git & GitHub

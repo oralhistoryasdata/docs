@@ -1,7 +1,7 @@
 ---
 section: Tutorials
-nav_order: 4
-title: Tutorial - Publishing via GH Pages
+nav_order: 3
+title: Publishing via GH Pages
 ---
 
 # Tutorial: Publishing Your Site with GitHub Pages
@@ -43,28 +43,18 @@ Ensure you have:
    - In the left sidebar, scroll down to find "Pages"
    - Click on "Pages" under the "Code and automation" section
    
-   ![GitHub settings sidebar with Pages option highlighted](SCREENSHOT_PLACEHOLDER)
 
 2. **Select build method**
    - Under "Build and Deployment", look for "Source"
    - Select "GitHub Actions" from the dropdown menu
    
-   ![Build and deployment section with GitHub Actions selected](SCREENSHOT_PLACEHOLDER)
+{% include bootstrap/alert.md text="**Important:** If you see a 'GitHub Pages Jekyll' option with a 'Configure' button, **DO NOT** click it. The OHD template already includes the necessary workflow file, and clicking 'Configure' would create a duplicate file and cause an error." color="warning" %}
 
-3. **Configure the workflow**
-   - A "GitHub Pages Jekyll" option will appear
-   - Click the "Configure" button
-   - A new page will open with a workflow file
+3. **Confirm the workflow is ready**
+   - GitHub will automatically detect the existing workflow file in your repository
+   - You should see a message indicating that GitHub Actions is configured
+   - No additional setup is needed since the OHD template already includes the necessary workflow file
    
-   ![GitHub Pages Jekyll option with Configure button](SCREENSHOT_PLACEHOLDER)
-
-4. **Commit the workflow file**
-   - Review the workflow file (you don't need to understand all the details)
-   - Click the green "Commit changes..." button at the top right
-   - A dialog will appear
-   - Click "Commit changes" again
-   
-   ![Commit changes dialog for workflow file](SCREENSHOT_PLACEHOLDER)
 
 ### Step 3: Wait for Your Site to Build
 
@@ -73,14 +63,10 @@ Ensure you have:
    - This typically takes 2-5 minutes for the first build
    - You can see the progress by clicking on the "Actions" tab
    
-   ![Actions tab showing build in progress](SCREENSHOT_PLACEHOLDER)
-
 2. **Check deployment status**
    - A green checkmark will appear when the build succeeds
    - Your site will be deployed to: `https://[your-username].github.io/[repository-name]/`
    
-   ![Successful deployment with green checkmark](SCREENSHOT_PLACEHOLDER)
-
 ### Step 4: Access and Share Your Site
 
 1. **Visit your published site**
@@ -88,8 +74,6 @@ Ensure you have:
    - For example: `https://jsmith.github.io/my-oral-history/`
    - If you see a 404 error, wait a few more minutes and try again
    
-   ![Browser showing published OHD site homepage](SCREENSHOT_PLACEHOLDER)
-
 2. **Add the URL to your repository info**
    - Return to your repository's main page
    - Look for the "About" section on the right sidebar
@@ -97,8 +81,6 @@ Ensure you have:
    - Paste your site URL in the "Website" field
    - Click "Save"
    
-   ![Repository About section with Website field completed](SCREENSHOT_PLACEHOLDER)
-
 ## Making Updates to Your Published Site
 
 Whenever you make changes to your repository:
@@ -130,4 +112,4 @@ Now that your site is published:
    - [Customizing the theme](../z-old/customize/customization)
    - [Adding more interviews](../z-old/prepare-metadata/tutorial-metadata)
 
-{% include bootstrap/alert.md text="GitHub Pages is a free service with some limitations: 1GB storage maximum, 100GB bandwidth per month, and 10 builds per hour." color="info" %}
+{% include bootstrap/alert.md text="GitHub Pages is a free service with some (soft) limitations: 1GB storage maximum and 100GB bandwidth per month." color="info" %}

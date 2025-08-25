@@ -1,12 +1,16 @@
 ---
-section: Publish Your Site
-nav_order: 2
-title: Publishing via GitHub Pages
+nav_order: 5
+title: Publishing Your Site
 ---
 
-# Publishing Your Site on GitHub Pages
+# Publishing Your Site
 
-After setting up your repository and configuring your project, you need to activate GitHub Pages to make your site publicly accessible on the web.
+After setting up your repository and configuring your project, you can publish your site to make it publicly accessible on the web.
+
+**Quick Links:**
+- [GitHub Pages Setup](#github-actions) (recommended)
+- [Other Publishing Options](#other-publishing-options) 
+- [Step-by-step tutorial](../tutorials/tutorial-publishing)
 
 ## About GitHub Pages
 
@@ -23,7 +27,7 @@ GitHub Pages is a free hosting service that publishes websites directly from Git
 
 GitHub Actions allows you to use GitHub Pages to host an OHD site on GitHub that require custom plugins. This is important since the default GitHub Pages process doesn't support plugins needed by CB-CSV.
 
-{% include button.html text="Check out our Step by Step Tutorial to Learn More" color="primary btn-lg" link="/content/tutorials/tutorial-publishing"%}
+For detailed step-by-step instructions, see our [publishing tutorial](../tutorials/tutorial-publishing).
 
 
 - **Setup**: Configure through repository Settings > Pages
@@ -63,3 +67,26 @@ GitHub Pages is intended for documentation and small project sites. Keep these g
 {% endcapture %}
 
 {% include bootstrap/alert.md text=media_note color="secondary" %}
+
+## Other Publishing Options
+
+OHD sites can be deployed in several ways beyond GitHub Pages, each with different benefits depending on your needs.
+
+### Self-Hosting
+After building your site with Jekyll, copy the "_site" folder contents to any web server. 
+- **Process**: Run `JEKYLL_ENV=production bundle exec jekyll build`
+- **Benefits**: Complete control over hosting environment
+- **Documentation**: [Jekyll Build Guide](https://collectionbuilder.github.io/cb-docs/docs/deploy/build/)
+
+### Third-Party Services
+- **Render**: Free static site service that connects to GitHub and builds with Jekyll
+- **GitLab Pages**: Similar to GitHub Pages but with GitLab repositories  
+- **Cloudflare Pages**: Free static site hosting with global CDN
+- **Documentation**: [Third Party Services](https://collectionbuilder.github.io/cb-docs/docs/deploy/thirdparty/)
+
+### Choosing the Right Option
+Consider these factors:
+1. **Technical requirements**: Does your site use plugins? (GitHub Actions, third-party, or self-hosting required)
+2. **Collection size**: Approaching GitHub's 1GB limit? (Consider hosting objects separately)
+3. **Custom domain**: Most services support custom URLs
+4. **Long-term maintenance**: Self-hosting requires more maintenance

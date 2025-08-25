@@ -1,7 +1,7 @@
 ---
-section: How-To Guides
-nav_order: 4
-title: How to Convert CollectionBuilder-CSV to Oral History as Data
+section: Tutorials
+nav_order: 5
+title: Convert a CollectionBuilder-CSV Repo to Oral History as Data
 ---
 
 # How to Convert CollectionBuilder-CSV to Oral History as Data
@@ -132,4 +132,4 @@ After converting your repository:
 2. Add more transcripts and metadata as your collection grows
 3. Explore the visualization features by clicking on different transcripts
 
-Remember that you can always check the [OHD documentation](https://oralhistoryasdata.github.io/docs/) for more details on customization options and features.
+For more details on customization options and features, see our [theme settings guide](../setup/theme-settings) and [visualization guide](../setup/visualizations).

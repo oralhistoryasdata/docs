@@ -11,15 +11,15 @@ The techniques covered in the documentation have been applied in several success
 ### CTRL+Shift
 [CTRL+Shift](https://ctrl-shift.org/) was one of the first OHD implementations, focusing on interviews with poets about their use of computers in their writing processes. Though using an earlier codebase, it demonstrates the core visualization capabilities.
 
-{% include bootstrap/figure.md img="examples/ctrl-shift.jpg" caption="CTRL+Shift project" alt="Screenshot of the CTRL+Shift project website" class="w-75" %}
+{% include figure.html img="https://oralhistoryasdata.github.io/assets/img/ctrl.png" caption="CTRL+Shift project" alt="Screenshot of the CTRL+Shift project website"  width="50%"  %}
 
 ### Voices of Gay Rodeo
 [Voices of Gay Rodeo](https://www.voicesofgayrodeo.com/) represents a highly customized implementation of Oral History as Data with unique styling, enhanced navigation, and integration with archival materials.
 
-{% include bootstrap/figure.md img="examples/voices-gay-rodeo.jpg" caption="Voices of Gay Rodeo website" alt="Screenshot of the Voices of Gay Rodeo website" class="w-75" %}
+{% include figure.html img="https://oralhistoryasdata.github.io/assets/img/voices.png" caption="Voices of Gay Rodeo website" alt="Screenshot of the Voices of Gay Rodeo website"  width="50%"  %}
 
 ### Taylor Wilderness Research Station Oral Histories
 [Taylor Wilderness Research Station Oral Histories](https://www.lib.uidaho.edu/digital/taylor-archive/oral_histories/) demonstrates how OHD can be embedded within a larger digital collection, showing its flexibility as a component in more extensive digital humanities projects.
 
-{% include bootstrap/figure.md img="examples/taylor-wilderness.jpg" caption="Taylor Wilderness Research Station Oral Histories" alt="Screenshot of the Taylor Wilderness Research Station Oral Histories page" class="w-75" %}
+{% include figure.html img="https://oralhistoryasdata.github.io/assets/img/taylor.png"  caption="Taylor Wilderness Research Station Oral Histories" alt="Screenshot of the Taylor Wilderness Research Station Oral Histories page" width="50%" %}
 

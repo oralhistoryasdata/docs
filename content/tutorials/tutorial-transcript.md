@@ -1,10 +1,10 @@
 ---
 section_id: Tutorials
 nav_order: 8
-title: Tutorial - Transcript Preparation
+title: Transcript Preparation
 ---
 
-# Complete Tutorial: Converting a Transcript to CSV Format
+# Step-by-Step: Converting Your Transcript to an OHD-friendly CSV Format
 
 This beginner-friendly tutorial guides you through converting a standard interview transcript into the structured CSV format used by Oral History as Data. Follow this step-by-step process to prepare your first transcript.
 
@@ -20,23 +20,15 @@ By the end of this tutorial, you'll have:
 Gather these materials:
 - A raw interview transcript (Word document, text file, etc.)
 - Access to Google Sheets (recommended) or another spreadsheet program
-- 30-45 minutes of time (less for subsequent transcripts)
+- 15-20 minutes of time (less for subsequent transcripts)
 
 ## Tutorial Steps
 
 ### Step 1: Create Your Spreadsheet
 
-1. **Open Google Sheets** in your web browser
-   - Go to [sheets.google.com](https://sheets.google.com)
-   - Click "Blank" to create a new spreadsheet
-   
-2. **Set up your column headers**
-   - In cell A1, type: **speaker**
-   - In cell B1, type: **words**
-   - In cell C1, type: **tags**
-   - In cell D1, type: **timestamp**
+[Go to our template spreadsheet](https://docs.google.com/spreadsheets/d/1uWrPMItiP-XOSkm7gyC8b9bl3tpSQRj9zLzS5y8QnW0/copy) and click "Make a copy".
 
-   **Tip:** Alternatively, use our [template spreadsheet](https://docs.google.com/spreadsheets/d/1uWrPMItiP-XOSkm7gyC8b9bl3tpSQRj9zLzS5y8QnW0/copy) and click "Make a copy".
+   
 
 ### Step 2: Clean Your Transcript Text
 
@@ -87,12 +79,29 @@ Gather these materials:
    - Format as MM:SS (e.g., 01:45) or HH:MM:SS (e.g., 1:12:30)
    - Match to the corresponding points in your recording
 
-2. **Add topic tags** (for visualization)
-   - In column C, add relevant topic keywords
+2. **Add topic tags** (for visualization and analysis)
+   
+   **Create your tag vocabulary first:**
+   - Before tagging segments, create a `filters.csv` file in your `_data` folder
+   - Include two columns: `tag` and `description`
+   - Review all your transcripts to identify 10-20 common themes
+   
+   Example filters.csv:
+   ```
+   tag,description
+   education,Educational experiences and schooling
+   family,Family relationships and history
+   career,Work and professional life
+   childhood,Early life experiences
+   community,Community involvement and local history
+   ```
+   
+   **Apply tags to transcript segments:**
+   - In column C, add relevant topic keywords from your vocabulary
    - Use semicolons between multiple tags (e.g., "education; family; career")
-   - Be consistent with terminology across segments
-
-[See our How To for more information on creating Tags!](../how-to/create-transcript-tags.html)
+   - Be selective - focus on the most meaningful content
+   - Use exact tag terms from your filters.csv file
+   - Keep formatting consistent: lowercase, no special characters
 
 ### Step 5: Finalize and Save
 

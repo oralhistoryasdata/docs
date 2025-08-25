@@ -1,7 +1,7 @@
 ---
 section: Tutorials
 nav_order: 2
-title: Tutorial - Metadata Preparation
+title: Metadata Creation
 ---
 
 # Step-by-Step: Creating Your Collection Metadata
@@ -26,20 +26,7 @@ Gather these materials:
 
 ### Step 1: Get Started with a Template
 
-1. **Download the template spreadsheet**
-   - Click to download the [demo-ohd-metadata.csv](/examples/demo-ohd-metadata.csv) file, or browse all {% include examples-modal.html %}
-   - Save it to your computer
-   
-2. **Open in Google Sheets**
-   - Go to [sheets.google.com](https://sheets.google.com)
-   - Click File → Import → Upload
-   - Select the downloaded template file
-   - Choose "Import data" when prompted
-   
-3. **Examine the structure**
-   - Review the column headers in the first row
-   - Note the example entries in subsequent rows
-   - These show the format for each field
+[Go to our blank metadata spreadsheet](https://docs.google.com/spreadsheets/d/1PAx8C3EMsCAHwtsJolMnYZK3ZXBc1EGy-U4tRscC2kE/copy) and click "Make a copy".
 
 
 ### Step 2: Understand Required Fields
@@ -58,7 +45,9 @@ Every interview in your collection needs these three essential fields:
 
 3. **display_template**
    - Controls how the item displays
-   - Always set to "transcript" for interviews
+   - Always set to `transcript` for interviews
+   - can be set to other values (image, pdf, audio, video, etc.) for other items in collection or in compound objects
+   - parent records for compound objects should use `transcript` for display_template
    
 
 ### Step 3: Add Your Interviews
@@ -67,13 +56,11 @@ Every interview in your collection needs these three essential fields:
    - Delete the example rows once you understand the format
    - Add a new row for each interview in your collection
    
-   ![Empty spreadsheet with just the header row](SCREENSHOT_PLACEHOLDER)
 
 2. **Fill in the required fields**
    - Add the objectid, title, and display_template for each interview
    - Make objectid values simple and URL-friendly
    
-   ![Spreadsheet with basic required information added](SCREENSHOT_PLACEHOLDER)
 
 3. **Add recommended fields**
    - Complete additional fields for better display and searchability:
@@ -84,7 +71,7 @@ Every interview in your collection needs these three essential fields:
      - **subject**: Main topics (separated by semicolons)
      - **location**: Where the interview took place
    
-To get a better idea of how this look, see our {% include examples-modal.html %} 
+To get a better idea of how this looks, see our example metadata file --> <a href="/examples/demo-ohd-metadata.csv" class="text-decoration-none" download="">demo-ohd-metadata.csv</a>.
 
 ### Step 4: Connect Media (Optional)
 
@@ -114,7 +101,8 @@ If you have audio or video recordings:
    
 3. **Upload to your repository**
    - Place the CSV file in the `_data/` folder
-   - Update `_config.yml` to reference this filename if needed
+   - Update `_config.yml` to reference this filename in the `metadata` key 
+      - (Do not include ".csv"; just the filename!)
 
 ### Step 6: Adding Compound Objects (Advanced)
 
