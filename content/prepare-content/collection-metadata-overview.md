@@ -17,6 +17,9 @@ Metadata is the structured information about each interview in your collection. 
 - OHD specific fields: `interviewer`, `interviewee`, `date`, `description`, `subject`, `location`, `object_location` (for media links)
 - Each row = one interview
 
+## Controlling Field Display
+
+Fields like `interviewer`, `interviewee`, `description`, `date`, and `location` appear at the top of interview pages. To control which fields display, edit the `transcript-fields` list in your `_data/theme.yml` file. All fields are listed by default, but only fields with data in your metadata will actually appear—use `theme.yml` to hide fields you don't want to show.
 
 #### Required Fields
 - **objectid**: A unique identifier for each interview (used for filenames and URLs)
@@ -25,6 +28,7 @@ Metadata is the structured information about each interview in your collection. 
 - **display_template**: The template for displaying the item described -- it should be `transcript` for OHD features to work
 
 #### Oral History as Data Specific Fields
+
 - **interviewee**: Name of the person interviewed
 - **interviewer**: Name of the person conducting the interview
 - **pdf**: Path to transcript pdf file
@@ -33,6 +37,7 @@ Metadata is the structured information about each interview in your collection. 
     - This can be an external link (`https://example.com/doc.pdf`), or a relative link to a PDF stored in the repository (`/assets/pdfs/doc.pdf`)
 - **bio**: Biographical information about the interviewee
     - You can use Markdown to style the bios. 
+    - The biographies will pop out in a modal
 
 #### Standard CollectionBuilder Fields
 - **description**: A brief summary of the interview content
@@ -105,4 +110,4 @@ Oral History as Data supports compound objects, allowing you to associate additi
 ## More Help
 - [Step-by-step metadata tutorial](../tutorials/tutorial-metadata)
 
-For a sample file, see the {% include examples-modal.html %}.
+For a sample file, look for the `mcmichael` rows at the end of our example metadata file --> <a href="/examples/demo-ohd-metadata.csv" class="text-decoration-none" download="">demo-ohd-metadata.csv</a>.

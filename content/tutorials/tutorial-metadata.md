@@ -71,7 +71,7 @@ Every interview in your collection needs these three essential fields:
      - **subject**: Main topics (separated by semicolons)
      - **location**: Where the interview took place
    
-To get a better idea of how this look, see our {% include examples-modal.html %} 
+To get a better idea of how this looks, see our example metadata file --> <a href="/examples/demo-ohd-metadata.csv" class="text-decoration-none" download="">demo-ohd-metadata.csv</a>.
 
 ### Step 4: Connect Media (Optional)
 
@@ -101,7 +101,8 @@ If you have audio or video recordings:
    
 3. **Upload to your repository**
    - Place the CSV file in the `_data/` folder
-   - Update `_config.yml` to reference this filename if needed
+   - Update `_config.yml` to reference this filename in the `metadata` key 
+      - (Do not include ".csv"; just the filename!)
 
 ### Step 6: Adding Compound Objects (Advanced)
 
