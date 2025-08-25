@@ -105,7 +105,7 @@ This naming convention is crucial because it connects your transcript files to t
 
 ## Sample Files
 
-For sample transcript files that demonstrate the proper format, see our {% include examples-modal.html %}.
+For sample transcript files that demonstrate the proper format, see our {% include examples-modal.html button="example trancripts."%}
 
 ## More Help
 

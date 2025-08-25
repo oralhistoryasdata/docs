@@ -43,14 +43,11 @@ Ensure you have:
    - In the left sidebar, scroll down to find "Pages"
    - Click on "Pages" under the "Code and automation" section
    
-   ![GitHub settings sidebar with Pages option highlighted](SCREENSHOT_PLACEHOLDER)
 
 2. **Select build method**
    - Under "Build and Deployment", look for "Source"
    - Select "GitHub Actions" from the dropdown menu
    
-   ![Build and deployment section with GitHub Actions selected](SCREENSHOT_PLACEHOLDER)
-
 {% include bootstrap/alert.md text="**Important:** If you see a 'GitHub Pages Jekyll' option with a 'Configure' button, **DO NOT** click it. The OHD template already includes the necessary workflow file, and clicking 'Configure' would create a duplicate file and cause an error." color="warning" %}
 
 3. **Confirm the workflow is ready**
@@ -58,7 +55,6 @@ Ensure you have:
    - You should see a message indicating that GitHub Actions is configured
    - No additional setup is needed since the OHD template already includes the necessary workflow file
    
-   ![GitHub Actions automatically detected](SCREENSHOT_PLACEHOLDER)
 
 ### Step 3: Wait for Your Site to Build
 
@@ -67,14 +63,10 @@ Ensure you have:
    - This typically takes 2-5 minutes for the first build
    - You can see the progress by clicking on the "Actions" tab
    
-   ![Actions tab showing build in progress](SCREENSHOT_PLACEHOLDER)
-
 2. **Check deployment status**
    - A green checkmark will appear when the build succeeds
    - Your site will be deployed to: `https://[your-username].github.io/[repository-name]/`
    
-   ![Successful deployment with green checkmark](SCREENSHOT_PLACEHOLDER)
-
 ### Step 4: Access and Share Your Site
 
 1. **Visit your published site**
@@ -82,8 +74,6 @@ Ensure you have:
    - For example: `https://jsmith.github.io/my-oral-history/`
    - If you see a 404 error, wait a few more minutes and try again
    
-   ![Browser showing published OHD site homepage](SCREENSHOT_PLACEHOLDER)
-
 2. **Add the URL to your repository info**
    - Return to your repository's main page
    - Look for the "About" section on the right sidebar
@@ -91,8 +81,6 @@ Ensure you have:
    - Paste your site URL in the "Website" field
    - Click "Save"
    
-   ![Repository About section with Website field completed](SCREENSHOT_PLACEHOLDER)
-
 ## Making Updates to Your Published Site
 
 Whenever you make changes to your repository:

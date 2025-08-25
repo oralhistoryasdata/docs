@@ -1,26 +1,11 @@
 ---
-title: Oral History as Data
+title: Oral History as Data Docs
 layout: page
 ---
 
-# A User Guide to Digital Oral History
-
-**Oral History as Data** is a powerful tool for researchers, archivists, and oral history practitioners to prepare, publish, and analyze interview transcripts. This platform streamlines the process of working with qualitative interviews, enabling you to:
-
-- Manage interview metadata through a simple spreadsheet
-- Prepare and clean transcripts for web publication
-- Apply thematic coding to your interview content
-- Create beautiful, accessible web presentations of your oral histories
-- Connect transcripts with audio/video recordings
-- Analyze interviews through interactive visualizations
+**Oral History as Data (OHD)** is a powerful tool for researchers, archivists, and oral history practitioners to prepare, publish, and analyze interview transcripts. 
 
 {% include figure.html img="ohd_homepage.png" alt="Homepage Screenshot for Oral History as Data" caption="Oral History as Data visualization interface" width="75%" link="https://oralhistoryasdata.github.io/" title="Oral History as Data Demo Page" %}
-
-## Getting Started
-
-Whether you're working with a single interview or managing a large collection, this guide will walk you through the complete workflow from transcript preparation to final publication. The documentation is organized into logical sections following the research process.
-
-{% include toc.html %}
 
 ## Who Should Use This Tool?
 
@@ -37,5 +22,21 @@ Whether you're working with a single interview or managing a large collection, t
 - **Responsive design**: Works on mobile and desktop devices
 - **Media integration**: Connect transcripts with audio/video sources
 - **Open source**: Free to use and adapt to your needs
+
+### About Oral History as Data
+
+Oral History as Data was first built in 2018, coming out of work at the University of Idaho Library's [Center for Digital Inquiry and Learning (CD?L)](https://cdil.lib.uidaho.edu/). 
+The framework served as the foundation for several digital humanities projects, including [Voices of Gay Rodeo](https://www.voicesofgayrodeo.com/), [Idaho Queered](https://www.lib.uidaho.edu/queered/), and [CTRL+Shift](https://ctrl-shift.org/).
+
+Devin Becker (@dcnb) is the primary developer for this project.
+
+The project is closely related to the [CollectionBuilder](https://collectionbuilder.github.io/) project, and the current iteration was built on top of a CollectionBuilder-CSV template.
+
+## Getting Started
+
+Whether you're working with a single interview or managing a large collection, this guide will walk you through the complete workflow from transcript preparation to final publication. The documentation is organized into logical sections following the research process.
+
+{% include toc.html %}
+
 
 {% include template/credits.html %}
