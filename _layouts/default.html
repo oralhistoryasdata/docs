@@ -8,42 +8,109 @@
 
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
 
-    <header class="py-3">
-      <div class="container-xxl d-flex flex-wrap">
-        <a id="header-title" href="{{ '/' | relative_url }}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto h4">
-          {% if site.title-icon %}<span class="me-2">{% include icon.html icon=site.title-icon %}</span>{% endif %}
-          {{ site.title }}
-        </a>
-         <a class="mb-3 mb-lg-0" href="https://github.com/oralhistoryasdata/template/"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-</svg> Template</a>
-        </form>
+    <header class="site-header border-bottom">
+      <div class="container-xxl">
+        <div class="row align-items-center py-2 py-md-3">
+          <!-- Mobile menu toggle (visible on small screens) -->
+          <div class="col-auto d-lg-none">
+            <button class="btn btn-link p-2" id="sidebarToggle" title="Toggle sidebar navigation" aria-controls="sidebar-wrapper" aria-label="Toggle navigation menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Site title -->
+          <div class="col-auto">
+            <a id="header-title" href="{{ '/' | relative_url }}" class="d-flex align-items-center text-decoration-none">
+              {% if site.title-icon %}<span class="me-2 title-icon">{% include icon.html icon=site.title-icon %}</span>{% endif %}
+              <span class="h5 mb-0 fw-bold">{{ site.title }}</span>
+            </a>
+          </div>
+
+          <!-- Search bar (desktop) -->
+          <div class="col d-none d-md-block">
+            <div class="header-search-container mx-3">
+              <div class="jtd-search-input-wrap">
+                <input type="text"
+                       id="jtd-search-input"
+                       class="jtd-search-input"
+                       tabindex="0"
+                       placeholder="Search docs..."
+                       aria-label="Search {{ site.title }}"
+                       autocomplete="off">
+                <label for="jtd-search-input" class="jtd-search-label">
+                  <svg viewBox="0 0 24 24" class="jtd-search-icon" aria-hidden="true">
+                    <path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                  </svg>
+                </label>
+              </div>
+              <div id="jtd-search-results" class="jtd-search-results"></div>
+            </div>
+          </div>
+
+          <!-- Use Template CTA button -->
+          <div class="col-auto">
+            <a href="https://github.com/oralhistoryasdata/template/" class="btn btn-primary btn-sm d-flex align-items-center template-cta" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>
+              <span class="d-none d-sm-inline">Use Template</span>
+              <span class="d-inline d-sm-none">Template</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile search (below header on small screens) -->
+        <div class="row d-md-none pb-2">
+          <div class="col">
+            <div class="header-search-container">
+              <div class="jtd-search-input-wrap">
+                <input type="text"
+                       id="jtd-search-input-mobile"
+                       class="jtd-search-input"
+                       tabindex="0"
+                       placeholder="Search docs..."
+                       aria-label="Search {{ site.title }}"
+                       autocomplete="off">
+                <label for="jtd-search-input-mobile" class="jtd-search-label">
+                  <svg viewBox="0 0 24 24" class="jtd-search-icon" aria-hidden="true">
+                    <path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                  </svg>
+                </label>
+              </div>
+              <div id="jtd-search-results-mobile" class="jtd-search-results"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
-    <div id="breadcrumb-header" class="py-2 border-bottom">
-      <div class="container-xxl d-flex align-items-center">
-
-        <button class="btn" id="sidebarToggle" title="Toggle sidebar navigation" aria-controls="sidebar-wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-        </button>
-        
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb ms-3 mb-0">
-            <li class="breadcrumb-item">
-              <a href="{{ '/' | relative_url }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
-</svg></a>
-            </li>
-            {% if page.section or page.section_id %}
-            <li class="breadcrumb-item">{{ page.section | truncatewords: 1 | default: page.section_id }}</li>
-            {% endif %}
-            <li class="breadcrumb-item" aria-current="page">{{ page.title }}</li>
-          </ol>
-        </nav>
-
+    <!-- Compact breadcrumb bar with sidebar toggle for desktop -->
+    <div class="breadcrumb-bar bg-light border-bottom d-none d-lg-block">
+      <div class="container-xxl py-2">
+        <div class="d-flex align-items-center">
+          <button class="btn btn-link p-1 me-2" id="sidebarToggleDesktop" title="Toggle sidebar navigation" aria-controls="sidebar-wrapper" aria-label="Toggle sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 small">
+              <li class="breadcrumb-item">
+                <a href="{{ '/' | relative_url }}" class="text-decoration-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                  </svg>
+                </a>
+              </li>
+              {% if page.section or page.section_id %}
+              <li class="breadcrumb-item">{{ page.section | truncatewords: 1 | default: page.section_id }}</li>
+              {% endif %}
+              <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+            </ol>
+          </nav>
+        </div>
       </div>
     </div>
     
@@ -179,9 +246,7 @@
             }
           }
         </script>
-        <!-- Just the Docs style search -->
-        {% include jtd-search.html %}
-        
+
           <!-- Page content-->
           <main id="maincontent" role="main" aria-label="Content">
             <div class="px-1 py-4">

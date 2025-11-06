@@ -1,13 +1,40 @@
 <!-- Bootstrap JS bundle -->
 <script src="{{ '/assets/lib/bootstrap.bundle.min.js' | relative_url }}"></script>
 <script>
-    /* mobile sidebar toggle */
+    /* sidebar toggle for both mobile and desktop buttons */
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
+    const sidebarToggleDesktop = document.body.querySelector('#sidebarToggleDesktop');
     const sidebarNav = document.body.querySelector('#sidebar-wrapper');
-    sidebarToggle.addEventListener('click', event => {
-        event.preventDefault();
-        sidebarNav.classList.toggle('sidebar-show');
-    });
+
+    if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', event => {
+            event.preventDefault();
+            sidebarNav.classList.toggle('sidebar-show');
+        });
+    }
+
+    if (sidebarToggleDesktop) {
+        sidebarToggleDesktop.addEventListener('click', event => {
+            event.preventDefault();
+            sidebarNav.classList.toggle('sidebar-show');
+        });
+    }
+
+    /* Sync search inputs between mobile and desktop */
+    const searchInput = document.getElementById('jtd-search-input');
+    const searchInputMobile = document.getElementById('jtd-search-input-mobile');
+    const searchResults = document.getElementById('jtd-search-results');
+    const searchResultsMobile = document.getElementById('jtd-search-results-mobile');
+
+    if (searchInput && searchInputMobile) {
+        // Sync values between desktop and mobile search
+        searchInput.addEventListener('input', () => {
+            searchInputMobile.value = searchInput.value;
+        });
+        searchInputMobile.addEventListener('input', () => {
+            searchInput.value = searchInputMobile.value;
+        });
+    }
 </script>
 <!-- load other js -->
 {% if page.foot %}{% include {{ page.foot }} %}{% endif %}
