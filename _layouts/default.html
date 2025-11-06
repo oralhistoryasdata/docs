@@ -86,34 +86,6 @@
       </div>
     </header>
 
-    <!-- Compact breadcrumb bar with sidebar toggle for desktop -->
-    <div class="breadcrumb-bar bg-light border-bottom d-none d-lg-block">
-      <div class="container-xxl py-2">
-        <div class="d-flex align-items-center">
-          <button class="btn btn-link p-1 me-2" id="sidebarToggleDesktop" title="Toggle sidebar navigation" aria-controls="sidebar-wrapper" aria-label="Toggle sidebar">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-          </button>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0 small">
-              <li class="breadcrumb-item">
-                <a href="{{ '/' | relative_url }}" class="text-decoration-none">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
-                  </svg>
-                </a>
-              </li>
-              {% if page.section or page.section_id %}
-              <li class="breadcrumb-item">{{ page.section | truncatewords: 1 | default: page.section_id }}</li>
-              {% endif %}
-              <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div>
-    
     <div class="container-xxl" id="wrapper">
       <!-- Sidebar-->
       <div class="py-4 pe-3 bg-white" id="sidebar-wrapper">
@@ -250,6 +222,25 @@
           <!-- Page content-->
           <main id="maincontent" role="main" aria-label="Content">
             <div class="px-1 py-4">
+            {% unless page.url == "/" or page.url == "/index.html" %}
+            <!-- Breadcrumbs for non-home pages -->
+            <nav aria-label="breadcrumb" class="mb-3">
+              <ol class="breadcrumb breadcrumb-sm mb-2">
+                <li class="breadcrumb-item">
+                  <a href="{{ '/' | relative_url }}" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                    </svg>
+                    Home
+                  </a>
+                </li>
+                {% if page.section or page.section_id %}
+                <li class="breadcrumb-item">{{ page.section | truncatewords: 1 | default: page.section_id }}</li>
+                {% endif %}
+                <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+              </ol>
+            </nav>
+            {% endunless %}
             {{ content }}
             </div>
             

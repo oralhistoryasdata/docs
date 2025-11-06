@@ -143,13 +143,11 @@ table {
   }
 }
 
-// Breadcrumb bar
-.breadcrumb-bar {
-  font-size: 0.875rem;
-
-  .breadcrumb {
-    font-size: 0.875rem;
-  }
+// Small breadcrumbs in content area
+.breadcrumb-sm {
+  font-size: 0.8125rem;
+  padding: 0;
+  background: transparent;
 
   .breadcrumb-item {
     &.active {
@@ -157,7 +155,8 @@ table {
     }
 
     a {
-      color: #495057;
+      color: #6c757d;
+      font-size: 0.8125rem;
 
       &:hover {
         color: #0d6efd;
@@ -166,15 +165,11 @@ table {
 
     svg {
       vertical-align: text-bottom;
+      margin-right: 0.25rem;
     }
-  }
 
-  .btn-link {
-    color: #6c757d;
-    text-decoration: none;
-
-    &:hover {
-      color: #0d6efd;
+    + .breadcrumb-item::before {
+      color: #adb5bd;
     }
   }
 }

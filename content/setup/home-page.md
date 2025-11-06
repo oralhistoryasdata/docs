@@ -8,281 +8,312 @@ title: Customize Home Page
 
 Your OHD site's home page is the first thing visitors see, so customizing it to match your project's identity and goals is important. This guide covers the various ways you can customize your home page.
 
+## How OHD Home Pages Work
+
+The home page is controlled by two main configuration files:
+
+1. **`pages/index.md`** - Sets the layout type (usually just front matter, no content)
+2. **`_config.yml`** - Defines your site title, tagline, and organization info
+3. **`_data/theme.yml`** - Controls colors, images, and display options
+
 ## Home Page Layout Options
 
-OHD offers different home page layouts to suit different presentation styles. The layout is controlled by the `layout` value in your `pages/index.md` file.
+OHD offers two home page layouts. The layout is set in the `pages/index.md` file.
 
 ### Layout: home-cover (Default OHD Style)
 
-The `home-cover` layout creates a full-screen landing page with a large title and optional background image. This is the default for OHD projects and emphasizes the oral history focus.
+The `home-cover` layout creates a dark-themed hero landing page with a large title, tagline, and optional visualization or background image. This is the default for OHD projects.
 
 **Features**:
-- Full-screen cover design with centered title
-- Optional background image
-- Prominent "Get Started" or custom call-to-action button
-- Clean, focused presentation ideal for interview collections
+- Dark hero section with site title and tagline
+- Soundwave icon branding
+- Optional collection visualization preview
+- Optional background/featured image
+- Navigation buttons to main site sections
+- Clean, focused presentation emphasizing oral history content
 
-**To use this layout**:
+**To use this layout**, ensure your `pages/index.md` contains:
 
-1. Open `pages/index.md` in your repository
-2. Set the front matter to:
 ```yaml
 ---
 layout: home-cover
+title: Home
+permalink: /
 ---
 ```
+
+Note: The `pages/index.md` file typically contains **only front matter** (no body content). The layout generates everything automatically.
 
 ### Layout: home-infographic (CollectionBuilder Style)
 
-The `home-infographic` layout displays a more data-rich home page with featured items, collection statistics, and visual elements. This is better suited if you want to show more collection information upfront.
+The `home-infographic` layout displays a more data-rich home page with featured items, collection statistics, subjects, and locations.
 
 **Features**:
-- Featured image carousel from your collection
-- Collection statistics and metadata
-- Multiple visual elements and navigation options
-- More traditional digital collection homepage feel
+- Featured item carousel
+- Top subjects buttons
+- Locations section
+- Time/date components
+- Collection statistics
+- Data download section
+- More traditional digital collection homepage
 
-**To use this layout**:
+**To use this layout**, change `pages/index.md` to:
 
-1. Open `pages/index.md` in your repository
-2. Set the front matter to:
 ```yaml
 ---
 layout: home-infographic
----
-```
-
-## Customizing Home Page Content
-
-### Editing pages/index.md
-
-The `pages/index.md` file controls your home page content and settings:
-
-```yaml
----
-layout: home-cover
-title: Your Project Title
+title: Home
 permalink: /
 ---
-
-# Optional: Add custom content below
-
-Your custom introductory text can go here. This appears below the main title area.
 ```
 
-**Key front matter options**:
+## Customizing Site Title and Tagline
 
-- `layout`: Choose `home-cover` or `home-infographic`
-- `title`: Main heading displayed on the home page (can also pull from `_config.yml`)
-- `permalink`: Keep as `/` to make this your home page
-
-### Adding a Background Image
-
-For the `home-cover` layout, you can add a background image to create visual impact:
-
-1. **Add your image to the repository**
-   - Place the image file in the `objects/` folder (e.g., `objects/homepage-bg.jpg`)
-   - Recommended size: At least 1920x1080px for full-screen display
-   - Optimize image file size for web (aim for under 500KB)
-
-2. **Configure in `_data/theme.yml`**
-   ```yaml
-   featured-image: /objects/homepage-bg.jpg
-   ```
-
-3. **Adjust image display settings** (optional)
-   ```yaml
-   home-title-y-padding: 12em  # Vertical spacing for title
-   home-banner-image-position: center  # Image positioning
-   ```
-
-## Customizing Colors and Styles
-
-### Primary Colors
-
-Edit `_data/theme.yml` to change your site's color scheme:
+The home page displays your site title and tagline prominently. These are set in `_config.yml`:
 
 ```yaml
-# Primary color (used for buttons, links, highlights)
-theme-color: "#0d6efd"
-
-# Accent color (for secondary elements)
-secondary-color: "#6c757d"
-
-# Link color
-link-color: "#0d6efd"
+# _config.yml
+title: "Your Oral History Project Name"
+tagline: "A descriptive tagline about your collection"
+description: "Longer description for search engines (max 160 characters)"
 ```
 
-**Finding color codes**: Use a tool like [HTML Color Picker](https://www.w3schools.com/colors/colors_picker.asp) to find hex color codes that match your branding.
+**Title** appears as the main heading on your home page.
+**Tagline** appears below the title explaining your project.
+**Description** is used for SEO meta tags (not displayed on page).
 
-### Typography
+## Adding a Background or Featured Image
 
-Customize fonts in `_data/theme.yml`:
+For the `home-cover` layout, you can add a background image or featured image:
+
+### Option 1: Use an image from your collection
+
+Reference an existing item's objectid in `_data/theme.yml`:
 
 ```yaml
-# Google Fonts for body text
-base-font-family: "Roboto, sans-serif"
-
-# Google Fonts for headings
-heading-font-family: "Roboto Slab, serif"
-
-# Font size
-base-font-size: 1.2em
+# _data/theme.yml
+featured-image: demo_001  # objectid from your metadata
 ```
 
-## Customizing the Call-to-Action
+### Option 2: Use a local image file
 
-### Button Text and Link
-
-The home page includes a primary call-to-action button. Customize it in `_data/theme.yml`:
+Place your image in the `objects/` folder and reference it:
 
 ```yaml
-# Button text
-cta-button-text: "Explore Interviews"
-
-# Button destination (page to link to)
-cta-button-link: /browse.html
+# _data/theme.yml
+featured-image: /objects/homepage-background.jpg
 ```
 
-**Common button destinations**:
-- `/browse.html` - Browse all items
-- `/visualization.html` - Go to visualization page
-- `/subjects.html` - Browse by subject
-- `/about.html` - Learn more about the project
+**Recommended specs**:
+- Size: At least 1920x1080px for full-screen display
+- Format: JPG or PNG
+- File size: Under 500KB (optimize for web)
 
-## Using Organization Branding
-
-Add your institution's branding via `_config.yml`:
+### Option 3: Use an external URL
 
 ```yaml
-# Organization information
-organization-name: "Your Organization"
+# _data/theme.yml
+featured-image: https://example.com/image.jpg
+```
+
+### Image Display Options
+
+Customize how the image displays:
+
+```yaml
+# _data/theme.yml
+featured-image-alt-text: "Description of the image"
+home-banner-image-position: center  # Options: center, top, bottom
+home-title-y-padding: 12em  # Adjusts vertical spacing of title
+```
+
+## Home Page Visualization
+
+The `home-cover` layout can display a preview of your collection's coded transcript visualization.
+
+**Enable visualization** in `_data/theme.yml`:
+
+```yaml
+# _data/theme.yml
+home-page-visualization: true  # Shows visualization on home page
+```
+
+**Disable visualization** (to show featured image instead):
+
+```yaml
+# _data/theme.yml
+home-page-visualization: false
+```
+
+This option only works if you have:
+- Transcript files with tags/codes in `_data/transcripts/`
+- A `_data/filters.csv` file defining your tags
+
+## Organization Branding
+
+Add your institution's branding in `_config.yml`:
+
+```yaml
+# _config.yml
+organization-name: "Your Organization Name"
 organization-link: https://your-organization.edu
 organization-logo-banner: https://example.com/logo-banner.png
 organization-logo-nav: https://example.com/logo-small.png
 ```
 
 **Logo specifications**:
-- **Banner logo**: Larger version for home page/footer (recommended width: 300-400px)
-- **Nav logo**: Smaller version for navigation bar (recommended height: 40-50px)
-- Can be external URLs or relative paths to files in your repository
+- **Banner logo**: Appears in the home page footer (recommended width: 300-400px)
+- **Nav logo**: Appears in the site header/navigation (recommended height: 40-50px)
+- Can be external URLs or relative paths to files in your repository (e.g., `/objects/logo.png`)
 
-## Advanced Customization Options
+## Customizing Colors
 
-### Custom HTML Content
+While the `home-cover` layout uses a dark theme by default, you can customize accent colors in `_data/theme.yml`:
 
-For more control, you can add custom HTML sections to your home page:
+```yaml
+# _data/theme.yml
+theme-color: "#0d6efd"      # Primary color for buttons and highlights
+link-color: "#0d6efd"        # Link color
+```
 
-1. Edit `pages/index.md`
-2. Add HTML content below the front matter:
+**Note**: The dark hero section's background color is part of the layout design and changing it requires advanced customization.
 
-```markdown
+## Typography
+
+Customize fonts in `_data/theme.yml`:
+
+```yaml
+# _data/theme.yml
+base-font-family: "Roboto, sans-serif"
+heading-font-family: "Roboto Slab, serif"
+base-font-size: 1.2em
+```
+
+Use [Google Fonts](https://fonts.google.com/) to find font names. Include the full font family with fallback (e.g., `"Font Name, sans-serif"`).
+
+## Navigation Buttons
+
+The `home-cover` layout automatically generates navigation buttons based on your `_data/config-nav.csv` file. These buttons appear on the home page and provide quick access to key sections.
+
+To customize navigation, edit `_data/config-nav.csv`:
+
+```csv
+display_name,stub,dropdown_parent
+Home,/,
+Browse Items,/browse.html,
+Subjects,/subjects.html,
+Locations,/locations.html,
+Map,/map.html,
+Timeline,/timeline.html,
+Visualization,/visualization.html,
+Data,/data/,
+About,/about.html,
+```
+
+## Advanced Customization
+
+### Using Custom Content in pages/index.md
+
+While the template's `pages/index.md` is typically empty (just front matter), you *can* add custom content that will appear in specific areas of the layout:
+
+```yaml
 ---
 layout: home-cover
+title: Home
+permalink: /
 ---
 
-<div class="container my-5">
-  <div class="row">
-    <div class="col-md-6">
-      <h2>About This Project</h2>
-      <p>Your custom content here...</p>
-    </div>
-    <div class="col-md-6">
-      <h2>Featured Interviews</h2>
-      <p>More custom content...</p>
-    </div>
-  </div>
-</div>
+Content you add here will be processed by the layout template.
 ```
 
-### Using Bootstrap Classes
+However, for `home-cover`, this is rarely used. The layout generates content automatically from your configuration files.
 
-OHD is built with Bootstrap 5, so you can use any [Bootstrap utility classes](https://getbootstrap.com/docs/5.1/utilities/) for styling:
+### Switching Base Layout Style
 
-- **Spacing**: `mt-3` (margin-top), `py-5` (padding vertical), etc.
-- **Colors**: `text-primary`, `bg-light`, etc.
-- **Layout**: `container`, `row`, `col-md-6`, etc.
+If you want to use CollectionBuilder styling throughout your entire site (not just the home page), edit `_data/theme.yml`:
 
-### Including Feature Components
-
-You can include CollectionBuilder feature components on your home page. Add them in `pages/index.md`:
-
-```markdown
-{% raw %}{% include feature/image.html objectid="demo_001" width="75" %}{% endraw %}
-
-{% raw %}{% include feature/card.md header="About This Collection" text="Description of your project" %}{% endraw %}
-
-{% raw %}{% include feature/button.md text="Browse Interviews" link="/browse.html" color="primary" %}{% endraw %}
+```yaml
+# _data/theme.yml
+base-layout: cb  # Use CollectionBuilder design system
+# OR
+base-layout: ohd  # Use OHD design system (default)
 ```
-
-See the [CollectionBuilder Feature Includes documentation](https://collectionbuilder.github.io/cb-docs/docs/pages/features/) for more options.
 
 ## Example Configurations
 
-### Minimal Home Page
+### Minimal OHD Home Page
+
+```yaml
+# _config.yml
+title: "Community Voices Archive"
+tagline: "Oral histories from our local community"
+```
+
+```yaml
+# _data/theme.yml
+home-page-visualization: true
+```
 
 ```yaml
 # pages/index.md
 ---
 layout: home-cover
-title: Voices from the Valley
+title: Home
+permalink: /
 ---
-
-# _data/theme.yml
-theme-color: "#2c5f2d"
-featured-image: /objects/valley-landscape.jpg
-cta-button-text: "Listen to Stories"
-cta-button-link: /browse.html
 ```
 
-### Rich Home Page with Branding
+### Home Page with Featured Image
+
+```yaml
+# _config.yml
+title: "Mining Heritage Project"
+tagline: "Stories from three generations of miners"
+organization-name: "State Historical Society"
+organization-link: https://history.state.gov
+```
+
+```yaml
+# _data/theme.yml
+home-page-visualization: false
+featured-image: /objects/mine-entrance.jpg
+featured-image-alt-text: "Historic photograph of mine entrance, 1952"
+home-banner-image-position: center
+home-title-y-padding: 14em
+```
+
+### CollectionBuilder-Style Home Page
 
 ```yaml
 # pages/index.md
 ---
 layout: home-infographic
-title: University Archives Oral History Project
+title: Home
+permalink: /
 ---
-
-# _config.yml
-organization-name: "State University Archives"
-organization-link: https://archives.university.edu
-organization-logo-banner: /objects/logo-banner.png
-
-# _data/theme.yml
-theme-color: "#003366"
-base-font-family: "Georgia, serif"
 ```
 
 ## Testing Your Changes
 
 After making changes:
 
-1. **Preview locally** (if using Jekyll):
-   ```bash
-   bundle exec jekyll serve
-   ```
-   View at `http://localhost:4000`
-
-2. **Push to GitHub**:
-   - Commit your changes to `pages/index.md`, `_config.yml`, and/or `_data/theme.yml`
-   - Push to your repository
-   - Wait 1-2 minutes for GitHub Pages to rebuild
-   - Check your live site
+1. **Commit and push** your changes to `_config.yml`, `_data/theme.yml`, or `pages/index.md`
+2. **Wait 2-5 minutes** for GitHub Pages to rebuild
+3. **Check your live site** to see the changes
+4. **Clear browser cache** if changes don't appear immediately
 
 ## Troubleshooting
 
 | Problem | Solution |
 |---------|----------|
-| **Background image not showing** | Verify the image path is correct and starts with `/objects/` or full URL |
-| **Colors not changing** | Check that hex color codes include the `#` symbol and are in quotes |
-| **Layout not applying** | Ensure `layout:` value matches exactly (`home-cover` or `home-infographic`) |
-| **Changes not visible** | Clear browser cache or wait longer for GitHub Pages to rebuild |
-| **Button link broken** | Verify the link path starts with `/` for internal links |
+| **Title/tagline not showing** | Check that `title` and `tagline` are set in `_config.yml` (not `pages/index.md`) |
+| **Featured image not appearing** | Verify `featured-image` path in `_data/theme.yml`; ensure file exists in repository |
+| **Visualization not showing** | Ensure `home-page-visualization: true` in `theme.yml` and that you have transcript files with tags |
+| **Wrong layout displaying** | Check `layout:` value in `pages/index.md` front matter (must be `home-cover` or `home-infographic`) |
+| **Organization logo missing** | Verify URLs in `_config.yml` for `organization-logo-banner` and `organization-logo-nav` |
 
 ## Learn More
 
-- [CollectionBuilder Home Page Configuration](https://collectionbuilder.github.io/cb-docs/docs/theme/home/)
-- [Theme Settings Overview](theme-settings)
-- [Configuration File Reference](config-settings)
-- [Adding Custom Pages](customization-cb)
+- [Configuration File Reference](config-settings) - Complete `_config.yml` settings
+- [Theme Settings Overview](theme-settings) - All `theme.yml` options
+- [CollectionBuilder Home Page Docs](https://collectionbuilder.github.io/cb-docs/docs/theme/home/) - Advanced customization options
