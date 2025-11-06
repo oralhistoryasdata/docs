@@ -208,11 +208,11 @@ OHD is built with Bootstrap 5, so you can use any [Bootstrap utility classes](ht
 You can include CollectionBuilder feature components on your home page. Add them in `pages/index.md`:
 
 ```markdown
-{% include feature/image.html objectid="demo_001" width="75" %}
+{% raw %}{% include feature/image.html objectid="demo_001" width="75" %}{% endraw %}
 
-{% include feature/card.md header="About This Collection" text="Description of your project" %}
+{% raw %}{% include feature/card.md header="About This Collection" text="Description of your project" %}{% endraw %}
 
-{% include feature/button.md text="Browse Interviews" link="/browse.html" color="primary" %}
+{% raw %}{% include feature/button.md text="Browse Interviews" link="/browse.html" color="primary" %}{% endraw %}
 ```
 
 See the [CollectionBuilder Feature Includes documentation](https://collectionbuilder.github.io/cb-docs/docs/pages/features/) for more options.
