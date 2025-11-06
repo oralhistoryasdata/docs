@@ -4,7 +4,7 @@ nav_order: 4
 title: Customize Home Page
 ---
 
-# Customizing Your Home Page
+## Customizing Your Home Page
 
 Your OHD site's home page is the first thing visitors see, so customizing it to match your project's identity and goals is important. This guide covers the various ways you can customize your home page.
 

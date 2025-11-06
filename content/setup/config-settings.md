@@ -4,7 +4,7 @@ nav_order: 3
 title: Configure (_config.yml)
 ---
 
-# Configuring Your Site with `_config.yml`
+## Configuring Your Site with `_config.yml`
 
 The `_config.yml` file in your project root controls your site's core settings, appearance, and metadata connections. Editing this file is one of the first steps after creating your repository.
 

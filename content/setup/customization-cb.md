@@ -4,17 +4,17 @@ nav_order: 5
 title: CollectionBuilder Customization 
 ---
 
-# Customizing Using CollectionBuilder Options
+## Customizing Using CollectionBuilder Options
 
 Because Oral History as Data is built on top of CollectionBuilder, you have access to many powerful customization options beyond the OHD-specific features.
 
 The sections below provide direct links to specific CollectionBuilder documentation topics. When you click these links, you'll be taken to the CollectionBuilder documentation site where you can learn about each customization option in detail. You can then return here to continue working on your OHD project.
 
-{% include bootstrap/alert.md text="**Note**: The CollectionBuilder documentation covers the general CollectionBuilder framework. Most customization options work the same way in OHD, but remember that OHD adds transcript-specific features on top of the base CollectionBuilder functionality." color="info" %} 
+{% include bootstrap/alert.md text="**Note**: The CollectionBuilder documentation covers the general CollectionBuilder framework. Most customization options work the same way in OHD, but remember that OHD adds transcript-specific features on top of the base CollectionBuilder functionality." color="info" %}
 
-# CollectionBuilder Documentation Guide
+## CollectionBuilder Documentation Guide
 
-## Theme Options
+### Theme Options
 The `_data/theme.yml` file controls display options that impact every page of your site. These settings affect global options in your website, so it's important to review each one as you create your site.
 
 - [Theme Options Overview](https://collectionbuilder.github.io/cb-docs/docs/theme/) - Main page explaining theme configuration
@@ -23,7 +23,7 @@ The `_data/theme.yml` file controls display options that impact every page of yo
 - [Item Page Configuration](https://collectionbuilder.github.io/cb-docs/docs/theme/item/) - Settings for individual item pages
 - [Navbar Configuration](https://collectionbuilder.github.io/cb-docs/docs/theme/navbar/) - Custom navbar options
 
-## Page Config
+### Page Config
 CollectionBuilder's navigation features and visualization pages are configured via "config" CSV files located in your project's "_data" directory. These config files usually have the prefix "config-" and tend to be more detailed than the options in "theme.yml".
 
 - [Customization Overview](https://collectionbuilder.github.io/cb-docs/docs/customization/) - Learn about config files
@@ -32,7 +32,7 @@ CollectionBuilder's navigation features and visualization pages are configured v
 - [Map Configuration](https://collectionbuilder.github.io/cb-docs/docs/config/map/) - Settings for the map visualization
 - [Metadata Configuration](https://collectionbuilder.github.io/cb-docs/docs/config/metadata/) - Configure how metadata fields display
 
-## Edit Pages
+### Edit Pages
 Most pages in CollectionBuilder are placeholders for visualization features like "Browse" or "Subjects," but you'll want to edit "about.md" and potentially add more interpretive pages.
 
 - [Page Basics](https://collectionbuilder.github.io/cb-docs/docs/pages/basics/) - Learn about page files and front matter

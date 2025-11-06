@@ -108,8 +108,8 @@ Now that your site is published:
 1. **Share your collection** with your audience
 2. **Test thoroughly** on different devices and browsers
 3. **Consider enhancements** like:
-   - [Adding Google Analytics](../z-old/configuration#analytics)
-   - [Customizing the theme](../z-old/customize/customization)
-   - [Adding more interviews](../z-old/prepare-metadata/tutorial-metadata)
+   - [Customizing the theme](../setup/theme-settings)
+   - [Customizing your home page](../setup/home-page)
+   - [Adding more interviews](tutorial-metadata)
 
 {% include bootstrap/alert.md text="GitHub Pages is a free service with some (soft) limitations: 1GB storage maximum and 100GB bandwidth per month." color="info" %}

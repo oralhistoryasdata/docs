@@ -23,7 +23,7 @@ Fields like `interviewer`, `interviewee`, `description`, `date`, and `location` 
 
 #### Required Fields
 - **objectid**: A unique identifier for each interview (used for filenames and URLs)
-   - This should also match with the filename of the transcript your using!!
+   - This should also match with the filename of the transcript you're using!
 - **title**: The title of the interview
 - **display_template**: The template for displaying the item described -- it should be `transcript` for OHD features to work
 
@@ -50,7 +50,7 @@ Fields like `interviewer`, `interviewee`, `description`, `date`, and `location` 
 - **rights**: Copyright or usage rights statement
 - **rightsstatement**: URL to a formal rights statement
 - **object_location**: URL to audio/video (if available)
-- **image_small***: small image to represent item in the collection (if left blank, will default to bootstrap icon)
+- **image_small**: small image to represent item in the collection (if left blank, will default to bootstrap icon)
 - **image_thumb**: thumbnail image to represent item in the collection (if left blank, will default to bootstrap icon)
 
 
