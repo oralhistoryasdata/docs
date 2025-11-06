@@ -25,8 +25,6 @@ This guide shows you how to convert an existing CollectionBuilder-CSV repository
    - Save it to a location where you can easily access the files
    - Extract/unzip the file to view its contents
 
-{% include bootstrap/figure.md img="download-template.jpg" caption="Download the template as a ZIP file" alt="Screenshot showing how to download the OHD template repository as a ZIP file" class="w-50" %}
-
 ## Step 2: Copy Files to Your CollectionBuilder Repository
 
 1. **Open both folders**
@@ -56,8 +54,6 @@ This guide shows you how to convert an existing CollectionBuilder-CSV repository
    | Replace | `.gitignore` | Removes line that excludes "objects/" from git |
    | Add | `rakelib/generate_json.rake` | Helper for generating transcript JSON |
 
-{% include bootstrap/figure.md img="file-replacement.jpg" caption="Replace files in your repository" alt="Illustration showing the process of replacing files in your existing repository" class="w-75" %}
-
 ## Step 3: Update .gitignore File
 
 1. **Edit the .gitignore file in your repository**
@@ -65,8 +61,6 @@ This guide shows you how to convert an existing CollectionBuilder-CSV repository
    - Find the line that excludes "objects/" at the end of the file
    - Delete this line completely
    - Save the file
-
-{% include bootstrap/figure.md img="edit-gitignore.jpg" caption="Edit .gitignore file" alt="Screenshot showing the line to remove from .gitignore file" class="w-50" %}
 
 ## Step 4: Update Your Metadata
 
@@ -101,8 +95,6 @@ This guide shows you how to convert an existing CollectionBuilder-CSV repository
    - Add your transcript files to the `objects/` directory
    - Ensure filenames match those referenced in your metadata
 
-{% include bootstrap/figure.md img="transcript-format.jpg" caption="Example transcript format" alt="Example of correctly formatted transcript text" class="w-75" %}
-
 ## Step 6: Test Your Conversion
 
 1. **Run the site locally (if possible)**
@@ -112,8 +104,6 @@ This guide shows you how to convert an existing CollectionBuilder-CSV repository
 2. **Commit and push your changes**
    - Commit all new and modified files to your repository
    - Push the changes to GitHub to update your site
-
-{% include bootstrap/figure.md img="final-result.jpg" caption="Your converted OHD site" alt="Screenshot of a successfully converted OHD site" class="w-75" %}
 
 ## Common Issues and Solutions
 

@@ -32,39 +32,75 @@ The first row of your CSV file should contain these column headers.
 
 ## Using Tags for Visualization and Analysis
 
-Tags are thematic codes that enable powerful visualization and filtering features in your oral history site. When you add tags to transcript segments, they become:
+Tags are thematic codes that enable powerful visualization and filtering features in your oral history site. Think of tags as keywords or themes that describe the content of each transcript segment.
 
-- Color-coded segments in the interactive visualization
-- Filters that users can apply to explore specific themes
-- Tools for pattern identification across interviews
+### What Tags Do
+
+When you add tags to transcript segments, they:
+
+- **Create color-coded visualizations** - Each tag gets a unique color in the interactive transcript view, making it easy to see patterns
+- **Enable filtering** - Users can click on tags to filter the transcript and see only segments about specific topics
+- **Support analysis** - Tags help researchers identify themes across multiple interviews
+- **Generate tag clouds** - The visualization page shows which themes appear most frequently
+
+### The filters.csv File Explained
+
+The `filters.csv` file is your **tag vocabulary** or **coding scheme**. It defines all the tags you'll use across your entire collection and provides descriptions of what each tag means.
+
+**Location**: `_data/filters.csv` in your repository
+
+**Required columns**:
+- `tag`: The short keyword you'll use in transcript files (e.g., "education", "family", "career")
+- `description`: A brief explanation of what this tag represents (shows up in tooltips and helps keep tagging consistent)
+
+**Example filters.csv**:
+```
+tag,description
+highlight,Key moments worth highlighting
+education,Educational experiences and schooling
+family,Family relationships and history
+career,Work and professional life
+childhood,Early life and youth experiences
+community,Community involvement and local history
+migration,Moving between places or immigration
+wartime,Experiences during war or conflict
+technology,Use of technology and tools
+health,Health and medical experiences
+```
 
 ### Creating Your Tag Vocabulary
 
-Before tagging transcript segments, establish a consistent vocabulary:
+Before you start tagging individual transcript segments, establish your vocabulary:
 
-1. **Review your transcripts** to identify common themes (10-20 tags is usually sufficient)
-2. **Create a `filters.csv` file** in your `_data` folder with two columns:
-   - `tag`: The short term used in transcripts
-   - `description`: Brief explanation of what the tag represents
+1. **Read through your transcripts** to identify recurring themes (10-20 tags works well for most collections)
+2. **Create the filters.csv file** with your chosen tags and descriptions
+3. **Upload it to `_data/filters.csv`** in your repository
+4. **Use only these tags** when tagging transcript segments to maintain consistency
 
-Example filters.csv:
+{% include bootstrap/alert.md text="**Important**: Create your filters.csv file BEFORE you start tagging transcripts. This ensures consistency across your entire collection." color="warning" %}
+
+### How Tags Appear in Transcript Files
+
+Once you've created your filters.csv vocabulary, you apply tags in your individual transcript CSV files using the `tags` column:
+
+**Single tag**: `education`
+
+**Multiple tags**: `education; family; career` (use semicolons to separate multiple tags)
+
+**Example transcript row**:
 ```
-tag,description
-highlight,Highlight
-between,working between media to advance writing process
-early,writing before widespread computer usage
-paper,using paper in the writing process
-files,usage and organization of computer files
-revision,revision
-software,the use of software and/or code for writing
+speaker,words,tags,timestamp
+John Smith,"I started teaching in 1972 at Lincoln Elementary.",education; career; 1970s,00:45
 ```
 
 ### Tips for Effective Tagging
 
-- **Keep it simple** - aim for 10-20 primary tags
-- **Use consistent formatting**: lowercase terms, avoid special characters, use singular forms
-- **Be selective** - tag only the most relevant segments
-- **Be consistent** across all transcripts in your collection 
+- **Keep it simple** - Aim for 10-20 primary tags; more than 30 becomes hard to manage
+- **Use consistent formatting** - Stick to lowercase, avoid special characters, use singular forms (e.g., "family" not "families")
+- **Be selective** - Not every segment needs tags; focus on the most meaningful content
+- **Stay consistent** - Always use the exact tag terms from your filters.csv file
+- **Think thematically** - Tags should represent ideas or themes, not just keywords
+- **Test as you go** - Preview your site to see how tags appear in visualizations 
 
 
 

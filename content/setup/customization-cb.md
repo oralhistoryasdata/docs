@@ -6,9 +6,11 @@ title: CollectionBuilder Customization
 
 # Customizing Using CollectionBuilder Options
 
-Because it is built on top of CollectionBuilder, you have a large number of ways to update your site using CollectionBuilder options. 
+Because Oral History as Data is built on top of CollectionBuilder, you have access to many powerful customization options beyond the OHD-specific features.
 
-CollectionBuilder has extensive documentation covering its customization options. Here's an overview of options: 
+The sections below provide direct links to specific CollectionBuilder documentation topics. When you click these links, you'll be taken to the CollectionBuilder documentation site where you can learn about each customization option in detail. You can then return here to continue working on your OHD project.
+
+{% include bootstrap/alert.md text="**Note**: The CollectionBuilder documentation covers the general CollectionBuilder framework. Most customization options work the same way in OHD, but remember that OHD adds transcript-specific features on top of the base CollectionBuilder functionality." color="info" %} 
 
 # CollectionBuilder Documentation Guide
 
@@ -39,8 +41,18 @@ Most pages in CollectionBuilder are placeholders for visualization features like
 - [Feature Includes](https://collectionbuilder.github.io/cb-docs/docs/pages/features/) - Using include features to enhance content
 
 ## Additional Resources
+
+### Video Tutorials
+
+CollectionBuilder provides helpful video tutorials for working with your site:
+
+- [GitHub Workflows Video Tutorials](https://www.youtube.com/playlist?list=PLt9zT3xACQo7q72AfphJzH41OiPcZrF4H) - Learn how to work with GitHub, repositories, and GitHub Pages
+- [CSV Metadata Video Tutorials](https://www.youtube.com/playlist?list=PLt9zT3xACQo6aLD8ayLFOGp5T_mEw3tMQ) - Learn how to create and manage your collection metadata in CSV format
+
+### Community Support
+
 - [Discussion Forum](https://github.com/CollectionBuilder/collectionbuilder.github.io/discussions) - Get help from the CollectionBuilder community
-- [Video Tutorials](https://collectionbuilder.github.io/cb-docs/docs/tutorials/) - Watch instructional videos to help build your site
+- [CollectionBuilder Documentation](https://collectionbuilder.github.io/cb-docs/) - Complete CollectionBuilder documentation site
 
 <!-- This section has been replaced by the new combined 'Setup Your Site' documentation. Please see ../setup-your-site.md for the latest workflow. -->
 

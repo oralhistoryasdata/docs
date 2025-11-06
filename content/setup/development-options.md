@@ -27,7 +27,7 @@ However, web interface development does have some limitations:
 - More complex customizations can be cumbersome
 - Limited ability to test changes before publishing
 
-The [GitHub Web Interface Tutorial](/content/tutorials/tutorial-github) walks you through the entire process of building your collection using only your browser.
+The [GitHub Web Interface Tutorial](../tutorials/tutorial-github) walks you through the entire process of building your collection using only your browser.
 
 ## Local Development Environment
 
