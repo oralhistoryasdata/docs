@@ -26,8 +26,10 @@ Gather these materials:
 
 ### Step 1: Get Started with a Template
 
-[Go to our blank metadata spreadsheet](https://docs.google.com/spreadsheets/d/1PAx8C3EMsCAHwtsJolMnYZK3ZXBc1EGy-U4tRscC2kE/copy) and click "Make a copy".
+Go to our [blank metadata spreadsheet](https://docs.google.com/spreadsheets/d/1PAx8C3EMsCAHwtsJolMnYZK3ZXBc1EGy-U4tRscC2kE/copy) and click "make a copy."
 
+Or go to our [blank metadata spreadsheet w/ examples](https://docs.google.com/spreadsheets/d/1Q7u5S4_7PVIRfufr7MchM-fcgTtnXzi4_1PajJIEWw0/copy)
+and click "make a copy."
 
 ### Step 2: Understand Required Fields
 
@@ -71,7 +73,7 @@ Every interview in your collection needs these three essential fields:
      - **subject**: Main topics (separated by semicolons)
      - **location**: Where the interview took place
    
-To get a better idea of how this looks, see our example metadata file --> <a href="/examples/demo-ohd-metadata.csv" class="text-decoration-none" download="">demo-ohd-metadata.csv</a>.
+To get a better idea of how this looks, see [our example metadata file] (https://docs.google.com/spreadsheets/d/1hrPFSVkh41FfHKpNdxRT7Jche3Dlf3QYGLAQ6Cy-Ks0/edit?usp=sharing).
 
 ### Step 4: Connect Media (Optional)
 
@@ -94,6 +96,7 @@ If you have audio or video recordings:
    - Check that all required fields are completed
    - Verify spelling and formatting
    - Ensure objectids match your transcript filenames
+   - Check your version against [our demo spreadsheet](https://docs.google.com/spreadsheets/d/1hrPFSVkh41FfHKpNdxRT7Jche3Dlf3QYGLAQ6Cy-Ks0/edit?usp=sharing) to ensure accuracy
 
 2. **Save as CSV file**
    - Click File → Download → Comma-separated values (.csv)
