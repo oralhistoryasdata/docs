@@ -69,15 +69,17 @@
 
         // Handle blur on mobile to hide results
         searchInputMobile.addEventListener('blur', function() {
-            setTimeout(function() {
-                if (searchResultsMobile && !searchResultsMobile.querySelector(':hover')) {
-                    searchResultsMobile.style.display = 'none';
-                }
-            }, 150);
+            if (searchResultsMobile) {
+                searchResultsMobile.style.display = 'none';
+            }
         });
 
-        // Handle clicks on mobile search results
+        // Hide results immediately on mousedown within results container
         if (searchResultsMobile) {
+            searchResultsMobile.addEventListener('mousedown', function(e) {
+                searchResultsMobile.style.display = 'none';
+            });
+            // Handle clicks on mobile search results
             searchResultsMobile.addEventListener('click', function(e) {
                 const link = e.target.closest('a');
                 if (link) {
