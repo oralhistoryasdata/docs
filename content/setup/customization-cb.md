@@ -25,7 +25,7 @@ CollectionBuilder provides helpful video tutorials for working with your site:
 ### Community Support
 
 - [Discussion Forum](https://github.com/CollectionBuilder/collectionbuilder.github.io/discussions) - Get help from the CollectionBuilder community
-- [CollectionBuilder Main Site](https://collectionbuilder.github.io/) - More About CollectionBuilder and ways to connect with it developers.
+- [CollectionBuilder Main Site](https://collectionbuilder.github.io/) - More About CollectionBuilder and ways to connect with its developers.
 
 
 
