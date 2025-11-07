@@ -27,31 +27,32 @@
     const jtdSearch = document.getElementById('jtd-search');
 
     if (searchInput && searchInputMobile) {
+        // Create a MutationObserver once to sync desktop results to mobile
+        if (searchResultsMobile && jtdSearch) {
+            const desktopResultsElem = document.getElementById('jtd-search-results');
+            const observer = new MutationObserver(function() {
+                if (desktopResultsElem && desktopResultsElem.innerHTML) {
+                    searchResultsMobile.innerHTML = desktopResultsElem.innerHTML;
+                    // Show mobile results if there's a query
+                    if (searchInputMobile.value.trim()) {
+                        searchResultsMobile.style.display = 'block';
+                    }
+                }
+            });
+            if (desktopResultsElem) {
+                observer.observe(desktopResultsElem, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+
         // When user types in mobile search, sync to desktop and trigger search
         searchInputMobile.addEventListener('input', function(e) {
             searchInput.value = e.target.value;
             // Trigger input event on desktop search to activate search functionality
             const inputEvent = new Event('input', { bubbles: true });
             searchInput.dispatchEvent(inputEvent);
-
-            // Show results in mobile area
-            if (searchResultsMobile && jtdSearch) {
-                // Copy results from desktop to mobile when they appear
-                const observer = new MutationObserver(function() {
-                    const desktopResults = document.getElementById('jtd-search-results');
-                    if (desktopResults && desktopResults.innerHTML) {
-                        searchResultsMobile.innerHTML = desktopResults.innerHTML;
-                        // Show mobile results
-                        if (e.target.value.trim()) {
-                            searchResultsMobile.style.display = 'block';
-                        }
-                    }
-                });
-                observer.observe(document.getElementById('jtd-search-results'), {
-                    childList: true,
-                    subtree: true
-                });
-            }
         });
 
         // When user types in desktop search, sync to mobile
