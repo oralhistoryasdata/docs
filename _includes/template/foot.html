@@ -23,17 +23,67 @@
     /* Sync search inputs between mobile and desktop */
     const searchInput = document.getElementById('jtd-search-input');
     const searchInputMobile = document.getElementById('jtd-search-input-mobile');
-    const searchResults = document.getElementById('jtd-search-results');
     const searchResultsMobile = document.getElementById('jtd-search-results-mobile');
+    const jtdSearch = document.getElementById('jtd-search');
 
     if (searchInput && searchInputMobile) {
-        // Sync values between desktop and mobile search
-        searchInput.addEventListener('input', () => {
-            searchInputMobile.value = searchInput.value;
+        // When user types in mobile search, sync to desktop and trigger search
+        searchInputMobile.addEventListener('input', function(e) {
+            searchInput.value = e.target.value;
+            // Trigger input event on desktop search to activate search functionality
+            const inputEvent = new Event('input', { bubbles: true });
+            searchInput.dispatchEvent(inputEvent);
+
+            // Show results in mobile area
+            if (searchResultsMobile && jtdSearch) {
+                // Copy results from desktop to mobile when they appear
+                const observer = new MutationObserver(function() {
+                    const desktopResults = document.getElementById('jtd-search-results');
+                    if (desktopResults && desktopResults.innerHTML) {
+                        searchResultsMobile.innerHTML = desktopResults.innerHTML;
+                        // Show mobile results
+                        if (e.target.value.trim()) {
+                            searchResultsMobile.style.display = 'block';
+                        }
+                    }
+                });
+                observer.observe(document.getElementById('jtd-search-results'), {
+                    childList: true,
+                    subtree: true
+                });
+            }
         });
-        searchInputMobile.addEventListener('input', () => {
-            searchInput.value = searchInputMobile.value;
+
+        // When user types in desktop search, sync to mobile
+        searchInput.addEventListener('input', function(e) {
+            searchInputMobile.value = e.target.value;
         });
+
+        // Handle focus on mobile to show results if there's a query
+        searchInputMobile.addEventListener('focus', function() {
+            if (this.value.trim() && searchResultsMobile) {
+                searchResultsMobile.style.display = 'block';
+            }
+        });
+
+        // Handle blur on mobile to hide results
+        searchInputMobile.addEventListener('blur', function() {
+            setTimeout(function() {
+                if (searchResultsMobile && !searchResultsMobile.querySelector(':hover')) {
+                    searchResultsMobile.style.display = 'none';
+                }
+            }, 150);
+        });
+
+        // Handle clicks on mobile search results
+        if (searchResultsMobile) {
+            searchResultsMobile.addEventListener('click', function(e) {
+                const link = e.target.closest('a');
+                if (link) {
+                    window.location.href = link.href;
+                }
+            });
+        }
     }
 </script>
 <!-- load other js -->
