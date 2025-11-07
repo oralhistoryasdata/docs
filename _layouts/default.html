@@ -10,7 +10,7 @@
 
     <header class="site-header border-bottom">
       <div class="container-xxl">
-        <div class="row align-items-center py-2 py-md-3">
+        <div class="row align-items-center py-2 bg-dark text-white sticky-top">
           <!-- Mobile menu toggle (visible on small screens) -->
           <div class="col-auto d-lg-none">
             <button class="btn btn-link p-2" id="sidebarToggle" title="Toggle sidebar navigation" aria-controls="sidebar-wrapper" aria-label="Toggle navigation menu">
@@ -24,7 +24,7 @@
           <div class="col-auto">
             <a id="header-title" href="{{ '/' | relative_url }}" class="d-flex align-items-center text-decoration-none">
               {% if site.title-icon %}<span class="me-2 title-icon">{% include icon.html icon=site.title-icon %}</span>{% endif %}
-              <span class="h5 mb-0 fw-bold">{{ site.title }}</span>
+              <span class="h5 mb-0 fw-bold text-white">{{ site.title }}</span>
             </a>
           </div>
 
