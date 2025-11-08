@@ -198,6 +198,16 @@
     link.href = doc.url;
     link.className = 'jtd-search-result';
     
+    // Add click handler to append search query as URL parameter
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var targetUrl = new URL(link.href, window.location.origin);
+      if (query && query.trim()) {
+        targetUrl.searchParams.set('highlight', query.trim());
+      }
+      window.location.href = targetUrl.toString();
+    });
+    
     var title = document.createElement('div');
     title.className = 'jtd-search-result-title';
     
@@ -328,6 +338,87 @@
         }
       };
       checkLoad();
+    }
+    
+    // Handle highlight parameter - open browser find with search term
+    var highlightTerm = urlParams.get('highlight');
+    if (highlightTerm) {
+      // Wait for page to fully load
+      window.addEventListener('load', function() {
+        // Small delay to ensure page is rendered
+        setTimeout(function() {
+          // Try to trigger browser find (this works in most browsers)
+          // Note: This is a workaround since we can't directly open Ctrl+F
+          // Instead, we'll highlight the text on the page
+          highlightTextOnPage(highlightTerm);
+          
+          // Also try to open the browser's find dialog
+          // This may not work in all browsers due to security restrictions
+          try {
+            if (window.find) {
+              window.find(highlightTerm);
+            }
+          } catch(e) {
+            // Browser may block this, silently fail
+            console.log('Browser find not available');
+          }
+        }, 300);
+      });
+    }
+  }
+  
+  function highlightTextOnPage(searchTerm) {
+    // Remove any existing highlights
+    var existingHighlights = document.querySelectorAll('.page-highlight');
+    existingHighlights.forEach(function(el) {
+      var parent = el.parentNode;
+      parent.replaceChild(document.createTextNode(el.textContent), el);
+      parent.normalize();
+    });
+    
+    // Get the main content area
+    var mainContent = document.getElementById('maincontent');
+    if (!mainContent) return;
+    
+    // Create a TreeWalker to find text nodes
+    var walker = document.createTreeWalker(
+      mainContent,
+      NodeFilter.SHOW_TEXT,
+      null,
+      false
+    );
+    
+    var textNodes = [];
+    var node;
+    while (node = walker.nextNode()) {
+      // Skip script and style tags
+      if (node.parentElement.tagName !== 'SCRIPT' && 
+          node.parentElement.tagName !== 'STYLE') {
+        textNodes.push(node);
+      }
+    }
+    
+    // Search and highlight in text nodes
+    var regex = new RegExp('(' + escapeRegex(searchTerm) + ')', 'gi');
+    var firstMatch = null;
+    
+    textNodes.forEach(function(textNode) {
+      var text = textNode.textContent;
+      if (regex.test(text)) {
+        var span = document.createElement('span');
+        span.innerHTML = text.replace(regex, '<mark class="page-highlight">$1</mark>');
+        textNode.parentNode.replaceChild(span, textNode);
+        
+        // Store first match for scrolling
+        if (!firstMatch) {
+          firstMatch = span.querySelector('.page-highlight');
+        }
+      }
+    });
+    
+    // Scroll to first match
+    if (firstMatch) {
+      firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }
   

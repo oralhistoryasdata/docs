@@ -47,4 +47,4 @@ Liquid statements are enclosed by {% raw %}`{%  %}`{% endraw %} and variables in
 [Sass](http://sass-lang.com/) is a CSS extension / preprocessor. 
 All normal CSS is valid SCSS, but Sass adds many powerful functions and programmatic features. 
 Writing SCSS is often easier and more sensible, for example by supporting nesting, variables, and operators. 
-Jekyll lets you write SASS in modular chucks called partials, in the "_sass" directory, that will be combined and compiled into normal CSS files when the site is built.
+Jekyll lets you write SASS in modular chunks called partials, in the "_sass" directory, that will be combined and compiled into normal CSS files when the site is built.

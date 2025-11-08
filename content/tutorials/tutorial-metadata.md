@@ -154,40 +154,40 @@ Compound objects allow you to associate additional materials (photographs, docum
 Here's how a metadata values might look with multiple entries (displayed vertically for easier reading--these will be in a spreadsheet when you enter them!):
 
 ```
-object id: smith_john  
-title: "Interview with John Smith on Mining History"  
-display_template: transcript  
-interviewer: Sarah Johnson  
-interviewee: John Smith  
-date: 2023-05-15  
-description: John Smith discusses his 40-year career in local mines, focusing on safety improvements.  
-subject: mining; labor history; safety  
-location: Coalville, PA  
-object_location: https://youtu.be/BX_bURONf78  
+objectid: smith_john
+title: "Interview with John Smith on Mining History"
+display_template: transcript
+interviewer: Sarah Johnson
+interviewee: John Smith
+date: 2023-05-15
+description: John Smith discusses his 40-year career in local mines, focusing on safety improvements.
+subject: mining; labor history; safety
+location: Coalville, PA
+object_location: https://youtu.be/BX_bURONf78
 ```
 
 ```
-object id: garcia_maria  
-title: "Maria Garcia on Immigration and Education"  
-display_template: transcript  
-interviewer: David Lee  
-interviewee: Maria Garcia  
-date: 2023-06-10  
-description: Maria Garcia shares her experience immigrating to the US as a child and later becoming an educator.  
-subject: immigration; education; family  
-location: Phoenix, AZ  
-object_location: https://soundcloud.com/user/maria-garcia-interview  
+objectid: garcia_maria
+title: "Maria Garcia on Immigration and Education"
+display_template: transcript
+interviewer: David Lee
+interviewee: Maria Garcia
+date: 2023-06-10
+description: Maria Garcia shares her experience immigrating to the US as a child and later becoming an educator.
+subject: immigration; education; family
+location: Phoenix, AZ
+object_location: https://soundcloud.com/user/maria-garcia-interview
 ```
 
 ```
-object id: taylor_robert  
-title: "Robert Taylor: Civil Rights Activism in the 1960s"  
-display_template: transcript  
-interviewer: Emily Wong  
-interviewee: Robert Taylor  
-date: 2023-04-22  
-description: Robert Taylor recounts his participation in civil rights demonstrations and community organizing.  
-subject: civil rights; activism; history  
-location: Atlanta, GA  
-object_location:  
+objectid: taylor_robert
+title: "Robert Taylor: Civil Rights Activism in the 1960s"
+display_template: transcript
+interviewer: Emily Wong
+interviewee: Robert Taylor
+date: 2023-04-22
+description: Robert Taylor recounts his participation in civil rights demonstrations and community organizing.
+subject: civil rights; activism; history
+location: Atlanta, GA
+object_location:
 ```
