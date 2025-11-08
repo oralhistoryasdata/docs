@@ -201,3 +201,26 @@
     padding: 0.75rem;
   }
 }
+
+// Page highlight styling for search term highlighting
+.page-highlight,
+mark.page-highlight {
+  background-color: #ffeb3b;
+  color: #000;
+  padding: 0.1em 0.2em;
+  border-radius: 0.2em;
+  font-weight: 600;
+  animation: highlightPulse 1s ease-in-out;
+}
+
+@keyframes highlightPulse {
+  0% {
+    background-color: #ffeb3b;
+  }
+  50% {
+    background-color: #ffd54f;
+  }
+  100% {
+    background-color: #ffeb3b;
+  }
+}

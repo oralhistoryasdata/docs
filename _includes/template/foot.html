@@ -67,23 +67,29 @@
             }
         });
 
-        // Handle blur on mobile to hide results
+        // Handle blur on mobile to hide results (with delay to allow clicks)
         searchInputMobile.addEventListener('blur', function() {
             if (searchResultsMobile) {
-                searchResultsMobile.style.display = 'none';
+                setTimeout(function() {
+                    if (!searchResultsMobile.matches(':hover')) {
+                        searchResultsMobile.style.display = 'none';
+                    }
+                }, 200);
             }
         });
 
-        // Hide results immediately on mousedown within results container
+        // Handle clicks on mobile search results
         if (searchResultsMobile) {
-            searchResultsMobile.addEventListener('mousedown', function(e) {
-                searchResultsMobile.style.display = 'none';
-            });
-            // Handle clicks on mobile search results
             searchResultsMobile.addEventListener('click', function(e) {
+                e.preventDefault();
                 const link = e.target.closest('a');
                 if (link) {
-                    window.location.href = link.href;
+                    const searchTerm = searchInputMobile.value.trim();
+                    const targetUrl = new URL(link.href);
+                    if (searchTerm) {
+                        targetUrl.searchParams.set('highlight', searchTerm);
+                    }
+                    window.location.href = targetUrl.toString();
                 }
             });
         }
