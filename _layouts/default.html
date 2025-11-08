@@ -12,10 +12,10 @@
       <div class="container-xxl">
         <div class="row">
           <div class="col-auto">
-<a id="header-title" href="{{ '/' | relative_url }}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto h4">
+<h1><a id="header-title" href="{{ '/' | relative_url }}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto h4">
           {% if site.title-icon %}<span class="me-2">{% include icon.html icon=site.title-icon %}</span>{% endif %}
           {{ site.title }}
-        </a>
+        </a></h1>
           </div>
           <div class="col d-none d-lg-inline">
             <a href="https://github.com/oralhistoryasdata/template/" class="btn btn-success btn-sm float-end" target="_blank" rel="noopener" aria-label="Use Template (opens in new tab)">
@@ -46,7 +46,8 @@
             <li class="breadcrumb-item">
               <a href="{{ '/' | relative_url }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
   <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
-</svg></a>
+</svg>          <span class="visually hidden">Home</span>
+</a>
             </li>
             {% if page.section or page.section_id %}
             <li class="breadcrumb-item">{{ page.section | truncatewords: 1 | default: page.section_id }}</li>
@@ -65,11 +66,11 @@
                        placeholder="Search docs..."
                        aria-label="Search {{ site.title }}"
                        autocomplete="off">
-                <label for="jtd-search-input" class="jtd-search-label">
+                <span class="jtd-search-label" aria-hidden="true">
                   <svg viewBox="0 0 24 24" class="jtd-search-icon" aria-hidden="true">
                     <path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                   </svg>
-                </label>
+                </span>
               </div>
               <div id="jtd-search-results" class="jtd-search-results"></div>
             </div>
@@ -93,11 +94,11 @@
                        placeholder="Search docs..."
                        aria-label="Search {{ site.title }}"
                        autocomplete="off">
-                <label for="jtd-search-input-mobile" class="jtd-search-label">
+                <span class="jtd-search-label" aria-hidden="true">
                   <svg viewBox="0 0 24 24" class="jtd-search-icon" aria-hidden="true">
                     <path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                   </svg>
-                </label>
+                </span>
               </div>
               <div id="jtd-search-results-mobile" class="jtd-search-results" style="display: none;"></div>
             </div>
