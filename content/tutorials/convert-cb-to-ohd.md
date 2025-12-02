@@ -40,6 +40,7 @@ This guide shows you how to convert an existing CollectionBuilder-CSV repository
    | Add | `_sass/ohd.scss` | Styles for transcript visualizations |
    | Add | `_layouts/visualization.html` | Layout for visualization pages |
    | Add | `_layouts/item/transcript.html` | Layout for transcript items |
+   | Replace | `_layouts/item/item-page-base.html` | Adjusted item base for OHD options |
    | Add | `_layouts/home-cover.html` | Cover page layout |
    | Replace | `_layouts/default.html` | Adjusted layout base for OHD options |
    | Add | `pages/visualization.html` | Visualization page template |
