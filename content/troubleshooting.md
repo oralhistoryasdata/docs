@@ -74,6 +74,19 @@ This guide helps you resolve common problems when building and maintaining your 
    - Transcript CSVs must be in `_data/transcripts/` directory
    - NOT in `objects/` or `_data/` root
 
+4. **Visualization page stuck on "Loading topics…"**
+   - The page reads data written by the plugin `_plugins/topic_viz_index.rb`, so the site must be built locally or with GitHub Actions (the default GitHub Pages build does not run plugins)
+   - Check that `assets/data/topic-viz/index.json` exists in your built `_site` folder
+   - If you changed `topic-viz-output` in `_data/theme.yml`, make sure the path has no typos
+
+5. **An interview is missing from the visualization page**
+   - Look for `Topic Viz: no metadata row for ...` in the build output
+   - Every transcript filename must match an `objectid` in your metadata CSV
+
+6. **A tag is missing from the visualization page**
+   - With `topic-viz-tags: filters` (the default), only tags listed in `_data/filters.csv` appear -- add the tag there, or set `topic-viz-tags: all`
+   - Tags in square brackets, such as `[inaudible]`, are always skipped
+
 ### Media Not Playing
 
 **Problem**: Audio or video files won't play on transcript pages
