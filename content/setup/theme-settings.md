@@ -36,17 +36,53 @@ Shows an "As Data" button at the top right of the visualization page, which open
 ```yaml
 transcript-contents: true
 ```
-Displays and filters the contents of individual interviews at the bottom of the visualization page (below the color-coded chart portion).
+
+Shows the **Passages** section below the color-coded bars on the visualization page.
+When a visitor selects a topic, its passages are listed here, grouped by interview, and can be expanded or printed.
+Set to `false` to show only the bars.
+
+```yaml
+visualization-size: compact
+visualization-compact-threshold: 25
+```
+
+Controls how the bars on the visualization page are drawn:
+
+- `large` -- one tall bar per interviewee with their name above it (best for smaller collections)
+- `compact` -- thin strips arranged in columns (best for large collections)
+- `auto` -- uses `large` until the number of interviews is greater than `visualization-compact-threshold`, then switches to `compact`
+
+`visualization-compact-threshold` is only used with `auto` (defaults to `30` if left out).
+In `compact` mode the row height adjusts to the collection size automatically, from tallest (10 or fewer interviews) to thinnest (more than 100).
+
+```yaml
+topic-viz-tags: filters
+```
+
+Chooses which tags appear in the visualization:
+
+- `filters` -- only the tags listed in `_data/filters.csv` (recommended, so the topic list matches your curated filters)
+- `all` -- every tag found in your transcript CSVs
+
+Tags written in square brackets (for example `[inaudible]`) are treated as processing notes and are always skipped.
+
+```yaml
+topic-viz-output: assets/data/topic-viz
+```
+
+The folder where the visualization's data files are written during the build.
+You normally do not need to change this.
+
+{% include bootstrap/alert.md text="**No extra step needed:** The visualization data is generated automatically every time the site builds, by the plugin `_plugins/topic_viz_index.rb`. Because it is a plugin, your site must be built with GitHub Actions or locally -- see [Publishing Options](../publish/publishing)." color="info" %}
 
 ```yaml
 json-generation: false
 ```
 
-This determines if JSON files will be accessed for the visualization page. Particularly good for large collections as it reduces the visualization page size and allows for better usability. 
+Controls only the **Transcripts as JSON** download options in the Data Access section of the visualization page.
+The visualization itself no longer uses these files, so most projects can leave this as `false`.
 
-This will also allow you to download individual json files of your interviews. 
-
-**Warning --> This requires an Extra Step!**: If set to `true`, you must run the rake command `generate_json` to create necessary JSON files. This determines whether JSON files are accessed for advanced visualization features. Defaults to `false`.
+**Warning --> This requires an Extra Step!**: If set to `true`, you must run the rake command `rake generate_json` to create the JSON files before building the site.
 
 ### Site Layout Options
 ```yaml
